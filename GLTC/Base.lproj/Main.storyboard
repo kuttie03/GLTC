@@ -220,7 +220,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Km-gS-ypD">
                                                 <rect key="frame" x="18" y="255" width="555" height="67"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership_blue2" translatesAutoresizingMaskIntoConstraints="NO" id="KyS-nZ-ieR">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leader_blue" translatesAutoresizingMaskIntoConstraints="NO" id="KyS-nZ-ieR">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="by4-Hy-Jbs">
@@ -245,7 +245,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3tP-xI-Jlj">
                                                 <rect key="frame" x="22" y="340" width="555" height="85"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goal" translatesAutoresizingMaskIntoConstraints="NO" id="qOg-GL-ttz">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goal_blue" translatesAutoresizingMaskIntoConstraints="NO" id="qOg-GL-ttz">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qVM-kY-jWD">
@@ -584,10 +584,10 @@ Email: admin@lansingtelangana.org</string>
     <resources>
         <image name="contactus_blue" width="35" height="35"/>
         <image name="gltcLogo" width="232" height="215"/>
-        <image name="goal" width="35" height="35"/>
+        <image name="goal_blue" width="35" height="35"/>
         <image name="home_blue" width="35" height="35"/>
+        <image name="leader_blue" width="35" height="35"/>
         <image name="leadership_blue" width="35" height="35"/>
-        <image name="leadership_blue2" width="35" height="35"/>
         <image name="mission_blue" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>

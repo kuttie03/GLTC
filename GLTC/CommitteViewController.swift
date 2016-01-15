@@ -1,5 +1,5 @@
 //
-//  AboutViewController.swift
+//  CommitteeViewController.swift
 //  GLTC
 //
 //  Created by Shravan Kumar Singireddy on 1/12/16.

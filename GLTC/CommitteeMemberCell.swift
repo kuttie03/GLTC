@@ -1,5 +1,5 @@
 //
-//  WondersCell.swift
+//  CommitteeMemberCell.swift
 //  Custom-TableVC
 //
 //  Created by Shravan Kumar Singireddy on 1/11/16.

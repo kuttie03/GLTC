@@ -16,15 +16,16 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
     
     var committees: [Committee] = []
     
-    let COMMITTEE_JSON_URL = "http://1-dot-iodevelopment-1190.appspot.com/iosdevelopment"
+    let COMMITTEE_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=committeesJson"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCommittees()
         committeeTableView.delegate = self
         committeeTableView.dataSource = self
+        committeeTableView.allowsSelection = false
         if self.revealViewController() != nil {
-            var image = UIImage(named: "menu_black")
+            var image = UIImage(named: "menu_white")
             image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -150,6 +151,7 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
     
+    //Called to load each section's header
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let committee = committees[section]
         return committee.getName()

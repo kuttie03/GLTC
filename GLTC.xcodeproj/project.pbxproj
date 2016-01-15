@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4C9EEA91C494BC200B7067E /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */; };
+		A4C9EEAB1C494C3800B7067E /* GLTCSponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */; };
+		A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */; };
 		A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9161C488FB5007973E3 /* AppDelegate.swift */; };
 		A4EBC9191C488FB5007973E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9181C488FB5007973E3 /* ViewController.swift */; };
 		A4EBC91C1C488FB5007973E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91A1C488FB5007973E3 /* Main.storyboard */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
+		A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCSponsor.swift; sourceTree = "<group>"; };
+		A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorCell.swift; sourceTree = "<group>"; };
 		A4EBC9131C488FB5007973E3 /* GLTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EBC9161C488FB5007973E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EBC9181C488FB5007973E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 			children = (
 				A4EBC92B1C489045007973E3 /* Committee.swift */,
 				A4EBC92C1C489045007973E3 /* CommitteeMember.swift */,
+				A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 		A4EBC9291C488FF1007973E3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */,
 				A4EBC9311C48908E007973E3 /* MenuItemCell.swift */,
 				A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */,
 			);
@@ -104,6 +112,7 @@
 		A4EBC92A1C488FF8007973E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */,
 				A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */,
 				A4EBC9341C4890EA007973E3 /* ContactUsViewController.swift */,
 				A4EBC9181C488FB5007973E3 /* ViewController.swift */,
@@ -193,11 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */,
 				A4EBC9191C488FB5007973E3 /* ViewController.swift in Sources */,
 				A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */,
 				A4EBC92D1C489045007973E3 /* Committee.swift in Sources */,
 				A4EBC9361C4890EA007973E3 /* ContactUsViewController.swift in Sources */,
 				A4EBC9321C48908E007973E3 /* MenuItemCell.swift in Sources */,
+				A4C9EEA91C494BC200B7067E /* SponsorsViewController.swift in Sources */,
+				A4C9EEAB1C494C3800B7067E /* GLTCSponsor.swift in Sources */,
 				A4EBC93B1C48913D007973E3 /* SWRevealViewController.m in Sources */,
 				A4EBC9351C4890EA007973E3 /* CommitteViewController.swift in Sources */,
 				A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */,
@@ -356,6 +368,7 @@
 				A4EBC9271C488FB5007973E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

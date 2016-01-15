@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if self.revealViewController() != nil {
-            var image = UIImage(named: "menu_black")
+            var image = UIImage(named: "menu_white")
             image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
             //self.navigationItem.titleView = UIImageView(image: UIImage(named: "gltcBanner"))
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")

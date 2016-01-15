@@ -142,14 +142,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactus_blue" translatesAutoresizingMaskIntoConstraints="NO" id="zhd-GY-5fu">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sponsor_blue" translatesAutoresizingMaskIntoConstraints="NO" id="zhd-GY-5fu">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="n7P-Yj-yel"/>
                                                         <constraint firstAttribute="width" constant="35" id="pyM-3h-r8K"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32P-Ha-RTT">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sponsors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32P-Ha-RTT">
                                                     <rect key="frame" x="48" y="12" width="80" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="ATl-pE-1TN"/>
@@ -176,7 +176,51 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="O7c-8d-aXg" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="2rR-Rw-VJA"/>
+                                            <segue destination="s42-vg-BpA" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="c5g-Yh-aRh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ISP-47-DSf" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="205" width="600" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ISP-47-DSf" id="hOL-7o-nZG">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactus_blue" translatesAutoresizingMaskIntoConstraints="NO" id="sQl-RW-601">
+                                                    <rect key="frame" x="8" y="12" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="JpT-bu-SNl"/>
+                                                        <constraint firstAttribute="width" constant="35" id="xAD-ED-LRN"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ue4-4N-ax3">
+                                                    <rect key="frame" x="48" y="12" width="80" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="eJz-YB-Zpc"/>
+                                                        <constraint firstAttribute="width" constant="80" id="tA5-nk-ImI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sQl-RW-601" firstAttribute="leading" secondItem="hOL-7o-nZG" secondAttribute="leading" constant="10" id="04q-J1-Pqr"/>
+                                                <constraint firstItem="sQl-RW-601" firstAttribute="leading" secondItem="hOL-7o-nZG" secondAttribute="leading" constant="8" id="7Kh-ZT-DLv"/>
+                                                <constraint firstItem="sQl-RW-601" firstAttribute="top" secondItem="hOL-7o-nZG" secondAttribute="top" constant="10" id="aMD-vr-9LV"/>
+                                                <constraint firstItem="Ue4-4N-ax3" firstAttribute="leading" secondItem="sQl-RW-601" secondAttribute="trailing" constant="5" id="bKv-KB-04V"/>
+                                                <constraint firstItem="sQl-RW-601" firstAttribute="top" secondItem="hOL-7o-nZG" secondAttribute="top" constant="12" id="dDn-LO-vYI"/>
+                                                <constraint firstItem="Ue4-4N-ax3" firstAttribute="top" secondItem="hOL-7o-nZG" secondAttribute="top" constant="12" id="h7S-1e-0wm"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="04q-J1-Pqr"/>
+                                                    <exclude reference="aMD-vr-9LV"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="O7c-8d-aXg" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="LAc-eq-LxN"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -192,7 +236,7 @@
             </objects>
             <point key="canvasLocation" x="63" y="303"/>
         </scene>
-        <!--View Controller-->
+        <!--Greater Lansing Telangana Community-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
@@ -201,11 +245,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-5C-026">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E4x-nX-luo">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
@@ -366,7 +410,7 @@
                             <constraint firstItem="E4x-nX-luo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="rAw-SC-FnN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CRy-my-ZQO">
+                    <navigationItem key="navigationItem" title="Greater Lansing Telangana Community" id="CRy-my-ZQO">
                         <barButtonItem key="leftBarButtonItem" title="Menu" style="plain" id="iRe-r0-rUc"/>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -379,7 +423,7 @@
             </objects>
             <point key="canvasLocation" x="1727" y="-424"/>
         </scene>
-        <!--Committee View Controller-->
+        <!--GLTC Leadership-->
         <scene sceneID="Lvl-kE-Ee3">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="gnI-vC-19s" customClass="CommitteeViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
@@ -388,10 +432,10 @@
                         <viewControllerLayoutGuide type="bottom" id="j9x-ga-ff7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w1i-GB-84O">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bru-hi-a0w">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bru-hi-a0w">
                                 <rect key="frame" x="0.0" y="64" width="592" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -399,7 +443,7 @@
                                         <rect key="frame" x="0.0" y="28" width="592" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XSd-KB-eZy" id="bA1-UX-2al">
-                                            <rect key="frame" x="0.0" y="0.0" width="592" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="592" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LMd-AA-qH2">
@@ -456,7 +500,7 @@
                             <constraint firstItem="j9x-ga-ff7" firstAttribute="top" secondItem="bru-hi-a0w" secondAttribute="bottom" id="kYY-b3-cDk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GWg-5X-yGA">
+                    <navigationItem key="navigationItem" title="GLTC Leadership" id="GWg-5X-yGA">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="9Nt-1r-juw"/>
                     </navigationItem>
                     <connections>
@@ -468,7 +512,7 @@
             </objects>
             <point key="canvasLocation" x="1727" y="344"/>
         </scene>
-        <!--Contact Us View Controller-->
+        <!--Contact Us-->
         <scene sceneID="Sfw-Zg-vw2">
             <objects>
                 <viewController id="X1N-nP-CRJ" customClass="ContactUsViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
@@ -477,10 +521,10 @@
                         <viewControllerLayoutGuide type="bottom" id="pKZ-wS-I0c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="M8p-IP-08h">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gltcLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aUm-9x-5FM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gltcLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aUm-9x-5FM">
                                 <rect key="frame" x="192" y="64" width="217" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="217" id="8JZ-Sw-PNB"/>
@@ -515,7 +559,7 @@ Email: admin@lansingtelangana.org</string>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="tj7-uf-rAT">
+                    <navigationItem key="navigationItem" title="Contact Us" id="tj7-uf-rAT">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="98Q-Db-deP"/>
                     </navigationItem>
                     <connections>
@@ -526,14 +570,88 @@ Email: admin@lansingtelangana.org</string>
             </objects>
             <point key="canvasLocation" x="1727" y="1052"/>
         </scene>
+        <!--GLTC Sponsors-->
+        <scene sceneID="HyG-6w-dhO">
+            <objects>
+                <viewController id="xZX-jq-E0l" customClass="SponsorsViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rOB-E4-iw7"/>
+                        <viewControllerLayoutGuide type="bottom" id="w9A-SR-S4y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0io-1P-TBj">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="178" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sUW-cf-MxS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sponsorCell" rowHeight="178" id="IqR-CE-vhZ" customClass="SponsorCell" customModule="GLTC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="178"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IqR-CE-vhZ" id="ZP2-5e-FMX">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="178"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oKd-oR-WBc">
+                                                    <rect key="frame" x="180" y="22" width="240" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="GYF-g2-AlB"/>
+                                                        <constraint firstAttribute="width" constant="240" id="q69-4t-qm9"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oKd-oR-WBc" firstAttribute="top" secondItem="ZP2-5e-FMX" secondAttribute="topMargin" constant="14" id="8jf-W6-LC7"/>
+                                                <constraint firstItem="oKd-oR-WBc" firstAttribute="top" secondItem="ZP2-5e-FMX" secondAttribute="top" constant="20" id="INB-S0-6Fd"/>
+                                                <constraint firstItem="oKd-oR-WBc" firstAttribute="centerX" secondItem="ZP2-5e-FMX" secondAttribute="centerX" id="v9U-KR-Pu8"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="INB-S0-6Fd"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sponsorImg" destination="oKd-oR-WBc" id="dTN-IB-PAV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sUW-cf-MxS" firstAttribute="top" secondItem="0io-1P-TBj" secondAttribute="top" id="2eX-Me-YzM"/>
+                            <constraint firstAttribute="trailing" secondItem="sUW-cf-MxS" secondAttribute="trailing" id="ZUA-Mt-8xt"/>
+                            <constraint firstItem="sUW-cf-MxS" firstAttribute="leading" secondItem="0io-1P-TBj" secondAttribute="leading" id="kfs-9B-3A2"/>
+                            <constraint firstItem="w9A-SR-S4y" firstAttribute="top" secondItem="sUW-cf-MxS" secondAttribute="bottom" id="lFd-3j-vdi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GLTC Sponsors" id="6ky-Uc-pRy">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="dlz-ew-kta"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="dlz-ew-kta" id="AJ4-hG-PT6"/>
+                        <outlet property="sponsorTableView" destination="sUW-cf-MxS" id="bma-tW-1C8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4f-gd-5Ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="1741"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="7xv-eu-dph">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sY4-Km-lFL" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IlY-1z-l4p">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="IlY-1z-l4p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.47577271360000001" green="0.79584650189999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -549,11 +667,20 @@ Email: admin@lansingtelangana.org</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3DN-lI-jyE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Eq-sY-0td">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="0Eq-sY-0td">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.47577271355273631" green="0.79584650188783612" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="iVx-eM-0jK">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="gnI-vC-19s" kind="relationship" relationship="rootViewController" id="GxA-71-jks"/>
                     </connections>
@@ -567,9 +694,14 @@ Email: admin@lansingtelangana.org</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O7c-8d-aXg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KRN-Pp-AlE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KRN-Pp-AlE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.47577271360000001" green="0.79584650189999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -580,6 +712,29 @@ Email: admin@lansingtelangana.org</string>
             </objects>
             <point key="canvasLocation" x="967" y="1052"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1nw-hJ-tul">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s42-vg-BpA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="JHT-Ui-EtN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.47577271360000001" green="0.79584650189999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xZX-jq-E0l" kind="relationship" relationship="rootViewController" id="5Ig-XF-y4O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEA-bk-zx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="1741"/>
+        </scene>
     </scenes>
     <resources>
         <image name="contactus_blue" width="35" height="35"/>
@@ -589,6 +744,7 @@ Email: admin@lansingtelangana.org</string>
         <image name="leader_blue" width="35" height="35"/>
         <image name="leadership_blue" width="35" height="35"/>
         <image name="mission_blue" width="35" height="35"/>
+        <image name="sponsor_blue" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xkf-eZ-IRj"/>

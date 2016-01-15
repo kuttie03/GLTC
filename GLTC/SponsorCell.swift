@@ -1,5 +1,5 @@
 //
-//  MenuItemCell.swift
+//  SponsorCell.swift
 //  Custom-TableVC
 //
 //  Created by Shravan Kumar Singireddy on 1/11/16.
@@ -8,23 +8,22 @@
 
 import UIKit
 
-class MenuItemCell: UITableViewCell {
+class SponsorCell: UITableViewCell {
 
-    @IBOutlet weak var menuImg: UIImageView!
-    
-    @IBOutlet weak var menuText: UILabel!
+    @IBOutlet weak var sponsorImg: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        sponsorImg.layer.cornerRadius = 5.0
+        sponsorImg.clipsToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-    func configureCell(menuImg: UIImage, menuText: String){
-        self.menuImg.image = menuImg
-        self.menuText.text = menuText
+    func configureCell(memberImg: UIImage){
+        self.sponsorImg.image = memberImg
     }
 
 }

@@ -12,6 +12,13 @@
 		A4EBC91C1C488FB5007973E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91A1C488FB5007973E3 /* Main.storyboard */; };
 		A4EBC91E1C488FB5007973E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91D1C488FB5007973E3 /* Assets.xcassets */; };
 		A4EBC9211C488FB5007973E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91F1C488FB5007973E3 /* LaunchScreen.storyboard */; };
+		A4EBC92D1C489045007973E3 /* Committee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92B1C489045007973E3 /* Committee.swift */; };
+		A4EBC92E1C489045007973E3 /* CommitteeMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92C1C489045007973E3 /* CommitteeMember.swift */; };
+		A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */; };
+		A4EBC9321C48908E007973E3 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9311C48908E007973E3 /* MenuItemCell.swift */; };
+		A4EBC9351C4890EA007973E3 /* CommitteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */; };
+		A4EBC9361C4890EA007973E3 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9341C4890EA007973E3 /* ContactUsViewController.swift */; };
+		A4EBC93B1C48913D007973E3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC93A1C48913D007973E3 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,15 @@
 		A4EBC91D1C488FB5007973E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4EBC9201C488FB5007973E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4EBC9221C488FB5007973E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4EBC92B1C489045007973E3 /* Committee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Committee.swift; sourceTree = "<group>"; };
+		A4EBC92C1C489045007973E3 /* CommitteeMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeMember.swift; sourceTree = "<group>"; };
+		A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeMemberCell.swift; sourceTree = "<group>"; };
+		A4EBC9311C48908E007973E3 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteViewController.swift; sourceTree = "<group>"; };
+		A4EBC9341C4890EA007973E3 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		A4EBC9381C48913C007973E3 /* GLTC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLTC-Bridging-Header.h"; sourceTree = "<group>"; };
+		A4EBC9391C48913D007973E3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		A4EBC93A1C48913D007973E3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,55 @@
 		A4EBC9151C488FB5007973E3 /* GLTC */ = {
 			isa = PBXGroup;
 			children = (
+				A4EBC9371C489118007973E3 /* SWRevealViewController */,
+				A4EBC92A1C488FF8007973E3 /* Controller */,
+				A4EBC9291C488FF1007973E3 /* View */,
+				A4EBC9281C488FE5007973E3 /* Model */,
 				A4EBC9161C488FB5007973E3 /* AppDelegate.swift */,
-				A4EBC9181C488FB5007973E3 /* ViewController.swift */,
 				A4EBC91A1C488FB5007973E3 /* Main.storyboard */,
 				A4EBC91D1C488FB5007973E3 /* Assets.xcassets */,
 				A4EBC91F1C488FB5007973E3 /* LaunchScreen.storyboard */,
 				A4EBC9221C488FB5007973E3 /* Info.plist */,
 			);
 			path = GLTC;
+			sourceTree = "<group>";
+		};
+		A4EBC9281C488FE5007973E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4EBC92B1C489045007973E3 /* Committee.swift */,
+				A4EBC92C1C489045007973E3 /* CommitteeMember.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A4EBC9291C488FF1007973E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4EBC9311C48908E007973E3 /* MenuItemCell.swift */,
+				A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A4EBC92A1C488FF8007973E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */,
+				A4EBC9341C4890EA007973E3 /* ContactUsViewController.swift */,
+				A4EBC9181C488FB5007973E3 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A4EBC9371C489118007973E3 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4EBC9391C48913D007973E3 /* SWRevealViewController.h */,
+				A4EBC93A1C48913D007973E3 /* SWRevealViewController.m */,
+				A4EBC9381C48913C007973E3 /* GLTC-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +194,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4EBC9191C488FB5007973E3 /* ViewController.swift in Sources */,
+				A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */,
+				A4EBC92D1C489045007973E3 /* Committee.swift in Sources */,
+				A4EBC9361C4890EA007973E3 /* ContactUsViewController.swift in Sources */,
+				A4EBC9321C48908E007973E3 /* MenuItemCell.swift in Sources */,
+				A4EBC93B1C48913D007973E3 /* SWRevealViewController.m in Sources */,
+				A4EBC9351C4890EA007973E3 /* CommitteViewController.swift in Sources */,
 				A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */,
+				A4EBC92E1C489045007973E3 /* CommitteeMember.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,10 +314,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GLTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darshan.GLTC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GLTC/GLTC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -261,10 +328,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GLTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darshan.GLTC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GLTC/GLTC-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -12,6 +12,8 @@ class SponsorCell: UITableViewCell {
 
     @IBOutlet weak var sponsorImg: UIImageView!
     
+    @IBOutlet weak var sponsorNameLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         sponsorImg.layer.cornerRadius = 5.0
@@ -22,8 +24,25 @@ class SponsorCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configureCell(memberImg: UIImage){
-        self.sponsorImg.image = memberImg
+    func setSponsorImage(sponsorImg: UIImageView){
+        self.sponsorImg = sponsorImg
     }
+    
+    func setSponsorName(name: String) {
+        self.sponsorNameLbl.text = name
+    }
+}
 
+extension UIImageView {
+    func downloadImageFrom(link link:String, contentMode: UIViewContentMode) {
+        NSURLSession.sharedSession().dataTaskWithURL( NSURL(string:link)!, completionHandler: {
+            (data, response, error) -> Void in
+            dispatch_async(dispatch_get_main_queue()) {
+                self.contentMode =  contentMode
+                if let data = data {
+                    self.image = UIImage(data: data)
+                }
+            }
+        }).resume()
+    }
 }

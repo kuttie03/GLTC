@@ -14,16 +14,12 @@ class CommitteeMember {
     
     private var title: String!
     
-    private var picture: UIImage!
+    private var imageUrl: String!
     
-    init(name: String, title: String, pictureName: String){
+    init(name: String, title: String, imageUrl: String){
         self.name = name
         self.title = title
-        if let image = UIImage(named: pictureName){
-            self.picture = image
-        }else{
-            self.picture = UIImage(named: "userImg_medium")
-        }
+        self.imageUrl = imageUrl
     }
     
     init(){
@@ -46,16 +42,12 @@ class CommitteeMember {
         self.title = title
     }
     
-    func getPicture() -> UIImage {
-        return self.picture
+    func getImageUrl() -> String {
+        return self.imageUrl
     }
     
-    func setPicture(imageName: String){
-        if let image = UIImage(named: imageName){
-            self.picture = image
-        }else{
-            self.picture = UIImage(named: "userImg_medium")
-        }
+    func setImageUrl(imageUrl: String){
+        self.imageUrl = imageUrl
     }
     
 }

@@ -12,19 +12,14 @@ class GLTCSponsor {
     
     private var name: String!
     
-    private var picture: UIImage!
+    private var imageUrl: String!
     
-    init(name: String, pictureUrl: String){
+    init(name: String, imageUrl: String){
         self.name = name
-        let url = NSURL(string: pictureUrl)!
-        if let data = NSData(contentsOfURL: url) {
-            picture = UIImage(data: data)
-        }else{
-            picture = UIImage(named: "userImg_medium")
-        }
+        self.imageUrl = imageUrl
     }
     
-    init(){
+    init() {
         
     }
     
@@ -36,17 +31,11 @@ class GLTCSponsor {
         self.name = name
     }
     
-    func getPicture() -> UIImage {
-        return self.picture
+    func getImageUrl() -> String {
+        return self.imageUrl
     }
     
-    func setPicture(pictureUrl: String){
-        let url = NSURL(string: pictureUrl)!
-        if let data = NSData(contentsOfURL: url) {
-            picture = UIImage(data: data)
-        }else{
-            picture = UIImage(named: "userImg_medium")
-        }
+    func setImageUrl(imageUrl: String){
+        self.imageUrl = imageUrl
     }
-    
 }

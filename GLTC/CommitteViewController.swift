@@ -102,7 +102,7 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
                                     }else if(key as! String == "title"){
                                         committeeMember.setTitle(value as! String)
                                     }else if(key as! String == "picture"){
-                                        committeeMember.setPicture(value as! String)
+                                        committeeMember.setImageUrl(value as! String)
                                     }
                                 }
                                 members.append(committeeMember)
@@ -144,7 +144,10 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
         if let committeeMemberCell = tableView.dequeueReusableCellWithIdentifier("committeeMemberCell") as? CommitteeMemberCell {
             let committee = committees[indexPath.section]
             let committeeMember = committee.getMembers()[indexPath.row]
-            committeeMemberCell.configureCell(committeeMember.getPicture(), name: committeeMember.getName(), title: committeeMember.getTitle())
+            committeeMemberCell.memberImg.image = UIImage(named: "userImg_medium")
+            committeeMemberCell.memberImg.downloadImageFrom(link:committeeMember.getImageUrl(), contentMode: UIViewContentMode.ScaleAspectFit)
+            committeeMemberCell.nameLbl.text = committeeMember.getName()
+            committeeMemberCell.titleLbl.text = committeeMember.getTitle()
             return committeeMemberCell
         }else{
             return CommitteeMemberCell()

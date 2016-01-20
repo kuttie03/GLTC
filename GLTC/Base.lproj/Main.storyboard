@@ -179,8 +179,52 @@
                                             <segue destination="s42-vg-BpA" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="c5g-Yh-aRh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ISP-47-DSf" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="o9Z-pC-Xu2" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="205" width="600" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o9Z-pC-Xu2" id="ZSm-vn-LFe">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_blue" translatesAutoresizingMaskIntoConstraints="NO" id="7Ai-2l-mC3">
+                                                    <rect key="frame" x="8" y="12" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="SrC-p5-Hpz"/>
+                                                        <constraint firstAttribute="height" constant="35" id="YUj-z2-apA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJW-Q6-LMm">
+                                                    <rect key="frame" x="48" y="12" width="80" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="H9A-dh-T5J"/>
+                                                        <constraint firstAttribute="height" constant="35" id="Kdy-40-b4m"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VJW-Q6-LMm" firstAttribute="top" secondItem="ZSm-vn-LFe" secondAttribute="top" constant="12" id="GgQ-UR-qJw"/>
+                                                <constraint firstItem="VJW-Q6-LMm" firstAttribute="leading" secondItem="7Ai-2l-mC3" secondAttribute="trailing" constant="5" id="L1A-67-cXI"/>
+                                                <constraint firstItem="7Ai-2l-mC3" firstAttribute="top" secondItem="ZSm-vn-LFe" secondAttribute="top" constant="10" id="Ump-Nc-T9d"/>
+                                                <constraint firstItem="7Ai-2l-mC3" firstAttribute="top" secondItem="ZSm-vn-LFe" secondAttribute="top" constant="12" id="aPi-oT-qrC"/>
+                                                <constraint firstItem="7Ai-2l-mC3" firstAttribute="leading" secondItem="ZSm-vn-LFe" secondAttribute="leading" constant="8" id="hn7-HJ-5ua"/>
+                                                <constraint firstItem="7Ai-2l-mC3" firstAttribute="leading" secondItem="ZSm-vn-LFe" secondAttribute="leading" constant="10" id="skj-F0-8Gu"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Ump-Nc-T9d"/>
+                                                    <exclude reference="skj-F0-8Gu"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1QK-Gh-ifH" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="F70-th-Q3o"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ISP-47-DSf" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="270" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ISP-47-DSf" id="hOL-7o-nZG">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -401,7 +445,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3dM-5C-026" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5hH-Qk-Qky"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3dM-5C-026" secondAttribute="bottom" id="HUm-t6-AjP"/>
@@ -583,7 +627,7 @@ Email: admin@lansingtelangana.org</string>
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="20" y="245" width="240" height="264"/>
+                                                    <rect key="frame" x="21" y="258" width="240" height="264"/>
                                                     <mask key="constraints">
                                                         <include reference="ExK-NH-emQ"/>
                                                     </mask>
@@ -601,58 +645,11 @@ Email: admin@lansingtelangana.org</string>
                                                     </mask>
                                                 </variation>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pQ-7w-VtX" customClass="RoundedButton" customModule="GLTC" customModuleProvider="target">
-                                                <rect key="frame" x="227" y="528" width="100" height="30"/>
-                                                <color key="backgroundColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="8j4-cB-xfX"/>
-                                                    <constraint firstAttribute="width" constant="100" id="dd8-HU-TE3"/>
-                                                    <constraint firstAttribute="width" constant="100" id="duk-ij-7f2"/>
-                                                    <constraint firstAttribute="width" constant="100" id="gzw-Ge-4ba"/>
-                                                    <constraint firstAttribute="height" constant="30" id="wPf-8u-A60"/>
-                                                    <constraint firstAttribute="height" constant="30" id="waN-vE-q6B"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                <state key="normal" title="Send">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="8j4-cB-xfX"/>
-                                                        <exclude reference="dd8-HU-TE3"/>
-                                                        <exclude reference="duk-ij-7f2"/>
-                                                        <exclude reference="gzw-Ge-4ba"/>
-                                                        <exclude reference="wPf-8u-A60"/>
-                                                        <exclude reference="waN-vE-q6B"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="388" y="522" width="100" height="30"/>
-                                                    <mask key="constraints">
-                                                        <include reference="8j4-cB-xfX"/>
-                                                        <include reference="dd8-HU-TE3"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="widthClass=regular" misplaced="YES">
-                                                    <rect key="frame" x="404" y="552" width="100" height="30"/>
-                                                    <mask key="constraints">
-                                                        <include reference="gzw-Ge-4ba"/>
-                                                        <include reference="waN-vE-q6B"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="256" y="780" width="100" height="30"/>
-                                                    <mask key="constraints">
-                                                        <include reference="duk-ij-7f2"/>
-                                                        <include reference="wPf-8u-A60"/>
-                                                    </mask>
-                                                </variation>
-                                            </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gWx-Rq-btr">
-                                                <rect key="frame" x="130" y="478" width="338" height="23"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gWx-Rq-btr">
+                                                <rect key="frame" x="297" y="382" width="100" height="150"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5SZ-K2-9K0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="67" height="23"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5SZ-K2-9K0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="3ec-1G-oMe"/>
                                                             <constraint firstAttribute="height" constant="30" id="EMX-Dl-wwR"/>
@@ -683,8 +680,8 @@ Email: admin@lansingtelangana.org</string>
                                                             </mask>
                                                         </variation>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-Sm-3jm">
-                                                        <rect key="frame" x="77" y="0.0" width="63" height="23"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-Sm-3jm">
+                                                        <rect key="frame" x="0.0" y="40" width="100" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="1rf-4O-jxN"/>
                                                             <constraint firstAttribute="height" constant="30" id="Dnf-zd-SEI"/>
@@ -715,8 +712,8 @@ Email: admin@lansingtelangana.org</string>
                                                             </mask>
                                                         </variation>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Subject*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqB-ox-BkH">
-                                                        <rect key="frame" x="150" y="0.0" width="78" height="23"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqB-ox-BkH">
+                                                        <rect key="frame" x="0.0" y="80" width="100" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="KZT-2h-0Fv"/>
                                                             <constraint firstAttribute="height" constant="23" id="b8r-Xi-O2U"/>
@@ -747,8 +744,8 @@ Email: admin@lansingtelangana.org</string>
                                                             </mask>
                                                         </variation>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Comments*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yPn-SM-Qux">
-                                                        <rect key="frame" x="238" y="0.0" width="100" height="23"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Comments*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yPn-SM-Qux">
+                                                        <rect key="frame" x="0.0" y="120" width="100" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="5Wh-CX-u6I"/>
                                                             <constraint firstAttribute="height" constant="150" id="BxQ-Rn-HDB"/>
@@ -802,7 +799,7 @@ Email: admin@lansingtelangana.org</string>
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=compact" axis="vertical" misplaced="YES">
-                                                    <rect key="frame" x="313" y="245" width="250" height="263"/>
+                                                    <rect key="frame" x="313" y="258" width="250" height="263"/>
                                                     <mask key="constraints">
                                                         <include reference="boq-c5-Ovh"/>
                                                         <exclude reference="evw-cb-8KJ"/>
@@ -821,6 +818,56 @@ Email: admin@lansingtelangana.org</string>
                                                     </mask>
                                                 </variation>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pQ-7w-VtX" customClass="RoundedButton" customModule="GLTC" customModuleProvider="target">
+                                                <rect key="frame" x="302" y="561" width="100" height="30"/>
+                                                <color key="backgroundColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="8j4-cB-xfX"/>
+                                                    <constraint firstAttribute="width" constant="100" id="dd8-HU-TE3"/>
+                                                    <constraint firstAttribute="width" constant="100" id="duk-ij-7f2"/>
+                                                    <constraint firstAttribute="width" constant="100" id="gzw-Ge-4ba"/>
+                                                    <constraint firstAttribute="height" constant="30" id="wPf-8u-A60"/>
+                                                    <constraint firstAttribute="height" constant="30" id="waN-vE-q6B"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Send">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="8j4-cB-xfX"/>
+                                                        <exclude reference="dd8-HU-TE3"/>
+                                                        <exclude reference="duk-ij-7f2"/>
+                                                        <exclude reference="gzw-Ge-4ba"/>
+                                                        <exclude reference="wPf-8u-A60"/>
+                                                        <exclude reference="waN-vE-q6B"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="388" y="539" width="100" height="30"/>
+                                                    <mask key="constraints">
+                                                        <include reference="8j4-cB-xfX"/>
+                                                        <include reference="dd8-HU-TE3"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="404" y="552" width="100" height="30"/>
+                                                    <mask key="constraints">
+                                                        <include reference="gzw-Ge-4ba"/>
+                                                        <include reference="waN-vE-q6B"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="256" y="780" width="100" height="30"/>
+                                                    <mask key="constraints">
+                                                        <include reference="duk-ij-7f2"/>
+                                                        <include reference="wPf-8u-A60"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="sendEmail:" destination="X1N-nP-CRJ" eventType="touchUpInside" id="ZET-2C-NuY"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -828,7 +875,9 @@ Email: admin@lansingtelangana.org</string>
                                             <constraint firstAttribute="bottom" secondItem="xyn-iv-sdU" secondAttribute="bottom" id="7xb-mt-EvY"/>
                                             <constraint firstItem="8pQ-7w-VtX" firstAttribute="centerX" secondItem="K5h-Lz-wXn" secondAttribute="centerX" id="8ro-xI-ujq"/>
                                             <constraint firstItem="8pQ-7w-VtX" firstAttribute="top" secondItem="gWx-Rq-btr" secondAttribute="bottom" constant="20" id="91x-jg-Qxf"/>
-                                            <constraint firstItem="xyn-iv-sdU" firstAttribute="top" secondItem="beL-kp-gDx" secondAttribute="bottom" constant="8" id="BPu-lc-iIU"/>
+                                            <constraint firstItem="xyn-iv-sdU" firstAttribute="top" secondItem="beL-kp-gDx" secondAttribute="bottom" constant="8" id="BPu-lc-iIU">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                                            </constraint>
                                             <constraint firstItem="beL-kp-gDx" firstAttribute="centerX" secondItem="K5h-Lz-wXn" secondAttribute="centerX" id="EaZ-Gv-Nbf"/>
                                             <constraint firstItem="xmG-CC-yl8" firstAttribute="top" secondItem="K5h-Lz-wXn" secondAttribute="top" constant="8" id="JSd-3h-i3M"/>
                                             <constraint firstItem="gWx-Rq-btr" firstAttribute="top" secondItem="beL-kp-gDx" secondAttribute="bottom" constant="20" id="KjI-S1-c0e"/>
@@ -850,8 +899,12 @@ Email: admin@lansingtelangana.org</string>
                                             <constraint firstItem="xmG-CC-yl8" firstAttribute="centerX" secondItem="K5h-Lz-wXn" secondAttribute="centerX" id="bxp-6Q-bmT"/>
                                             <constraint firstItem="xyn-iv-sdU" firstAttribute="top" secondItem="xmG-CC-yl8" secondAttribute="bottom" constant="20" id="cYS-YA-rw1"/>
                                             <constraint firstItem="xyn-iv-sdU" firstAttribute="centerX" secondItem="K5h-Lz-wXn" secondAttribute="centerX" id="fm7-Vt-W4w"/>
-                                            <constraint firstItem="xyn-iv-sdU" firstAttribute="top" secondItem="beL-kp-gDx" secondAttribute="bottom" constant="10" id="h5R-St-HKO"/>
-                                            <constraint firstItem="gWx-Rq-btr" firstAttribute="top" secondItem="beL-kp-gDx" secondAttribute="bottom" constant="10" id="haz-LX-u56"/>
+                                            <constraint firstItem="xyn-iv-sdU" firstAttribute="top" secondItem="beL-kp-gDx" secondAttribute="bottom" constant="10" id="h5R-St-HKO">
+                                                <variation key="heightClass=compact" constant="20"/>
+                                            </constraint>
+                                            <constraint firstItem="gWx-Rq-btr" firstAttribute="top" secondItem="beL-kp-gDx" secondAttribute="bottom" constant="10" id="haz-LX-u56">
+                                                <variation key="heightClass=compact" constant="20"/>
+                                            </constraint>
                                             <constraint firstItem="8pQ-7w-VtX" firstAttribute="centerX" secondItem="gWx-Rq-btr" secondAttribute="centerX" id="id8-HZ-PIN"/>
                                             <constraint firstItem="8pQ-7w-VtX" firstAttribute="top" secondItem="gWx-Rq-btr" secondAttribute="bottom" constant="20" id="k8B-yY-jBS"/>
                                             <constraint firstAttribute="bottom" secondItem="8pQ-7w-VtX" secondAttribute="bottom" constant="20" id="qoL-yr-Ch8"/>
@@ -948,7 +1001,12 @@ Email: admin@lansingtelangana.org</string>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="900"/>
                     <connections>
+                        <outlet property="commentsText" destination="yPn-SM-Qux" id="tvH-Jy-IIS"/>
+                        <outlet property="emailText" destination="wPF-Sm-3jm" id="8ej-Xe-XhK"/>
                         <outlet property="menuButton" destination="98Q-Db-deP" id="prT-c2-7Y6"/>
+                        <outlet property="nameText" destination="5SZ-K2-9K0" id="x2K-oc-ss3"/>
+                        <outlet property="scrollView" destination="E8b-iG-7kz" id="C79-nC-I2m"/>
+                        <outlet property="subjectText" destination="AqB-ox-BkH" id="9eq-fC-zt8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEV-w5-2KK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -967,45 +1025,39 @@ Email: admin@lansingtelangana.org</string>
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="182" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sUW-cf-MxS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="111" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sUW-cf-MxS">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sponsorCell" rowHeight="182" id="IqR-CE-vhZ" customClass="SponsorCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="182"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sponsorCell" rowHeight="111" id="IqR-CE-vhZ" customClass="SponsorCell" customModule="GLTC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="111"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IqR-CE-vhZ" id="ZP2-5e-FMX">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="182"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="111"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oKd-oR-WBc">
-                                                    <rect key="frame" x="180" y="46" width="240" height="128"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oKd-oR-WBc">
+                                                    <rect key="frame" x="8" y="8" width="100" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="128" id="GYF-g2-AlB"/>
-                                                        <constraint firstAttribute="width" constant="240" id="q69-4t-qm9"/>
+                                                        <constraint firstAttribute="height" constant="100" id="GYF-g2-AlB"/>
+                                                        <constraint firstAttribute="width" constant="100" id="q69-4t-qm9"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGe-4r-Hna">
-                                                    <rect key="frame" x="26" y="0.0" width="549" height="21"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGe-4r-Hna">
+                                                    <rect key="frame" x="127" y="8" width="360" height="100"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="oKd-oR-WBc" firstAttribute="bottom" secondItem="ZP2-5e-FMX" secondAttribute="bottomMargin" id="6bd-Tk-6Ei"/>
-                                                <constraint firstItem="zGe-4r-Hna" firstAttribute="centerX" secondItem="ZP2-5e-FMX" secondAttribute="centerX" id="7yW-g6-gVY"/>
-                                                <constraint firstItem="oKd-oR-WBc" firstAttribute="top" secondItem="ZP2-5e-FMX" secondAttribute="topMargin" id="8jf-W6-LC7"/>
-                                                <constraint firstItem="oKd-oR-WBc" firstAttribute="top" secondItem="ZP2-5e-FMX" secondAttribute="top" constant="20" id="INB-S0-6Fd"/>
-                                                <constraint firstItem="zGe-4r-Hna" firstAttribute="top" secondItem="ZP2-5e-FMX" secondAttribute="topMargin" constant="10" id="RIt-QD-8ty"/>
-                                                <constraint firstItem="oKd-oR-WBc" firstAttribute="centerX" secondItem="ZP2-5e-FMX" secondAttribute="centerX" id="v9U-KR-Pu8"/>
+                                                <constraint firstItem="zGe-4r-Hna" firstAttribute="top" secondItem="ZP2-5e-FMX" secondAttribute="top" constant="10" id="2N6-IH-Cou"/>
+                                                <constraint firstItem="zGe-4r-Hna" firstAttribute="leading" secondItem="oKd-oR-WBc" secondAttribute="trailing" constant="20" id="GTt-wO-FeG"/>
+                                                <constraint firstItem="oKd-oR-WBc" firstAttribute="leading" secondItem="ZP2-5e-FMX" secondAttribute="leading" constant="10" id="HSW-3S-6AD"/>
+                                                <constraint firstAttribute="bottom" secondItem="zGe-4r-Hna" secondAttribute="bottom" constant="10" id="eCN-rG-u5J"/>
+                                                <constraint firstItem="oKd-oR-WBc" firstAttribute="top" secondItem="ZP2-5e-FMX" secondAttribute="top" constant="10" id="g7h-kP-S6g"/>
+                                                <constraint firstAttribute="trailing" secondItem="zGe-4r-Hna" secondAttribute="trailing" constant="20" id="slE-2n-Rax"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="8jf-W6-LC7"/>
-                                                    <exclude reference="INB-S0-6Fd"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="sponsorImg" destination="oKd-oR-WBc" id="dTN-IB-PAV"/>
@@ -1033,7 +1085,146 @@ Email: admin@lansingtelangana.org</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4f-gd-5Ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="1947"/>
+            <point key="canvasLocation" x="1981" y="1994"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="RxR-4U-DR3">
+            <objects>
+                <viewController id="wuq-Wb-WtF" customClass="NewsViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EGr-01-kM9"/>
+                        <viewControllerLayoutGuide type="bottom" id="GOZ-2z-FZZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lyf-ye-z6s">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="News" id="dyd-XA-iTC">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="xUh-Rr-aaH"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="xUh-Rr-aaH" id="zPW-ei-ZWJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMc-wz-4X9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971" y="2637"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="0Pn-73-iyP">
+            <objects>
+                <pageViewController storyboardIdentifier="NewsPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="sbE-m8-O7N" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtz-3z-jpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2640" y="2637"/>
+        </scene>
+        <!--News Content View Controller-->
+        <scene sceneID="B6s-NM-tL7">
+            <objects>
+                <viewController storyboardIdentifier="NewsContentViewController" id="ke3-nv-if3" customClass="NewsContentViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jfV-Rv-e61"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ia-ob-MYM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h32-OZ-mvE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0a-kz-aZv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A60-Uv-ksz">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0YE-Bl-Z2T">
+                                                <rect key="frame" x="0.0" y="47" width="600" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="i3e-dY-pTa"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5t-hC-P1q">
+                                                <rect key="frame" x="29" y="339" width="537" height="467"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg0-cL-l8l">
+                                                <rect key="frame" x="207" y="814" width="186" height="57"/>
+                                                <string key="text">Thanks &amp; Regards
+GLTC Team</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="w5t-hC-P1q" secondAttribute="trailing" constant="20" id="2G5-Bp-QO8"/>
+                                            <constraint firstItem="w5t-hC-P1q" firstAttribute="leading" secondItem="A60-Uv-ksz" secondAttribute="leading" constant="29" id="3hF-6i-cle"/>
+                                            <constraint firstItem="Dg0-cL-l8l" firstAttribute="top" secondItem="w5t-hC-P1q" secondAttribute="bottom" constant="5" id="88o-D8-Zy1"/>
+                                            <constraint firstAttribute="bottom" secondItem="Dg0-cL-l8l" secondAttribute="bottom" constant="20" id="92W-lL-3T3"/>
+                                            <constraint firstAttribute="bottom" secondItem="w5t-hC-P1q" secondAttribute="bottom" constant="20" id="E8L-Aa-4fy"/>
+                                            <constraint firstAttribute="trailing" secondItem="0YE-Bl-Z2T" secondAttribute="trailing" id="OTR-e7-6OL"/>
+                                            <constraint firstItem="0YE-Bl-Z2T" firstAttribute="leading" secondItem="A60-Uv-ksz" secondAttribute="leading" id="R0k-dX-NC2"/>
+                                            <constraint firstItem="Dg0-cL-l8l" firstAttribute="centerX" secondItem="A60-Uv-ksz" secondAttribute="centerX" id="UqC-sO-CVk"/>
+                                            <constraint firstItem="Dg0-cL-l8l" firstAttribute="top" secondItem="w5t-hC-P1q" secondAttribute="bottom" constant="10" id="a7U-CJ-4rB"/>
+                                            <constraint firstItem="w5t-hC-P1q" firstAttribute="top" secondItem="0YE-Bl-Z2T" secondAttribute="bottom" constant="20" id="fvz-fw-lCA"/>
+                                            <constraint firstItem="0YE-Bl-Z2T" firstAttribute="top" secondItem="A60-Uv-ksz" secondAttribute="top" constant="60" id="k9D-dT-n4X"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="E8L-Aa-4fy"/>
+                                                <exclude reference="88o-D8-Zy1"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="A60-Uv-ksz" secondAttribute="trailing" id="BaG-IV-j0E"/>
+                                    <constraint firstAttribute="bottom" secondItem="A60-Uv-ksz" secondAttribute="bottom" id="Fgs-hE-yfT"/>
+                                    <constraint firstItem="A60-Uv-ksz" firstAttribute="leading" secondItem="R0a-kz-aZv" secondAttribute="leading" id="dMe-5X-vyz"/>
+                                    <constraint firstItem="A60-Uv-ksz" firstAttribute="top" secondItem="R0a-kz-aZv" secondAttribute="top" id="sbM-M1-fb9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R0a-kz-aZv" firstAttribute="leading" secondItem="h32-OZ-mvE" secondAttribute="leading" id="Bnz-YC-9d1"/>
+                            <constraint firstItem="R0a-kz-aZv" firstAttribute="top" secondItem="h32-OZ-mvE" secondAttribute="top" id="CQW-5w-B82"/>
+                            <constraint firstAttribute="trailing" secondItem="R0a-kz-aZv" secondAttribute="trailing" id="hfc-Fe-fZz"/>
+                            <constraint firstItem="6ia-ob-MYM" firstAttribute="top" secondItem="R0a-kz-aZv" secondAttribute="bottom" id="iv1-wN-0jj"/>
+                            <constraint firstItem="A60-Uv-ksz" firstAttribute="width" secondItem="h32-OZ-mvE" secondAttribute="width" id="kum-uX-4uL"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="900"/>
+                    <connections>
+                        <outlet property="newsImageView" destination="0YE-Bl-Z2T" id="RnP-AP-X2f"/>
+                        <outlet property="newsLbl" destination="w5t-hC-P1q" id="jsO-GN-Gyn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faz-P0-6JS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3286" y="2637"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="du2-wU-H3A">
+            <objects>
+                <viewController id="rZv-Ee-pfk" customClass="VideoViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S0M-gq-DHO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yxk-Ox-r34"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nlU-x3-biX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qY-ff-wfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3280" y="3478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7xv-eu-dph">
@@ -1131,6 +1322,29 @@ Email: admin@lansingtelangana.org</string>
             </objects>
             <point key="canvasLocation" x="1103" y="1947"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u1h-Pv-gaS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1QK-Gh-ifH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3MS-dh-z6S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wuq-Wb-WtF" kind="relationship" relationship="rootViewController" id="iXQ-M6-Z1G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5u-Ze-FJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103" y="2637"/>
+        </scene>
     </scenes>
     <resources>
         <image name="contactus_blue" width="35" height="35"/>
@@ -1140,9 +1354,10 @@ Email: admin@lansingtelangana.org</string>
         <image name="leader_blue" width="35" height="35"/>
         <image name="leadership_blue" width="35" height="35"/>
         <image name="mission_blue" width="35" height="35"/>
+        <image name="news_blue" width="35" height="35"/>
         <image name="sponsor_blue" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e7m-uc-0Ho"/>
+        <segue reference="xkf-eZ-IRj"/>
     </inferredMetricsTieBreakers>
 </document>

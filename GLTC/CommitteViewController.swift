@@ -14,13 +14,11 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
     
     @IBOutlet weak var committeeTableView: UITableView!
     
-    var committees: [Committee] = []
-    
-    let COMMITTEE_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=committeesJson"
+    var committees: [GLTCCommittee] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadCommittees()
+        committees = GLTCDataLoader.sharedInstance.getCommittees()
         committeeTableView.delegate = self
         committeeTableView.dataSource = self
         committeeTableView.allowsSelection = false
@@ -55,86 +53,13 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
 //        }
 //    }
     
-    func loadCommittees(){
-        let url:NSURL = NSURL(string: COMMITTEE_JSON_URL)!
-        let session = NSURLSession.sharedSession()
-        let request = NSMutableURLRequest(URL: url)
-        request.HTTPMethod = "GET"
-        request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
-            guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
-                return
-            }
-            dispatch_async(dispatch_get_main_queue(), {
-                self.extractCommitteeJsondata(data!)
-                return
-            })
-        }
-        task.resume()
-    }
-    
-    func extractCommitteeJsondata(data:NSData){
-        do {
-            let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
-            if let jsonDict = jsonDictionary {
-                let committeeJsonArray = jsonDict["committee"] as! NSArray
-                print("Number of Committees: \(committeeJsonArray.count)")
-                for committeeJson in committeeJsonArray {
-                    let committee = Committee()
-                    let committeeJsonElement = committeeJson as! NSDictionary
-                    for (key, value) in committeeJsonElement {
-                        if(key as! String == "name"){
-                            print("Committee Name: \(value)")
-                            committee.setName(value as! String)
-                        }else if(key as! String == "members"){
-                            var members: [CommitteeMember] = []
-                            let committeeMemberJsonArray = value as! NSArray
-                            print("Number of Committee Members: \(committeeJsonArray.count)")
-                            for committeeMemberJson in committeeMemberJsonArray {
-                                let committeeMember = CommitteeMember()
-                                let committeeMemberJsonElement = committeeMemberJson as! NSDictionary
-                                for (key,value) in committeeMemberJsonElement {
-                                    if(key as! String == "name"){
-                                        committeeMember.setName(value as! String)
-                                    }else if(key as! String == "title"){
-                                        committeeMember.setTitle(value as! String)
-                                    }else if(key as! String == "picture"){
-                                        committeeMember.setImageUrl(value as! String)
-                                    }
-                                }
-                                members.append(committeeMember)
-                            }
-                            committee.setMembers(members)
-                        }
-                    }
-                    self.committees.append(committee)
-                }
-            }
-        }catch {
-            print(error)
-        }
-        doTableRefresh()
-    }
-    
-    func doTableRefresh(){
-        dispatch_async(dispatch_get_main_queue(), {
-            self.committeeTableView.reloadData()
-            return
-        })
-    }
-    
     //Returns Number of Sections
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        print("numberOfSectionsInTableView \(committees.count)")
         return committees.count
     }
     
     //Returns number of Rows in each section
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("numberOfSectionsInTableView \(committees[section].getMembers().count)")
         let committee = committees[section]
         return committee.getMembers().count
     }

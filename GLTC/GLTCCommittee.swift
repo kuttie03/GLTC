@@ -1,5 +1,5 @@
 //
-//  Committee.swift
+//  GLTCCommittee.swift
 //  GLTC
 //
 //  Created by Shravan Kumar Singireddy on 1/12/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Committee {
+class GLTCCommittee {
     
     private var name: String!
     

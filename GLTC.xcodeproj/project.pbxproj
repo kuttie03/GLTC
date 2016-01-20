@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4721EF21C4FFADC00EB62AC /* GLTCDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4721EF11C4FFADC00EB62AC /* GLTCDataLoader.swift */; };
 		A47262C11C49A6FE007DE47C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47262C01C49A6FE007DE47C /* RoundedButton.swift */; };
 		A4C9EEA91C494BC200B7067E /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */; };
 		A4C9EEAB1C494C3800B7067E /* GLTCSponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */; };
 		A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */; };
-		A4C9EEAF1C49936400B7067E /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEAE1C49936400B7067E /* EmailController.swift */; };
+		A4D086E31C4EBE5300F0675A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D086E21C4EBE5300F0675A /* NewsViewController.swift */; };
+		A4D086E51C4EC05300F0675A /* NewsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D086E41C4EC05300F0675A /* NewsContentViewController.swift */; };
+		A4D086E71C4ECF4000F0675A /* GLTCNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D086E61C4ECF4000F0675A /* GLTCNews.swift */; };
+		A4E9F1E21C4F367800389995 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9F1E11C4F367800389995 /* VideoViewController.swift */; };
 		A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9161C488FB5007973E3 /* AppDelegate.swift */; };
 		A4EBC9191C488FB5007973E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9181C488FB5007973E3 /* ViewController.swift */; };
 		A4EBC91C1C488FB5007973E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91A1C488FB5007973E3 /* Main.storyboard */; };
 		A4EBC91E1C488FB5007973E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91D1C488FB5007973E3 /* Assets.xcassets */; };
 		A4EBC9211C488FB5007973E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91F1C488FB5007973E3 /* LaunchScreen.storyboard */; };
-		A4EBC92D1C489045007973E3 /* Committee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92B1C489045007973E3 /* Committee.swift */; };
+		A4EBC92D1C489045007973E3 /* GLTCCommittee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92B1C489045007973E3 /* GLTCCommittee.swift */; };
 		A4EBC92E1C489045007973E3 /* CommitteeMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92C1C489045007973E3 /* CommitteeMember.swift */; };
 		A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */; };
 		A4EBC9321C48908E007973E3 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9311C48908E007973E3 /* MenuItemCell.swift */; };
@@ -27,11 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4721EF11C4FFADC00EB62AC /* GLTCDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCDataLoader.swift; sourceTree = "<group>"; };
 		A47262C01C49A6FE007DE47C /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
 		A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCSponsor.swift; sourceTree = "<group>"; };
 		A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorCell.swift; sourceTree = "<group>"; };
-		A4C9EEAE1C49936400B7067E /* EmailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
+		A4D086E21C4EBE5300F0675A /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		A4D086E41C4EC05300F0675A /* NewsContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsContentViewController.swift; sourceTree = "<group>"; };
+		A4D086E61C4ECF4000F0675A /* GLTCNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCNews.swift; sourceTree = "<group>"; };
+		A4E9F1E11C4F367800389995 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		A4EBC9131C488FB5007973E3 /* GLTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EBC9161C488FB5007973E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EBC9181C488FB5007973E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +47,7 @@
 		A4EBC91D1C488FB5007973E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4EBC9201C488FB5007973E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4EBC9221C488FB5007973E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4EBC92B1C489045007973E3 /* Committee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Committee.swift; sourceTree = "<group>"; };
+		A4EBC92B1C489045007973E3 /* GLTCCommittee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCCommittee.swift; sourceTree = "<group>"; };
 		A4EBC92C1C489045007973E3 /* CommitteeMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeMember.swift; sourceTree = "<group>"; };
 		A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeMemberCell.swift; sourceTree = "<group>"; };
 		A4EBC9311C48908E007973E3 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
@@ -61,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4721EF01C4FFA9B00EB62AC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A4721EF11C4FFADC00EB62AC /* GLTCDataLoader.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		A4EBC90A1C488FB5007973E3 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +96,7 @@
 		A4EBC9151C488FB5007973E3 /* GLTC */ = {
 			isa = PBXGroup;
 			children = (
+				A4721EF01C4FFA9B00EB62AC /* Service */,
 				A4EBC9371C489118007973E3 /* SWRevealViewController */,
 				A4EBC92A1C488FF8007973E3 /* Controller */,
 				A4EBC9291C488FF1007973E3 /* View */,
@@ -96,7 +113,8 @@
 		A4EBC9281C488FE5007973E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A4EBC92B1C489045007973E3 /* Committee.swift */,
+				A4D086E61C4ECF4000F0675A /* GLTCNews.swift */,
+				A4EBC92B1C489045007973E3 /* GLTCCommittee.swift */,
 				A4EBC92C1C489045007973E3 /* CommitteeMember.swift */,
 				A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */,
 			);
@@ -121,7 +139,9 @@
 				A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */,
 				A4EBC9341C4890EA007973E3 /* ContactUsViewController.swift */,
 				A4EBC9181C488FB5007973E3 /* ViewController.swift */,
-				A4C9EEAE1C49936400B7067E /* EmailController.swift */,
+				A4D086E21C4EBE5300F0675A /* NewsViewController.swift */,
+				A4D086E41C4EC05300F0675A /* NewsContentViewController.swift */,
+				A4E9F1E11C4F367800389995 /* VideoViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -208,11 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4721EF21C4FFADC00EB62AC /* GLTCDataLoader.swift in Sources */,
+				A4D086E71C4ECF4000F0675A /* GLTCNews.swift in Sources */,
 				A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */,
-				A4C9EEAF1C49936400B7067E /* EmailController.swift in Sources */,
+				A4E9F1E21C4F367800389995 /* VideoViewController.swift in Sources */,
 				A4EBC9191C488FB5007973E3 /* ViewController.swift in Sources */,
 				A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */,
-				A4EBC92D1C489045007973E3 /* Committee.swift in Sources */,
+				A4EBC92D1C489045007973E3 /* GLTCCommittee.swift in Sources */,
 				A4EBC9361C4890EA007973E3 /* ContactUsViewController.swift in Sources */,
 				A4EBC9321C48908E007973E3 /* MenuItemCell.swift in Sources */,
 				A4C9EEA91C494BC200B7067E /* SponsorsViewController.swift in Sources */,
@@ -220,8 +242,10 @@
 				A4EBC93B1C48913D007973E3 /* SWRevealViewController.m in Sources */,
 				A4EBC9351C4890EA007973E3 /* CommitteViewController.swift in Sources */,
 				A47262C11C49A6FE007DE47C /* RoundedButton.swift in Sources */,
+				A4D086E31C4EBE5300F0675A /* NewsViewController.swift in Sources */,
 				A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */,
 				A4EBC92E1C489045007973E3 /* CommitteeMember.swift in Sources */,
+				A4D086E51C4EC05300F0675A /* NewsContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

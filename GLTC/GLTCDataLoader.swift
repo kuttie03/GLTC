@@ -165,7 +165,8 @@ class GLTCDataLoader {
                     let newsJsonElement = newsJson as! NSDictionary
                     for (key, value) in newsJsonElement {
                         if(key as! String == "imageUrl"){
-                            news.setImageUrl(value as! String)
+                            news.setNewsImage(UIImageView(image: UIImage(named: "sponsorImg")))
+                            news.getNewsImage().downloadImageFrom(link:value as! String, contentMode: UIViewContentMode.ScaleAspectFit)
                         }else if(key as! String == "newsText"){
                             news.setNewsText(value as! String)
                         }

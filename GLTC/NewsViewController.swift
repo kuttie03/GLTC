@@ -76,7 +76,7 @@ class NewsViewController: UIViewController, UIPageViewControllerDataSource {
     
     func newsAtIndex(index: Int) -> NewsContentViewController {
         let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NewsContentViewController") as! NewsContentViewController
-        pageContentViewController.imageUrl = news[index].getImageUrl()
+        pageContentViewController.newsImage = news[index].getNewsImage()
         pageContentViewController.newsTxt = news[index].getNewsText()
         pageContentViewController.pageIndex = index
         return pageContentViewController        

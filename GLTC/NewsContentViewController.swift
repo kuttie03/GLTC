@@ -14,18 +14,14 @@ class NewsContentViewController: UIViewController {
     
     @IBOutlet weak var newsLbl: UILabel!
     
-    var imageUrl: String!
+    var newsImage: UIImageView!
     var newsTxt: String!
     var pageIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = NSURL(string: imageUrl)
-        if let data = NSData(contentsOfURL: url!) {
-            self.newsImageView.image = UIImage(data: data)
-            self.newsImageView.layer.cornerRadius = 5.0
-        }
         self.newsLbl.text = newsTxt
+        self.newsImageView.image = newsImage.image
     }
 
 }

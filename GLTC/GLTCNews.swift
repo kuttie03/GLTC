@@ -12,11 +12,11 @@ class GLTCNews {
     
     private var newsText: String!
     
-    private var imageUrl: String!
+    private var newsImage: UIImageView!
     
-    init(newsText: String, imageUrl: String){
+    init(newsText: String, newsImage: UIImageView){
         self.newsText = newsText
-        self.imageUrl = imageUrl
+        self.newsImage = newsImage
     }
     
     init() {
@@ -31,11 +31,11 @@ class GLTCNews {
         self.newsText = newsText
     }
     
-    func getImageUrl() -> String {
-        return self.imageUrl
+    func getNewsImage() -> UIImageView {
+        return self.newsImage
     }
     
-    func setImageUrl(imageUrl: String){
-        self.imageUrl = imageUrl
+    func setNewsImage(newsImage: UIImageView){
+        self.newsImage = newsImage
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A43137AA1C502642001FEB75 /* gltc_bylaws.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A43137A91C502642001FEB75 /* gltc_bylaws.pdf */; };
+		A43137AC1C502689001FEB75 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43137AB1C502689001FEB75 /* PDFViewController.swift */; };
 		A4721EF21C4FFADC00EB62AC /* GLTCDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4721EF11C4FFADC00EB62AC /* GLTCDataLoader.swift */; };
 		A47262C11C49A6FE007DE47C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47262C01C49A6FE007DE47C /* RoundedButton.swift */; };
 		A4C9EEA91C494BC200B7067E /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A43137A91C502642001FEB75 /* gltc_bylaws.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gltc_bylaws.pdf; sourceTree = "<group>"; };
+		A43137AB1C502689001FEB75 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		A4721EF11C4FFADC00EB62AC /* GLTCDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCDataLoader.swift; sourceTree = "<group>"; };
 		A47262C01C49A6FE007DE47C /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A43137A81C502627001FEB75 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A43137A91C502642001FEB75 /* gltc_bylaws.pdf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A4721EF01C4FFA9B00EB62AC /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 		A4EBC9151C488FB5007973E3 /* GLTC */ = {
 			isa = PBXGroup;
 			children = (
+				A43137A81C502627001FEB75 /* Resources */,
 				A4721EF01C4FFA9B00EB62AC /* Service */,
 				A4EBC9371C489118007973E3 /* SWRevealViewController */,
 				A4EBC92A1C488FF8007973E3 /* Controller */,
@@ -142,6 +155,7 @@
 				A4D086E21C4EBE5300F0675A /* NewsViewController.swift */,
 				A4D086E41C4EC05300F0675A /* NewsContentViewController.swift */,
 				A4E9F1E11C4F367800389995 /* VideoViewController.swift */,
+				A43137AB1C502689001FEB75 /* PDFViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -215,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43137AA1C502642001FEB75 /* gltc_bylaws.pdf in Resources */,
 				A4EBC9211C488FB5007973E3 /* LaunchScreen.storyboard in Resources */,
 				A4EBC91E1C488FB5007973E3 /* Assets.xcassets in Resources */,
 				A4EBC91C1C488FB5007973E3 /* Main.storyboard in Resources */,
@@ -229,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4721EF21C4FFADC00EB62AC /* GLTCDataLoader.swift in Sources */,
+				A43137AC1C502689001FEB75 /* PDFViewController.swift in Sources */,
 				A4D086E71C4ECF4000F0675A /* GLTCNews.swift in Sources */,
 				A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */,
 				A4E9F1E21C4F367800389995 /* VideoViewController.swift in Sources */,

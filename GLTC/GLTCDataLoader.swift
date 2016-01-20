@@ -86,7 +86,7 @@ class GLTCDataLoader {
                                     }else if(key as! String == "title"){
                                         committeeMember.setTitle(value as! String)
                                     }else if(key as! String == "imageUrl"){
-                                        committeeMember.setMemberImage(UIImageView(image: UIImage(named: "sponsorImg")))
+                                        committeeMember.setMemberImage(UIImageView(image: UIImage(named: "userImg_medium")))
                                         committeeMember.getMemberImage().downloadImageFrom(link:value as! String, contentMode: UIViewContentMode.ScaleAspectFit)
                                     }
                                 }
@@ -167,7 +167,7 @@ class GLTCDataLoader {
                     let newsJsonElement = newsJson as! NSDictionary
                     for (key, value) in newsJsonElement {
                         if(key as! String == "imageUrl"){
-                            news.setNewsImage(UIImageView(image: UIImage(named: "sponsorImg")))
+                            news.setNewsImage(UIImageView(image: UIImage(named: "news_blue_medium")))
                             news.getNewsImage().downloadImageFrom(link:value as! String, contentMode: UIViewContentMode.ScaleAspectFit)
                         }else if(key as! String == "newsText"){
                             news.setNewsText(value as! String)

@@ -12,9 +12,9 @@ class GLTCCommittee {
     
     private var name: String!
     
-    private var members: [CommitteeMember]!
+    private var members: [GLTCCommitteeMember]!
     
-    init(name: String, members: [CommitteeMember]){
+    init(name: String, members: [GLTCCommitteeMember]){
         self.name = name
         self.members = members
     }
@@ -31,11 +31,11 @@ class GLTCCommittee {
         self.name = name
     }
     
-    func getMembers() -> [CommitteeMember]{
+    func getMembers() -> [GLTCCommitteeMember]{
         return self.members
     }
     
-    func setMembers(members: [CommitteeMember]){
+    func setMembers(members: [GLTCCommitteeMember]){
         self.members = members
     }
 }

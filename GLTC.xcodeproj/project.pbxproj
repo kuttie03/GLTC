@@ -22,7 +22,7 @@
 		A4EBC91E1C488FB5007973E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91D1C488FB5007973E3 /* Assets.xcassets */; };
 		A4EBC9211C488FB5007973E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91F1C488FB5007973E3 /* LaunchScreen.storyboard */; };
 		A4EBC92D1C489045007973E3 /* GLTCCommittee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92B1C489045007973E3 /* GLTCCommittee.swift */; };
-		A4EBC92E1C489045007973E3 /* CommitteeMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92C1C489045007973E3 /* CommitteeMember.swift */; };
+		A4EBC92E1C489045007973E3 /* GLTCCommitteeMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92C1C489045007973E3 /* GLTCCommitteeMember.swift */; };
 		A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */; };
 		A4EBC9321C48908E007973E3 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9311C48908E007973E3 /* MenuItemCell.swift */; };
 		A4EBC9351C4890EA007973E3 /* CommitteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */; };
@@ -48,7 +48,7 @@
 		A4EBC9201C488FB5007973E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4EBC9221C488FB5007973E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4EBC92B1C489045007973E3 /* GLTCCommittee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCCommittee.swift; sourceTree = "<group>"; };
-		A4EBC92C1C489045007973E3 /* CommitteeMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeMember.swift; sourceTree = "<group>"; };
+		A4EBC92C1C489045007973E3 /* GLTCCommitteeMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCCommitteeMember.swift; sourceTree = "<group>"; };
 		A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeMemberCell.swift; sourceTree = "<group>"; };
 		A4EBC9311C48908E007973E3 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			children = (
 				A4D086E61C4ECF4000F0675A /* GLTCNews.swift */,
 				A4EBC92B1C489045007973E3 /* GLTCCommittee.swift */,
-				A4EBC92C1C489045007973E3 /* CommitteeMember.swift */,
+				A4EBC92C1C489045007973E3 /* GLTCCommitteeMember.swift */,
 				A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */,
 			);
 			name = Model;
@@ -244,7 +244,7 @@
 				A47262C11C49A6FE007DE47C /* RoundedButton.swift in Sources */,
 				A4D086E31C4EBE5300F0675A /* NewsViewController.swift in Sources */,
 				A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */,
-				A4EBC92E1C489045007973E3 /* CommitteeMember.swift in Sources */,
+				A4EBC92E1C489045007973E3 /* GLTCCommitteeMember.swift in Sources */,
 				A4D086E51C4EC05300F0675A /* NewsContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

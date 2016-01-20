@@ -74,19 +74,20 @@ class GLTCDataLoader {
                             print("Committee Name: \(value)")
                             committee.setName(value as! String)
                         }else if(key as! String == "members"){
-                            var members: [CommitteeMember] = []
+                            var members: [GLTCCommitteeMember] = []
                             let committeeMemberJsonArray = value as! NSArray
                             print("Number of Committee Members: \(committeeMemberJsonArray.count)")
                             for committeeMemberJson in committeeMemberJsonArray {
-                                let committeeMember = CommitteeMember()
+                                let committeeMember = GLTCCommitteeMember()
                                 let committeeMemberJsonElement = committeeMemberJson as! NSDictionary
                                 for (key,value) in committeeMemberJsonElement {
                                     if(key as! String == "name"){
                                         committeeMember.setName(value as! String)
                                     }else if(key as! String == "title"){
                                         committeeMember.setTitle(value as! String)
-                                    }else if(key as! String == "picture"){
-                                        committeeMember.setImageUrl(value as! String)
+                                    }else if(key as! String == "imageUrl"){
+                                        committeeMember.setMemberImage(UIImageView(image: UIImage(named: "sponsorImg")))
+                                        committeeMember.getMemberImage().downloadImageFrom(link:value as! String, contentMode: UIViewContentMode.ScaleAspectFit)
                                     }
                                 }
                                 members.append(committeeMember)
@@ -135,8 +136,9 @@ class GLTCDataLoader {
                     for (key, value) in sponsorJsonElement {
                         if(key as! String == "name"){
                             sponsor.setName(value as! String)
-                        }else if(key as! String == "pictureUrl"){
-                            sponsor.setImageUrl(value as! String)
+                        }else if(key as! String == "imageUrl"){
+                            sponsor.setSponsorImage(UIImageView(image: UIImage(named: "sponsorImg")))
+                            sponsor.getSponsorImage().downloadImageFrom(link:value as! String, contentMode: UIViewContentMode.ScaleAspectFit)
                         }
                     }
                     self.sponsors.append(sponsor)

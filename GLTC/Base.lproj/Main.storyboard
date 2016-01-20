@@ -1149,7 +1149,7 @@ Email: admin@lansingtelangana.org</string>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg0-cL-l8l">
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg0-cL-l8l">
                                                 <rect key="frame" x="207" y="814" width="186" height="57"/>
                                                 <string key="text">Thanks &amp; Regards
 GLTC Team</string>
@@ -1202,6 +1202,7 @@ GLTC Team</string>
                     <connections>
                         <outlet property="newsImageView" destination="0YE-Bl-Z2T" id="RnP-AP-X2f"/>
                         <outlet property="newsLbl" destination="w5t-hC-P1q" id="jsO-GN-Gyn"/>
+                        <outlet property="signLabel" destination="Dg0-cL-l8l" id="7cn-2y-67i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faz-P0-6JS" userLabel="First Responder" sceneMemberID="firstResponder"/>

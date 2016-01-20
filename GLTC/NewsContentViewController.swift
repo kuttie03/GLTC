@@ -14,6 +14,8 @@ class NewsContentViewController: UIViewController {
     
     @IBOutlet weak var newsLbl: UILabel!
     
+    @IBOutlet weak var signLabel: UILabel!
+    
     var newsImage: UIImageView!
     var newsTxt: String!
     var pageIndex: Int!
@@ -21,7 +23,10 @@ class NewsContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.newsLbl.text = newsTxt
-        self.newsImageView.image = newsImage.image
+        if let newsImage = newsImage {
+            signLabel.hidden = false
+            self.newsImageView.image = newsImage.image
+        }
     }
 
 }

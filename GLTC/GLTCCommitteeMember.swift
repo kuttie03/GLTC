@@ -1,5 +1,5 @@
 //
-//  CommitteeMember.swift
+//  GLTCCommitteeMember.swift
 //  GLTC
 //
 //  Created by Shravan Kumar Singireddy on 1/12/16.
@@ -8,18 +8,18 @@
 
 import UIKit
 
-class CommitteeMember {
+class GLTCCommitteeMember {
     
     private var name: String!
     
     private var title: String!
     
-    private var imageUrl: String!
+    private var memberImage: UIImageView!
     
-    init(name: String, title: String, imageUrl: String){
+    init(name: String, title: String, memberImage: UIImageView){
         self.name = name
         self.title = title
-        self.imageUrl = imageUrl
+        self.memberImage = memberImage
     }
     
     init(){
@@ -42,12 +42,12 @@ class CommitteeMember {
         self.title = title
     }
     
-    func getImageUrl() -> String {
-        return self.imageUrl
+    func getMemberImage() -> UIImageView {
+        return self.memberImage
     }
     
-    func setImageUrl(imageUrl: String){
-        self.imageUrl = imageUrl
+    func setMemberImage(memberImage: UIImageView){
+        self.memberImage = memberImage
     }
     
 }

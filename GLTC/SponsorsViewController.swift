@@ -24,7 +24,6 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
         sponsorTableView.delegate = self
         sponsorTableView.dataSource = self
         sponsorTableView.allowsSelection = false
-        //loadSponsors()
         if self.revealViewController() != nil {
             var image = UIImage(named: "menu_white")
             image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
@@ -49,8 +48,7 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
         if let sponsorCell = tableView.dequeueReusableCellWithIdentifier("sponsorCell") as? SponsorCell {
             let sponsor = sponsors[indexPath.row]
             sponsorCell.setSponsorName(sponsor.getName())
-            sponsorCell.sponsorImg.image = UIImage(named: "sponsorImg")
-            sponsorCell.sponsorImg.downloadImageFrom(link:sponsor.getImageUrl(), contentMode: UIViewContentMode.ScaleAspectFit)
+            sponsorCell.sponsorImg.image = sponsor.getSponsorImage().image
             return sponsorCell
         }else{
             return SponsorCell()

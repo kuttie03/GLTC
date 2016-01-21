@@ -10,21 +10,25 @@ import UIKit
 
 class GLTCDataLoader {
     
-    let COMMITTEE_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=committeesJson"
+    let EVENTS_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=eventsJson"
+    let COMMITTEES_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=committeesJson"
     let SPONSORS_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=sponsorsJson"
     let NEWS_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=newsJson"
     
     //Singleton
     static let sharedInstance = GLTCDataLoader()
     
+    private var events: [GLTCEvent] = []
     private var committees: [GLTCCommittee] = []
     private var sponsors: [GLTCSponsor] = []
     private var news: [GLTCNews] = []
     
     private init() {
-        loadCommittees()
-        loadSponsors()
-        loadNews()
+        loadAllGLTCJson()
+    }
+    
+    func getEvents() -> [GLTCEvent] {
+        return self.events
     }
     
     func getCommittees() -> [GLTCCommittee] {
@@ -39,8 +43,25 @@ class GLTCDataLoader {
         return self.news
     }
     
-    func loadCommittees(){
-        let url:NSURL = NSURL(string: COMMITTEE_JSON_URL)!
+    func loadAllGLTCJson(){
+        loadJson("events")
+        loadJson("committees")
+        loadJson("sponsors")
+        loadJson("news")
+    }
+    
+    func loadJson(type: String) {
+        var urlString = ""
+        if(type == "events"){
+            urlString = EVENTS_JSON_URL
+        }else if(type == "committees"){
+            urlString = COMMITTEES_JSON_URL
+        }else if(type == "sponsors"){
+            urlString = SPONSORS_JSON_URL
+        }else if(type == "news"){
+            urlString = NEWS_JSON_URL
+        }
+        let url:NSURL = NSURL(string: urlString)!
         let session = NSURLSession.sharedSession()
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "GET"
@@ -53,14 +74,45 @@ class GLTCDataLoader {
                 return
             }
             dispatch_async(dispatch_get_main_queue(), {
-                self.extractCommitteeJsondata(data!)
+                if(type == "events"){
+                    self.extractEventsJsondata(data!)
+                }else if(type == "committees"){
+                    self.extractCommitteesJsondata(data!)
+                }else if(type == "sponsors"){
+                    self.extractSponsorsJsondata(data!)
+                }else if(type == "news"){
+                    self.extractNewsJsondata(data!)
+                }
                 return
             })
         }
         task.resume()
     }
     
-    func extractCommitteeJsondata(data:NSData){
+    func extractEventsJsondata(data:NSData){
+        do {
+            let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
+            if let jsonDict = jsonDictionary {
+                let eventsJsonArray = jsonDict["events"] as! NSArray
+                print("Number of Events: \(eventsJsonArray.count)")
+                for eventJson in eventsJsonArray {
+                    let event = GLTCEvent()
+                    let eventJsonElement = eventJson as! NSDictionary
+                    for (key, value) in eventJsonElement {
+                        if(key as! String == "imageUrl"){
+                            event.setEventImage(UIImageView(image: UIImage(named: "events_blue_medium")))
+                            event.getEventImage().downloadImageFrom(link:value as! String, contentMode: UIViewContentMode.ScaleAspectFit)
+                        }
+                    }
+                    self.events.append(event)
+                }
+            }
+        }catch {
+            print(error)
+        }
+    }
+    
+    func extractCommitteesJsondata(data:NSData){
         do {
             let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
             if let jsonDict = jsonDictionary {
@@ -103,28 +155,7 @@ class GLTCDataLoader {
         }
     }
     
-    func loadSponsors(){
-        let url:NSURL = NSURL(string: SPONSORS_JSON_URL)!
-        let session = NSURLSession.sharedSession()
-        let request = NSMutableURLRequest(URL: url)
-        request.HTTPMethod = "GET"
-        request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
-            guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print(error)
-                return
-            }
-            dispatch_async(dispatch_get_main_queue(), {
-                self.extractSponsorJsondata(data!)
-                return
-            })
-        }
-        task.resume()
-    }
-    
-    func extractSponsorJsondata(data:NSData){
+    func extractSponsorsJsondata(data:NSData){
         do {
             let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
             if let jsonDict = jsonDictionary {
@@ -146,13 +177,6 @@ class GLTCDataLoader {
             }
         }catch {
             print(error)
-        }
-    }
-    
-    func loadNews() {
-        let url = NSURL(string: NEWS_JSON_URL)
-        if let data = NSData(contentsOfURL: url!) {
-            extractNewsJsondata(data)
         }
     }
     

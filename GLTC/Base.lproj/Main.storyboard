@@ -91,8 +91,52 @@
                                             <segue destination="sY4-Km-lFL" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="e7m-uc-0Ho"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="sjd-Ir-SKm" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="iYY-bi-yfb" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="75" width="600" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iYY-bi-yfb" id="cR8-jS-b98">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="events_blue" translatesAutoresizingMaskIntoConstraints="NO" id="sap-wA-AvV">
+                                                    <rect key="frame" x="8" y="12" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="mpH-zO-QS7"/>
+                                                        <constraint firstAttribute="height" constant="35" id="tSb-Qx-tL0"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzx-Jd-3a8">
+                                                    <rect key="frame" x="48" y="12" width="100" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="UmP-m9-nHa"/>
+                                                        <constraint firstAttribute="width" constant="80" id="tu3-ve-1R0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sap-wA-AvV" firstAttribute="top" secondItem="cR8-jS-b98" secondAttribute="top" constant="10" id="Jqr-iN-YGY"/>
+                                                <constraint firstItem="Xzx-Jd-3a8" firstAttribute="leading" secondItem="sap-wA-AvV" secondAttribute="trailing" constant="5" id="MXi-iJ-dDu"/>
+                                                <constraint firstItem="sap-wA-AvV" firstAttribute="leading" secondItem="cR8-jS-b98" secondAttribute="leading" constant="8" id="PDE-uY-iHa"/>
+                                                <constraint firstItem="Xzx-Jd-3a8" firstAttribute="top" secondItem="cR8-jS-b98" secondAttribute="top" constant="12" id="ToA-ai-UtX"/>
+                                                <constraint firstItem="sap-wA-AvV" firstAttribute="leading" secondItem="cR8-jS-b98" secondAttribute="leading" constant="10" id="yfl-X5-3hL"/>
+                                                <constraint firstItem="sap-wA-AvV" firstAttribute="top" secondItem="cR8-jS-b98" secondAttribute="top" constant="12" id="zXP-7p-opW"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="yfl-X5-3hL"/>
+                                                    <exclude reference="Jqr-iN-YGY"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5Gz-rA-ga7" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Uiq-J3-qIL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="sjd-Ir-SKm" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="140" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sjd-Ir-SKm" id="Tsk-PL-GsF">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -136,7 +180,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ZKx-gY-8rN" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="140" width="600" height="65"/>
+                                        <rect key="frame" x="0.0" y="205" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZKx-gY-8rN" id="2JY-MC-Kr7">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -180,7 +224,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="o9Z-pC-Xu2" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="205" width="600" height="65"/>
+                                        <rect key="frame" x="0.0" y="270" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o9Z-pC-Xu2" id="ZSm-vn-LFe">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -224,7 +268,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ISP-47-DSf" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="270" width="600" height="65"/>
+                                        <rect key="frame" x="0.0" y="335" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ISP-47-DSf" id="hOL-7o-nZG">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -268,7 +312,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="JMI-Wf-gGL" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="335" width="600" height="65"/>
+                                        <rect key="frame" x="0.0" y="400" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JMI-Wf-gGL" id="eRS-fa-PEY">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -1155,6 +1199,30 @@ Email: admin@lansingtelangana.org</string>
             </objects>
             <point key="canvasLocation" x="1971" y="2637"/>
         </scene>
+        <!--GLTC Events-->
+        <scene sceneID="dlj-9x-Gfi">
+            <objects>
+                <viewController id="2Gw-OB-Ppe" customClass="EventsViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0RH-kt-iQ5"/>
+                        <viewControllerLayoutGuide type="bottom" id="vKi-i8-b5r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cS2-ZC-Kz1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GLTC Events" id="aR2-pf-HVb">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="4Ma-8G-OL7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="4Ma-8G-OL7" id="ktJ-4w-q39"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7Q-XG-3Oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971" y="3360"/>
+        </scene>
         <!--Page View Controller-->
         <scene sceneID="0Pn-73-iyP">
             <objects>
@@ -1162,6 +1230,46 @@ Email: admin@lansingtelangana.org</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtz-3z-jpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2640" y="2637"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="iqo-nh-iHw">
+            <objects>
+                <pageViewController storyboardIdentifier="EventsPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="rAS-3I-RQR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KzH-um-jS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2640" y="3360"/>
+        </scene>
+        <!--Events Content View Controller-->
+        <scene sceneID="gCw-QA-YXN">
+            <objects>
+                <viewController storyboardIdentifier="EventsContentViewController" id="ufL-wu-Dj1" customClass="EventsContentViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WAx-QZ-ndi"/>
+                        <viewControllerLayoutGuide type="bottom" id="mgH-ui-JXS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T3s-wo-1lU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kzw-yg-R8n">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kzw-yg-R8n" firstAttribute="top" secondItem="T3s-wo-1lU" secondAttribute="top" id="AK4-E9-h0e"/>
+                            <constraint firstItem="mgH-ui-JXS" firstAttribute="top" secondItem="Kzw-yg-R8n" secondAttribute="bottom" id="UfQ-6d-aBa"/>
+                            <constraint firstItem="Kzw-yg-R8n" firstAttribute="leading" secondItem="T3s-wo-1lU" secondAttribute="leading" id="WDN-u9-7UO"/>
+                            <constraint firstAttribute="trailing" secondItem="Kzw-yg-R8n" secondAttribute="trailing" id="whn-r7-Idd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eventImageView" destination="Kzw-yg-R8n" id="kk1-tp-Lm8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJ6-GY-HG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3298" y="3360"/>
         </scene>
         <!--News Content View Controller-->
         <scene sceneID="B6s-NM-tL7">
@@ -1251,7 +1359,7 @@ GLTC Team</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faz-P0-6JS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4098" y="2637"/>
+            <point key="canvasLocation" x="3298" y="2487"/>
         </scene>
         <!--GLTC ByLaws-->
         <scene sceneID="bHL-ut-ZvA">
@@ -1299,7 +1407,7 @@ GLTC Team</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iyh-lW-aGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="3401"/>
+            <point key="canvasLocation" x="1971" y="4168"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7xv-eu-dph">
@@ -1441,11 +1549,35 @@ GLTC Team</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byO-zl-8N1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="3401"/>
+            <point key="canvasLocation" x="1103" y="4168"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b1P-7W-0AX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Gz-rA-ga7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qSQ-k0-KQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Gw-OB-Ppe" kind="relationship" relationship="rootViewController" id="96L-l2-Agc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lc4-No-1U5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103" y="3353"/>
         </scene>
     </scenes>
     <resources>
         <image name="contactus_blue" width="35" height="35"/>
+        <image name="events_blue" width="35" height="35"/>
         <image name="gltcLogo" width="232" height="215"/>
         <image name="goal_blue" width="35" height="35"/>
         <image name="home_blue" width="35" height="35"/>

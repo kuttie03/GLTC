@@ -46,7 +46,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-SB-ho4">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_green" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-SB-ho4">
                                                     <rect key="frame" x="8" y="26" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="VFP-0a-skk"/>
@@ -98,7 +98,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="events_blue" translatesAutoresizingMaskIntoConstraints="NO" id="sap-wA-AvV">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="events_green" translatesAutoresizingMaskIntoConstraints="NO" id="sap-wA-AvV">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="mpH-zO-QS7"/>
@@ -126,8 +126,8 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
-                                                    <exclude reference="yfl-X5-3hL"/>
                                                     <exclude reference="Jqr-iN-YGY"/>
+                                                    <exclude reference="yfl-X5-3hL"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -142,7 +142,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership_blue" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-DS-nMU">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership_green" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-DS-nMU">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="1Uf-gW-8TW"/>
@@ -186,7 +186,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sponsor_blue" translatesAutoresizingMaskIntoConstraints="NO" id="zhd-GY-5fu">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sponsor_green" translatesAutoresizingMaskIntoConstraints="NO" id="zhd-GY-5fu">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="n7P-Yj-yel"/>
@@ -230,7 +230,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_blue" translatesAutoresizingMaskIntoConstraints="NO" id="7Ai-2l-mC3">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_green" translatesAutoresizingMaskIntoConstraints="NO" id="7Ai-2l-mC3">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="SrC-p5-Hpz"/>
@@ -274,7 +274,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactus_blue" translatesAutoresizingMaskIntoConstraints="NO" id="sQl-RW-601">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactus_green" translatesAutoresizingMaskIntoConstraints="NO" id="sQl-RW-601">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="JpT-bu-SNl"/>
@@ -318,17 +318,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laws_blue" translatesAutoresizingMaskIntoConstraints="NO" id="jXp-Mv-Prv">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laws_green" translatesAutoresizingMaskIntoConstraints="NO" id="jXp-Mv-Prv">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="P7z-x7-itw"/>
                                                         <constraint firstAttribute="height" constant="35" id="oQX-MM-hdk"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="By Laws" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trk-No-H9a">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GLTC By Laws" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trk-No-H9a">
                                                     <rect key="frame" x="48" y="12" width="100" height="35"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="80" id="NFQ-Ia-cfp"/>
+                                                        <constraint firstAttribute="width" constant="120" id="NFQ-Ia-cfp"/>
                                                         <constraint firstAttribute="height" constant="35" id="cG2-e6-nMO"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -353,6 +353,50 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Jqf-SP-nBu" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="JO3-Ri-Qzx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="S3X-Z9-sQp" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="465" width="600" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S3X-Z9-sQp" id="jU7-as-yyL">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_small" translatesAutoresizingMaskIntoConstraints="NO" id="bEx-np-iV2">
+                                                    <rect key="frame" x="8" y="12" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="DYG-us-eGx"/>
+                                                        <constraint firstAttribute="height" constant="35" id="fHs-Kj-Nxc"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Darshan Labs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUg-hn-87W">
+                                                    <rect key="frame" x="48" y="12" width="120" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="RQD-Xy-51D"/>
+                                                        <constraint firstAttribute="width" constant="120" id="wwI-7K-rV1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PUg-hn-87W" firstAttribute="leading" secondItem="bEx-np-iV2" secondAttribute="trailing" constant="5" id="ACw-QV-2qz"/>
+                                                <constraint firstItem="bEx-np-iV2" firstAttribute="top" secondItem="jU7-as-yyL" secondAttribute="top" constant="10" id="GAj-rL-Avb"/>
+                                                <constraint firstItem="bEx-np-iV2" firstAttribute="leading" secondItem="jU7-as-yyL" secondAttribute="leading" constant="8" id="aQt-YS-Mno"/>
+                                                <constraint firstItem="PUg-hn-87W" firstAttribute="top" secondItem="jU7-as-yyL" secondAttribute="top" constant="12" id="dS3-jD-bbz"/>
+                                                <constraint firstItem="bEx-np-iV2" firstAttribute="leading" secondItem="jU7-as-yyL" secondAttribute="leading" constant="10" id="igF-Fg-iw1"/>
+                                                <constraint firstItem="bEx-np-iV2" firstAttribute="top" secondItem="jU7-as-yyL" secondAttribute="top" constant="12" id="uaC-TX-N7Q"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="GAj-rL-Avb"/>
+                                                    <exclude reference="igF-Fg-iw1"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fQS-uc-gM4" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Zlf-8D-nkY"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -394,13 +438,17 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Km-gS-ypD">
-                                                <rect key="frame" x="18" y="255" width="555" height="67"/>
+                                                <rect key="frame" x="18" y="255" width="555" height="35"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leader_blue" translatesAutoresizingMaskIntoConstraints="NO" id="KyS-nZ-ieR">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whoweare_green" translatesAutoresizingMaskIntoConstraints="NO" id="KyS-nZ-ieR">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="3Ri-5L-08H"/>
+                                                            <constraint firstAttribute="width" constant="35" id="iiy-ie-rUa"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="by4-Hy-Jbs">
-                                                        <rect key="frame" x="45" y="0.0" width="510" height="67"/>
+                                                        <rect key="frame" x="45" y="0.0" width="510" height="32"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who we are" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uS7-9Y-qEx">
                                                                 <rect key="frame" x="0.0" y="0.0" width="101" height="22"/>
@@ -409,7 +457,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greater Lansing Telangana Community (GLTC) is formed to represent the Telangana culture, community and the ‘Telangana’ state." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-Pd-CKg">
-                                                                <rect key="frame" x="0.0" y="32" width="491" height="35"/>
+                                                                <rect key="frame" x="0.0" y="32" width="510" height="0.0"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -419,13 +467,17 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3tP-xI-Jlj">
-                                                <rect key="frame" x="22" y="340" width="555" height="85"/>
+                                                <rect key="frame" x="22" y="340" width="555" height="35"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goal_blue" translatesAutoresizingMaskIntoConstraints="NO" id="qOg-GL-ttz">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goal_green" translatesAutoresizingMaskIntoConstraints="NO" id="qOg-GL-ttz">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="1fp-4q-DO8"/>
+                                                            <constraint firstAttribute="width" constant="35" id="L5R-Le-k2d"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qVM-kY-jWD">
-                                                        <rect key="frame" x="45" y="0.0" width="510" height="85"/>
+                                                        <rect key="frame" x="45" y="0.0" width="510" height="32"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yw7-yO-Hcz">
                                                                 <rect key="frame" x="0.0" y="0.0" width="77" height="22"/>
@@ -434,7 +486,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc7-5e-xWH">
-                                                                <rect key="frame" x="0.0" y="32" width="501" height="53"/>
+                                                                <rect key="frame" x="0.0" y="32" width="510" height="0.0"/>
                                                                 <string key="text">Is to provide a platform for people of Telangana origin and Indian Diaspora in and around Lansing to come together for cultural awareness and community development.</string>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -448,13 +500,17 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="20m-qm-DlO">
-                                                <rect key="frame" x="22" y="445" width="560" height="67"/>
+                                                <rect key="frame" x="22" y="445" width="560" height="35"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mission_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Sag-Mj-LLE">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mission_green" translatesAutoresizingMaskIntoConstraints="NO" id="Sag-Mj-LLE">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="35" id="Dfk-uw-Mt1"/>
+                                                            <constraint firstAttribute="height" constant="35" id="xe8-ID-X6r"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kf1-3I-uQc">
-                                                        <rect key="frame" x="45" y="0.0" width="515" height="67"/>
+                                                        <rect key="frame" x="45" y="0.0" width="515" height="32"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAy-qS-YqT">
                                                                 <rect key="frame" x="0.0" y="0.0" width="104" height="22"/>
@@ -463,7 +519,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmE-Q2-0rB">
-                                                                <rect key="frame" x="0.0" y="32" width="500" height="35"/>
+                                                                <rect key="frame" x="0.0" y="32" width="515" height="0.0"/>
                                                                 <string key="text">Is to help the local charities and communities. GLTC represents Telangana culture, promote and celebrate the festivals like Bathukamma.</string>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -477,13 +533,17 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="une-Tn-8hO">
-                                                <rect key="frame" x="20" y="535" width="560" height="67"/>
+                                                <rect key="frame" x="20" y="535" width="560" height="35"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Igr-Q7-UQz">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership_green" translatesAutoresizingMaskIntoConstraints="NO" id="Igr-Q7-UQz">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="P5G-QJ-c3u"/>
+                                                            <constraint firstAttribute="width" constant="35" id="rgG-5n-cgw"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qv3-6a-YrM">
-                                                        <rect key="frame" x="45" y="0.0" width="515" height="67"/>
+                                                        <rect key="frame" x="45" y="0.0" width="515" height="32"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFW-Ja-Vcg">
                                                                 <rect key="frame" x="0.0" y="0.0" width="83" height="22"/>
@@ -492,7 +552,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GLTC Board is formed with Executive Board, Advisory Committee and Bathukamma Committee." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cI-6L-Ydr">
-                                                                <rect key="frame" x="0.0" y="32" width="474" height="35"/>
+                                                                <rect key="frame" x="0.0" y="32" width="515" height="0.0"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -908,7 +968,7 @@ Email: admin@lansingtelangana.org</string>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pQ-7w-VtX" customClass="RoundedButton" customModule="GLTC" customModuleProvider="target">
                                                 <rect key="frame" x="302" y="561" width="100" height="30"/>
-                                                <color key="backgroundColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="8j4-cB-xfX"/>
                                                     <constraint firstAttribute="width" constant="100" id="dd8-HU-TE3"/>
@@ -1298,7 +1358,7 @@ Email: admin@lansingtelangana.org</string>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5t-hC-P1q">
                                                 <rect key="frame" x="29" y="339" width="537" height="467"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg0-cL-l8l">
@@ -1306,7 +1366,7 @@ Email: admin@lansingtelangana.org</string>
                                                 <string key="text">Thanks &amp; Regards
 GLTC Team</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                                <color key="textColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -1409,6 +1469,60 @@ GLTC Team</string>
             </objects>
             <point key="canvasLocation" x="1971" y="4168"/>
         </scene>
+        <!--Credits View Controller-->
+        <scene sceneID="i8w-dr-TIq">
+            <objects>
+                <viewController id="EVx-jW-zFi" customClass="CreditsViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RPK-lW-AoB"/>
+                        <viewControllerLayoutGuide type="bottom" id="YBM-Ft-F59"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ODu-aM-UkS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NHL-yF-6VY">
+                                <rect key="frame" x="165" y="82" width="270" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="BjE-GE-kT7"/>
+                                    <constraint firstAttribute="height" constant="207" id="Ska-3z-V7S"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Darshan Labs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXU-x9-UbR">
+                                <rect key="frame" x="172" y="271" width="257" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="00o-1v-aFn"/>
+                                    <constraint firstAttribute="width" constant="257" id="UHx-kg-xmE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.48361167245227638" green="0.66666666669999997" blue="0.3246499294818988" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NHL-yF-6VY" firstAttribute="top" secondItem="RPK-lW-AoB" secondAttribute="bottom" constant="30" id="3gM-Mm-VJ6"/>
+                            <constraint firstItem="wXU-x9-UbR" firstAttribute="top" secondItem="NHL-yF-6VY" secondAttribute="bottom" constant="10" id="6JK-EP-Dmk"/>
+                            <constraint firstItem="wXU-x9-UbR" firstAttribute="top" secondItem="NHL-yF-6VY" secondAttribute="bottom" constant="-18" id="8gh-Sz-T5O"/>
+                            <constraint firstItem="wXU-x9-UbR" firstAttribute="centerX" secondItem="ODu-aM-UkS" secondAttribute="centerX" id="WDz-xU-EEG"/>
+                            <constraint firstItem="NHL-yF-6VY" firstAttribute="centerX" secondItem="ODu-aM-UkS" secondAttribute="centerX" id="Wwb-A9-ya1"/>
+                            <constraint firstItem="NHL-yF-6VY" firstAttribute="top" secondItem="RPK-lW-AoB" secondAttribute="bottom" constant="20" id="WyX-IS-vgU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3gM-Mm-VJ6"/>
+                                <exclude reference="6JK-EP-Dmk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="svs-8c-GOY">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="hyT-hF-8pd"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1z7-d9-bxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971" y="4873"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="7xv-eu-dph">
             <objects>
@@ -1417,7 +1531,7 @@ GLTC Team</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="IlY-1z-l4p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1440,7 +1554,7 @@ GLTC Team</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="0Eq-sY-0td">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1467,7 +1581,7 @@ GLTC Team</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KRN-Pp-AlE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.12995956598945368" green="0.63696865028510219" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1490,7 +1604,7 @@ GLTC Team</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="JHT-Ui-EtN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1513,7 +1627,7 @@ GLTC Team</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3MS-dh-z6S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1536,7 +1650,7 @@ GLTC Team</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mrG-2C-m8e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1559,7 +1673,7 @@ GLTC Team</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qSQ-k0-KQ5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.129959566" green="0.63696865030000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1574,19 +1688,40 @@ GLTC Team</string>
             </objects>
             <point key="canvasLocation" x="1103" y="3353"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZnA-0V-7Y6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fQS-uc-gM4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KXF-5k-6hJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EVx-jW-zFi" kind="relationship" relationship="rootViewController" id="hTR-Xq-KPI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltA-SP-YS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103" y="4873"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="contactus_blue" width="35" height="35"/>
-        <image name="events_blue" width="35" height="35"/>
+        <image name="contactus_green" width="199" height="199"/>
+        <image name="events_green" width="253" height="247"/>
         <image name="gltcLogo" width="232" height="215"/>
-        <image name="goal_blue" width="35" height="35"/>
-        <image name="home_blue" width="35" height="35"/>
-        <image name="laws_blue" width="35" height="35"/>
-        <image name="leader_blue" width="35" height="35"/>
-        <image name="leadership_blue" width="35" height="35"/>
-        <image name="mission_blue" width="35" height="35"/>
-        <image name="news_blue" width="35" height="35"/>
-        <image name="sponsor_blue" width="35" height="35"/>
+        <image name="goal_green" width="344" height="350"/>
+        <image name="home_green" width="74" height="74"/>
+        <image name="laws_green" width="450" height="450"/>
+        <image name="leadership_green" width="301" height="295"/>
+        <image name="logo" width="257" height="197"/>
+        <image name="logo_small" width="35" height="35"/>
+        <image name="mission_green" width="193" height="193"/>
+        <image name="news_green" width="256" height="256"/>
+        <image name="sponsor_green" width="68" height="68"/>
+        <image name="whoweare_green" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="e7m-uc-0Ho"/>

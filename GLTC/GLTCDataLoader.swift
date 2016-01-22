@@ -24,7 +24,7 @@ class GLTCDataLoader {
     private var news: [GLTCNews] = []
     
     private init() {
-        loadAllGLTCJson()
+        
     }
     
     func getEvents() -> [GLTCEvent] {
@@ -44,10 +44,16 @@ class GLTCDataLoader {
     }
     
     func loadAllGLTCJson(){
-        loadJson("events")
-        loadJson("committees")
-        loadJson("sponsors")
-        loadJson("news")
+        if(events.isEmpty || committees.isEmpty || sponsors.isEmpty || news.isEmpty) {
+            print("Content Doesn't Exist - Loading Data from the server")
+            emptyContent()
+            loadJson("events")
+            loadJson("committees")
+            loadJson("sponsors")
+            loadJson("news")
+        }else{
+            print("Content Exists - No need to Load Data from the server")
+        }
     }
     
     func loadJson(type: String) {
@@ -203,5 +209,12 @@ class GLTCDataLoader {
         }catch {
             print(error)
         }
+    }
+    
+    func emptyContent() {
+        events = []
+        committees = []
+        sponsors = []
+        news = []
     }
 }

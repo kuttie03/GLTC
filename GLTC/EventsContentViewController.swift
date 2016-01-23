@@ -19,6 +19,8 @@ class EventsContentViewController: UIViewController {
         super.viewDidLoad()
         if let eventImage = eventImage {
             self.eventImageView.image = eventImage.image
+        }else{
+            print("No image found")
         }
     }
     

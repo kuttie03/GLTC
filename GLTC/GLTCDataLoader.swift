@@ -82,12 +82,16 @@ class GLTCDataLoader {
             dispatch_async(dispatch_get_main_queue(), {
                 if(type == "events"){
                     self.extractEventsJsondata(data!)
+                    print("Loaded Events")
                 }else if(type == "committees"){
                     self.extractCommitteesJsondata(data!)
+                    print("Loaded Committees")
                 }else if(type == "sponsors"){
                     self.extractSponsorsJsondata(data!)
+                    print("Loaded Sponsors")
                 }else if(type == "news"){
                     self.extractNewsJsondata(data!)
+                    print("Loaded News")
                 }
                 return
             })

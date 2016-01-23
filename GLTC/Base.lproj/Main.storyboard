@@ -59,7 +59,7 @@
                                                         <constraint firstAttribute="width" constant="80" id="dRB-rV-cdC"/>
                                                         <constraint firstAttribute="height" constant="35" id="sie-Gz-smx"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -111,7 +111,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="UmP-m9-nHa"/>
                                                         <constraint firstAttribute="width" constant="80" id="tu3-ve-1R0"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -150,12 +150,12 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leadership" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88L-Ib-Evc">
-                                                    <rect key="frame" x="48" y="12" width="80" height="35"/>
+                                                    <rect key="frame" x="48" y="12" width="120" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="rft-CA-Xi6"/>
-                                                        <constraint firstAttribute="width" constant="80" id="yun-e1-nh8"/>
+                                                        <constraint firstAttribute="width" constant="120" id="yun-e1-nh8"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -199,7 +199,7 @@
                                                         <constraint firstAttribute="width" constant="80" id="ATl-pE-1TN"/>
                                                         <constraint firstAttribute="height" constant="35" id="cai-5v-S1t"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -243,7 +243,7 @@
                                                         <constraint firstAttribute="width" constant="80" id="H9A-dh-T5J"/>
                                                         <constraint firstAttribute="height" constant="35" id="Kdy-40-b4m"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -282,12 +282,12 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ue4-4N-ax3">
-                                                    <rect key="frame" x="48" y="12" width="80" height="35"/>
+                                                    <rect key="frame" x="48" y="12" width="120" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="eJz-YB-Zpc"/>
-                                                        <constraint firstAttribute="width" constant="80" id="tA5-nk-ImI"/>
+                                                        <constraint firstAttribute="width" constant="120" id="tA5-nk-ImI"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -325,13 +325,13 @@
                                                         <constraint firstAttribute="height" constant="35" id="oQX-MM-hdk"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GLTC By Laws" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trk-No-H9a">
-                                                    <rect key="frame" x="48" y="12" width="100" height="35"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GLTC Bylaws" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trk-No-H9a">
+                                                    <rect key="frame" x="48" y="12" width="124" height="35"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="120" id="NFQ-Ia-cfp"/>
+                                                        <constraint firstAttribute="width" constant="150" id="NFQ-Ia-cfp"/>
                                                         <constraint firstAttribute="height" constant="35" id="cG2-e6-nMO"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -362,7 +362,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_small" translatesAutoresizingMaskIntoConstraints="NO" id="bEx-np-iV2">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darshanLabsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bEx-np-iV2">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="DYG-us-eGx"/>
@@ -375,7 +375,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="RQD-Xy-51D"/>
                                                         <constraint firstAttribute="width" constant="120" id="wwI-7K-rV1"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -448,17 +448,17 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="by4-Hy-Jbs">
-                                                        <rect key="frame" x="45" y="0.0" width="510" height="32"/>
+                                                        <rect key="frame" x="45" y="0.0" width="510" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who we are" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uS7-9Y-qEx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="101" height="22"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                                                <color key="textColor" red="0.22009214743589745" green="0.22009214743589745" blue="0.22009214743589745" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
+                                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                                                <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greater Lansing Telangana Community (GLTC) is formed to represent the Telangana culture, community and the ‘Telangana’ state." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-Pd-CKg">
-                                                                <rect key="frame" x="0.0" y="32" width="510" height="0.0"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <rect key="frame" x="0.0" y="31" width="510" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -477,18 +477,18 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qVM-kY-jWD">
-                                                        <rect key="frame" x="45" y="0.0" width="510" height="32"/>
+                                                        <rect key="frame" x="45" y="0.0" width="510" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yw7-yO-Hcz">
-                                                                <rect key="frame" x="0.0" y="0.0" width="77" height="22"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                                                <color key="textColor" red="0.22009214739999999" green="0.22009214739999999" blue="0.22009214739999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="74" height="21"/>
+                                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                                                <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc7-5e-xWH">
-                                                                <rect key="frame" x="0.0" y="32" width="510" height="0.0"/>
+                                                                <rect key="frame" x="0.0" y="31" width="510" height="0.0"/>
                                                                 <string key="text">Is to provide a platform for people of Telangana origin and Indian Diaspora in and around Lansing to come together for cultural awareness and community development.</string>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -510,18 +510,18 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kf1-3I-uQc">
-                                                        <rect key="frame" x="45" y="0.0" width="515" height="32"/>
+                                                        <rect key="frame" x="45" y="0.0" width="515" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAy-qS-YqT">
-                                                                <rect key="frame" x="0.0" y="0.0" width="104" height="22"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                                                <color key="textColor" red="0.22009214739999999" green="0.22009214739999999" blue="0.22009214739999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="97" height="21"/>
+                                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                                                <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmE-Q2-0rB">
-                                                                <rect key="frame" x="0.0" y="32" width="515" height="0.0"/>
+                                                                <rect key="frame" x="0.0" y="31" width="515" height="0.0"/>
                                                                 <string key="text">Is to help the local charities and communities. GLTC represents Telangana culture, promote and celebrate the festivals like Bathukamma.</string>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -543,17 +543,17 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qv3-6a-YrM">
-                                                        <rect key="frame" x="45" y="0.0" width="515" height="32"/>
+                                                        <rect key="frame" x="45" y="0.0" width="515" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFW-Ja-Vcg">
-                                                                <rect key="frame" x="0.0" y="0.0" width="83" height="22"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                                                <color key="textColor" red="0.22009214739999999" green="0.22009214739999999" blue="0.22009214739999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="81" height="21"/>
+                                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                                                <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GLTC Board is formed with Executive Board, Advisory Committee and Bathukamma Committee." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cI-6L-Ydr">
-                                                                <rect key="frame" x="0.0" y="32" width="515" height="0.0"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                <rect key="frame" x="0.0" y="31" width="515" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -651,17 +651,17 @@
                                                         <constraint firstAttribute="height" constant="30" id="sam-5T-bLD"/>
                                                         <constraint firstAttribute="width" constant="452" id="uv3-ac-SfA"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKS-2v-a71">
-                                                    <rect key="frame" x="118" y="53" width="178" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKS-2v-a71">
+                                                    <rect key="frame" x="118" y="43" width="178" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="178" id="38A-xk-QyP"/>
                                                         <constraint firstAttribute="height" constant="21" id="aLE-ch-62L"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -671,7 +671,7 @@
                                                 <constraint firstItem="yO4-UJ-gaL" firstAttribute="top" secondItem="bA1-UX-2al" secondAttribute="topMargin" constant="10" id="6zh-Vb-XJ7"/>
                                                 <constraint firstItem="yO4-UJ-gaL" firstAttribute="leading" secondItem="LMd-AA-qH2" secondAttribute="trailing" constant="20" id="7f1-nQ-AqD"/>
                                                 <constraint firstItem="LMd-AA-qH2" firstAttribute="top" secondItem="bA1-UX-2al" secondAttribute="topMargin" constant="7" id="JND-GO-jz0"/>
-                                                <constraint firstItem="EKS-2v-a71" firstAttribute="top" secondItem="yO4-UJ-gaL" secondAttribute="bottom" constant="5" id="NS0-Xl-wj7"/>
+                                                <constraint firstItem="EKS-2v-a71" firstAttribute="top" secondItem="yO4-UJ-gaL" secondAttribute="bottom" constant="-5" id="NS0-Xl-wj7"/>
                                                 <constraint firstItem="LMd-AA-qH2" firstAttribute="leading" secondItem="bA1-UX-2al" secondAttribute="leadingMargin" constant="6" id="VR5-Jo-Ay2"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -735,15 +735,15 @@
                                                     <constraint firstAttribute="width" constant="316" id="G3e-g0-0Oh"/>
                                                     <constraint firstAttribute="height" constant="21" id="cU8-Iv-keV"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                                <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyn-iv-sdU">
-                                                <rect key="frame" x="112" y="225" width="1114" height="143"/>
+                                                <rect key="frame" x="112" y="225" width="984" height="122"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuc-0D-NQo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1114" height="143"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="984" height="122"/>
                                                         <string key="text">Please use the contact form if you have any questions or requests, concerning our organization. We will respond to your message within 48 hours.
  
 Tel: 517.975.5737
@@ -751,7 +751,7 @@ Tel: 517.975.5737
 Fax: 517.580.0828
 
 Email: admin@lansingtelangana.org</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -794,16 +794,16 @@ Email: admin@lansingtelangana.org</string>
                                                 </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gWx-Rq-btr">
-                                                <rect key="frame" x="297" y="382" width="100" height="150"/>
+                                                <rect key="frame" x="297" y="382" width="97" height="150"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5SZ-K2-9K0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="3ec-1G-oMe"/>
                                                             <constraint firstAttribute="height" constant="30" id="EMX-Dl-wwR"/>
                                                             <constraint firstAttribute="height" constant="30" id="y8q-Mj-8d5"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
@@ -829,13 +829,13 @@ Email: admin@lansingtelangana.org</string>
                                                         </variation>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-Sm-3jm">
-                                                        <rect key="frame" x="0.0" y="40" width="100" height="30"/>
+                                                        <rect key="frame" x="0.0" y="40" width="97" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="1rf-4O-jxN"/>
                                                             <constraint firstAttribute="height" constant="30" id="Dnf-zd-SEI"/>
                                                             <constraint firstAttribute="height" constant="30" id="gJi-MK-zUR"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
@@ -861,13 +861,13 @@ Email: admin@lansingtelangana.org</string>
                                                         </variation>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqB-ox-BkH">
-                                                        <rect key="frame" x="0.0" y="80" width="100" height="30"/>
+                                                        <rect key="frame" x="0.0" y="80" width="97" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="KZT-2h-0Fv"/>
                                                             <constraint firstAttribute="height" constant="23" id="b8r-Xi-O2U"/>
                                                             <constraint firstAttribute="height" constant="30" id="feF-m3-d56"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
@@ -893,14 +893,14 @@ Email: admin@lansingtelangana.org</string>
                                                         </variation>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Comments*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yPn-SM-Qux">
-                                                        <rect key="frame" x="0.0" y="120" width="100" height="30"/>
+                                                        <rect key="frame" x="0.0" y="120" width="97" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="5Wh-CX-u6I"/>
                                                             <constraint firstAttribute="height" constant="150" id="BxQ-Rn-HDB"/>
                                                             <constraint firstAttribute="height" constant="100" id="VJm-Hk-fIL"/>
                                                             <constraint firstAttribute="height" constant="150" id="crt-9d-GmY"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <variation key="default">
                                                             <mask key="constraints">
@@ -977,7 +977,7 @@ Email: admin@lansingtelangana.org</string>
                                                     <constraint firstAttribute="height" constant="30" id="wPf-8u-A60"/>
                                                     <constraint firstAttribute="height" constant="30" id="waN-vE-q6B"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="16"/>
                                                 <state key="normal" title="Send">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1193,7 +1193,7 @@ Email: admin@lansingtelangana.org</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGe-4r-Hna">
                                                     <rect key="frame" x="127" y="8" width="360" height="100"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1235,7 +1235,7 @@ Email: admin@lansingtelangana.org</string>
             </objects>
             <point key="canvasLocation" x="1981" y="1994"/>
         </scene>
-        <!--News-->
+        <!--GLTC News-->
         <scene sceneID="RxR-4U-DR3">
             <objects>
                 <viewController id="wuq-Wb-WtF" customClass="NewsViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
@@ -1248,7 +1248,7 @@ Email: admin@lansingtelangana.org</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="News" id="dyd-XA-iTC">
+                    <navigationItem key="navigationItem" title="GLTC News" id="dyd-XA-iTC">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="xUh-Rr-aaH"/>
                     </navigationItem>
                     <connections>
@@ -1312,12 +1312,12 @@ Email: admin@lansingtelangana.org</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kzw-yg-R8n">
-                                <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Kzw-yg-R8n" firstAttribute="top" secondItem="T3s-wo-1lU" secondAttribute="top" constant="50" id="AK4-E9-h0e"/>
+                            <constraint firstItem="Kzw-yg-R8n" firstAttribute="top" secondItem="T3s-wo-1lU" secondAttribute="top" id="AK4-E9-h0e"/>
                             <constraint firstItem="mgH-ui-JXS" firstAttribute="top" secondItem="Kzw-yg-R8n" secondAttribute="bottom" id="UfQ-6d-aBa"/>
                             <constraint firstItem="Kzw-yg-R8n" firstAttribute="leading" secondItem="T3s-wo-1lU" secondAttribute="leading" id="WDN-u9-7UO"/>
                             <constraint firstAttribute="trailing" secondItem="Kzw-yg-R8n" secondAttribute="trailing" id="whn-r7-Idd"/>
@@ -1334,7 +1334,7 @@ Email: admin@lansingtelangana.org</string>
         <!--News Content View Controller-->
         <scene sceneID="B6s-NM-tL7">
             <objects>
-                <viewController storyboardIdentifier="NewsContentViewController" id="ke3-nv-if3" customClass="NewsContentViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsContentViewController" automaticallyAdjustsScrollViewInsets="NO" id="ke3-nv-if3" customClass="NewsContentViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jfV-Rv-e61"/>
                         <viewControllerLayoutGuide type="bottom" id="6ia-ob-MYM"/>
@@ -1357,7 +1357,7 @@ Email: admin@lansingtelangana.org</string>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5t-hC-P1q">
                                                 <rect key="frame" x="29" y="339" width="537" height="467"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1365,7 +1365,7 @@ Email: admin@lansingtelangana.org</string>
                                                 <rect key="frame" x="207" y="814" width="186" height="57"/>
                                                 <string key="text">Thanks &amp; Regards
 GLTC Team</string>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                                 <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1419,9 +1419,9 @@ GLTC Team</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faz-P0-6JS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3298" y="2487"/>
+            <point key="canvasLocation" x="3298" y="2787"/>
         </scene>
-        <!--GLTC ByLaws-->
+        <!--GLTC Bylaws-->
         <scene sceneID="bHL-ut-ZvA">
             <objects>
                 <viewController id="B5c-u8-9M6" customClass="PDFViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
@@ -1458,7 +1458,7 @@ GLTC Team</string>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="GLTC ByLaws" id="iYh-LV-8U5">
+                    <navigationItem key="navigationItem" title="GLTC Bylaws" id="iYh-LV-8U5">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="ZEl-4d-1D4"/>
                     </navigationItem>
                     <connections>
@@ -1469,55 +1469,95 @@ GLTC Team</string>
             </objects>
             <point key="canvasLocation" x="1971" y="4168"/>
         </scene>
-        <!--Credits View Controller-->
+        <!--Darshan Labs-->
         <scene sceneID="i8w-dr-TIq">
             <objects>
-                <viewController id="EVx-jW-zFi" customClass="CreditsViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="EVx-jW-zFi" customClass="CreditsViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RPK-lW-AoB"/>
                         <viewControllerLayoutGuide type="bottom" id="YBM-Ft-F59"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ODu-aM-UkS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NHL-yF-6VY">
-                                <rect key="frame" x="165" y="82" width="270" height="207"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UR-zQ-VKK">
+                                <rect key="frame" x="0.0" y="64" width="600" height="836"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gK6-Ih-HM4">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="836"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="darshanLabsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="nh1-Ve-Qlq">
+                                                <rect key="frame" x="23" y="0.0" width="555" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="Ksl-7c-gGx"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Darshan Labs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDx-GY-YXc">
+                                                <rect key="frame" x="181" y="252" width="239" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="Uy9-mL-blA"/>
+                                                    <constraint firstAttribute="width" constant="239" id="o3p-7D-Ap2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
+                                                <color key="textColor" red="1" green="0.68094642215967083" blue="0.21418752816978348" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grr-Rb-ZkZ">
+                                                <rect key="frame" x="94" y="307" width="413" height="292"/>
+                                                <string key="text">Developed by Darshan Labs
+
+Tel: 268.823.3534
+
+Email: shravankumar.singireddy@gmail.com</string>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="hDx-GY-YXc" firstAttribute="top" secondItem="nh1-Ve-Qlq" secondAttribute="bottom" id="0Ox-Ag-I5A"/>
+                                            <constraint firstItem="grr-Rb-ZkZ" firstAttribute="centerX" secondItem="gK6-Ih-HM4" secondAttribute="centerX" id="FO6-YS-czh"/>
+                                            <constraint firstAttribute="bottom" secondItem="hDx-GY-YXc" secondAttribute="bottom" constant="559" id="LlE-dL-k6O"/>
+                                            <constraint firstItem="nh1-Ve-Qlq" firstAttribute="leading" secondItem="gK6-Ih-HM4" secondAttribute="leading" constant="20" id="N4T-FH-PY2"/>
+                                            <constraint firstItem="grr-Rb-ZkZ" firstAttribute="top" secondItem="hDx-GY-YXc" secondAttribute="bottom" constant="20" id="Vfe-dH-lN0"/>
+                                            <constraint firstAttribute="bottom" secondItem="grr-Rb-ZkZ" secondAttribute="bottom" constant="237" id="XBz-Xv-aDg"/>
+                                            <constraint firstItem="nh1-Ve-Qlq" firstAttribute="top" secondItem="gK6-Ih-HM4" secondAttribute="top" id="dUX-b5-4Cf"/>
+                                            <constraint firstAttribute="trailing" secondItem="nh1-Ve-Qlq" secondAttribute="trailing" constant="20" id="hVO-xK-E5d"/>
+                                            <constraint firstItem="nh1-Ve-Qlq" firstAttribute="top" secondItem="gK6-Ih-HM4" secondAttribute="top" constant="-20" id="lUW-0G-SVf"/>
+                                            <constraint firstItem="hDx-GY-YXc" firstAttribute="centerX" secondItem="gK6-Ih-HM4" secondAttribute="centerX" id="oeo-2E-z4p"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="lUW-0G-SVf"/>
+                                                <exclude reference="LlE-dL-k6O"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="270" id="BjE-GE-kT7"/>
-                                    <constraint firstAttribute="height" constant="207" id="Ska-3z-V7S"/>
+                                    <constraint firstAttribute="bottom" secondItem="gK6-Ih-HM4" secondAttribute="bottom" id="2hB-UA-0j7"/>
+                                    <constraint firstAttribute="trailing" secondItem="gK6-Ih-HM4" secondAttribute="trailing" id="KkM-sq-aXu"/>
+                                    <constraint firstItem="gK6-Ih-HM4" firstAttribute="top" secondItem="8UR-zQ-VKK" secondAttribute="top" id="M0c-pV-sHC"/>
+                                    <constraint firstItem="gK6-Ih-HM4" firstAttribute="leading" secondItem="8UR-zQ-VKK" secondAttribute="leading" id="qQ8-Vo-dxK"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Darshan Labs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXU-x9-UbR">
-                                <rect key="frame" x="172" y="271" width="257" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="00o-1v-aFn"/>
-                                    <constraint firstAttribute="width" constant="257" id="UHx-kg-xmE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" red="0.48361167245227638" green="0.66666666669999997" blue="0.3246499294818988" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NHL-yF-6VY" firstAttribute="top" secondItem="RPK-lW-AoB" secondAttribute="bottom" constant="30" id="3gM-Mm-VJ6"/>
-                            <constraint firstItem="wXU-x9-UbR" firstAttribute="top" secondItem="NHL-yF-6VY" secondAttribute="bottom" constant="10" id="6JK-EP-Dmk"/>
-                            <constraint firstItem="wXU-x9-UbR" firstAttribute="top" secondItem="NHL-yF-6VY" secondAttribute="bottom" constant="-18" id="8gh-Sz-T5O"/>
-                            <constraint firstItem="wXU-x9-UbR" firstAttribute="centerX" secondItem="ODu-aM-UkS" secondAttribute="centerX" id="WDz-xU-EEG"/>
-                            <constraint firstItem="NHL-yF-6VY" firstAttribute="centerX" secondItem="ODu-aM-UkS" secondAttribute="centerX" id="Wwb-A9-ya1"/>
-                            <constraint firstItem="NHL-yF-6VY" firstAttribute="top" secondItem="RPK-lW-AoB" secondAttribute="bottom" constant="20" id="WyX-IS-vgU"/>
+                            <constraint firstItem="8UR-zQ-VKK" firstAttribute="top" secondItem="RPK-lW-AoB" secondAttribute="bottom" id="0Tl-F8-KEO"/>
+                            <constraint firstItem="YBM-Ft-F59" firstAttribute="top" secondItem="8UR-zQ-VKK" secondAttribute="bottom" id="8MA-cN-th5"/>
+                            <constraint firstItem="8UR-zQ-VKK" firstAttribute="leading" secondItem="ODu-aM-UkS" secondAttribute="leading" id="MOI-ji-uBG"/>
+                            <constraint firstItem="gK6-Ih-HM4" firstAttribute="width" secondItem="ODu-aM-UkS" secondAttribute="width" id="Rk5-SQ-tbt"/>
+                            <constraint firstAttribute="trailing" secondItem="8UR-zQ-VKK" secondAttribute="trailing" id="aKY-Qb-lHU"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="3gM-Mm-VJ6"/>
-                                <exclude reference="6JK-EP-Dmk"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="svs-8c-GOY">
+                    <navigationItem key="navigationItem" title="Darshan Labs" id="svs-8c-GOY">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="hyT-hF-8pd"/>
                     </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="900"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1z7-d9-bxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1533,7 +1573,7 @@ GLTC Team</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -1556,7 +1596,7 @@ GLTC Team</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -1583,7 +1623,7 @@ GLTC Team</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -1606,7 +1646,7 @@ GLTC Team</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -1629,7 +1669,7 @@ GLTC Team</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -1652,7 +1692,7 @@ GLTC Team</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -1675,7 +1715,7 @@ GLTC Team</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -1697,6 +1737,10 @@ GLTC Team</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1710,20 +1754,19 @@ GLTC Team</string>
     </scenes>
     <resources>
         <image name="contactus_green" width="199" height="199"/>
+        <image name="darshanLabsLogo" width="420" height="434"/>
         <image name="events_green" width="253" height="247"/>
         <image name="gltcLogo" width="232" height="215"/>
         <image name="goal_green" width="344" height="350"/>
         <image name="home_green" width="74" height="74"/>
         <image name="laws_green" width="450" height="450"/>
         <image name="leadership_green" width="301" height="295"/>
-        <image name="logo" width="257" height="197"/>
-        <image name="logo_small" width="35" height="35"/>
         <image name="mission_green" width="193" height="193"/>
         <image name="news_green" width="256" height="256"/>
         <image name="sponsor_green" width="68" height="68"/>
         <image name="whoweare_green" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e7m-uc-0Ho"/>
+        <segue reference="xkf-eZ-IRj"/>
     </inferredMetricsTieBreakers>
 </document>

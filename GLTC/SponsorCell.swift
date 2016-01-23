@@ -41,6 +41,7 @@ extension UIImageView {
                 self.contentMode =  contentMode
                 if let data = data {
                     self.image = UIImage(data: data)
+                    print("Loaded image: \(link)")
                 }
             }
         }).resume()

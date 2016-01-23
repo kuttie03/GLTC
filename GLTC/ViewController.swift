@@ -23,5 +23,27 @@ class ViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
     }
+    
+    //    func loadCommitteejson(){
+    //        //let urlString = "http://swapi.co/api/people/1/"
+    //        //let urlString = "http://pokeapi.co/api/v1/pokemon/1/"
+    //        let urlString = "http://1-dot-iodevelopment-1190.appspot.com/iosdevelopment"
+    //        let session = NSURLSession.sharedSession()
+    //        let url = NSURL(string: urlString)!
+    //
+    //        session.dataTaskWithURL(url) { (data:NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+    //            if let responseData = data {
+    //                self.extractJsondata(responseData)
+    //            }
+    //        }.resume()
+    //    }
+    
+    //    func loadCommitteejson(){
+    //        let path = NSBundle.mainBundle().pathForResource("committee", ofType: "json")
+    //        let fileData = NSData(contentsOfFile: path!)
+    //        if let data = fileData {
+    //            extractCommitteeJsondata(data)
+    //        }
+    //    }
 }
 

@@ -135,96 +135,8 @@
                                             <segue destination="5Gz-rA-ga7" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Uiq-J3-qIL"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="sjd-Ir-SKm" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="140" width="600" height="65"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sjd-Ir-SKm" id="Tsk-PL-GsF">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership_green" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-DS-nMU">
-                                                    <rect key="frame" x="8" y="12" width="35" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="35" id="1Uf-gW-8TW"/>
-                                                        <constraint firstAttribute="height" constant="35" id="RqC-8A-2Vo"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leadership" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88L-Ib-Evc">
-                                                    <rect key="frame" x="48" y="12" width="120" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="35" id="rft-CA-Xi6"/>
-                                                        <constraint firstAttribute="width" constant="120" id="yun-e1-nh8"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="YKg-DS-nMU" firstAttribute="leading" secondItem="Tsk-PL-GsF" secondAttribute="leading" constant="8" id="0Y5-gi-8pm"/>
-                                                <constraint firstItem="88L-Ib-Evc" firstAttribute="leading" secondItem="YKg-DS-nMU" secondAttribute="trailing" constant="5" id="Vft-RH-fBf"/>
-                                                <constraint firstItem="YKg-DS-nMU" firstAttribute="top" secondItem="Tsk-PL-GsF" secondAttribute="top" constant="10" id="lvl-gI-Zq1"/>
-                                                <constraint firstItem="YKg-DS-nMU" firstAttribute="leading" secondItem="Tsk-PL-GsF" secondAttribute="leading" constant="10" id="pT8-gy-Rny"/>
-                                                <constraint firstItem="88L-Ib-Evc" firstAttribute="top" secondItem="Tsk-PL-GsF" secondAttribute="top" constant="12" id="trq-ee-ldK"/>
-                                                <constraint firstItem="YKg-DS-nMU" firstAttribute="top" secondItem="Tsk-PL-GsF" secondAttribute="top" constant="12" id="x2C-zJ-1pV"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="lvl-gI-Zq1"/>
-                                                    <exclude reference="pT8-gy-Rny"/>
-                                                </mask>
-                                            </variation>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="3DN-lI-jyE" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="lPq-xc-ACO"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ZKx-gY-8rN" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="205" width="600" height="65"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZKx-gY-8rN" id="2JY-MC-Kr7">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sponsor_green" translatesAutoresizingMaskIntoConstraints="NO" id="zhd-GY-5fu">
-                                                    <rect key="frame" x="8" y="12" width="35" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="35" id="n7P-Yj-yel"/>
-                                                        <constraint firstAttribute="width" constant="35" id="pyM-3h-r8K"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sponsors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32P-Ha-RTT">
-                                                    <rect key="frame" x="48" y="12" width="80" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="80" id="ATl-pE-1TN"/>
-                                                        <constraint firstAttribute="height" constant="35" id="cai-5v-S1t"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="zhd-GY-5fu" firstAttribute="leading" secondItem="2JY-MC-Kr7" secondAttribute="leading" constant="10" id="5CA-sW-eL7"/>
-                                                <constraint firstItem="zhd-GY-5fu" firstAttribute="top" secondItem="2JY-MC-Kr7" secondAttribute="top" constant="10" id="BEl-Ef-Ihw"/>
-                                                <constraint firstItem="32P-Ha-RTT" firstAttribute="leading" secondItem="zhd-GY-5fu" secondAttribute="trailing" constant="5" id="DZD-81-enj"/>
-                                                <constraint firstItem="zhd-GY-5fu" firstAttribute="top" secondItem="2JY-MC-Kr7" secondAttribute="top" constant="12" id="PUc-X4-SS7"/>
-                                                <constraint firstItem="32P-Ha-RTT" firstAttribute="top" secondItem="2JY-MC-Kr7" secondAttribute="top" constant="12" id="ROn-Fe-5iW"/>
-                                                <constraint firstItem="zhd-GY-5fu" firstAttribute="leading" secondItem="2JY-MC-Kr7" secondAttribute="leading" constant="8" id="qv2-RT-JLX"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="5CA-sW-eL7"/>
-                                                    <exclude reference="BEl-Ef-Ihw"/>
-                                                </mask>
-                                            </variation>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="s42-vg-BpA" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="c5g-Yh-aRh"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="o9Z-pC-Xu2" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="270" width="600" height="65"/>
+                                        <rect key="frame" x="0.0" y="140" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o9Z-pC-Xu2" id="ZSm-vn-LFe">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -268,7 +180,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="92F-yS-kdI" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="335" width="600" height="65"/>
+                                        <rect key="frame" x="0.0" y="205" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="92F-yS-kdI" id="sh3-qc-vo0">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -309,6 +221,94 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="sjg-yp-Ab2" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Uca-er-WxK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ZKx-gY-8rN" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="270" width="600" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZKx-gY-8rN" id="2JY-MC-Kr7">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sponsor_green" translatesAutoresizingMaskIntoConstraints="NO" id="zhd-GY-5fu">
+                                                    <rect key="frame" x="8" y="12" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="n7P-Yj-yel"/>
+                                                        <constraint firstAttribute="width" constant="35" id="pyM-3h-r8K"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sponsors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32P-Ha-RTT">
+                                                    <rect key="frame" x="48" y="12" width="80" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="ATl-pE-1TN"/>
+                                                        <constraint firstAttribute="height" constant="35" id="cai-5v-S1t"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zhd-GY-5fu" firstAttribute="leading" secondItem="2JY-MC-Kr7" secondAttribute="leading" constant="10" id="5CA-sW-eL7"/>
+                                                <constraint firstItem="zhd-GY-5fu" firstAttribute="top" secondItem="2JY-MC-Kr7" secondAttribute="top" constant="10" id="BEl-Ef-Ihw"/>
+                                                <constraint firstItem="32P-Ha-RTT" firstAttribute="leading" secondItem="zhd-GY-5fu" secondAttribute="trailing" constant="5" id="DZD-81-enj"/>
+                                                <constraint firstItem="zhd-GY-5fu" firstAttribute="top" secondItem="2JY-MC-Kr7" secondAttribute="top" constant="12" id="PUc-X4-SS7"/>
+                                                <constraint firstItem="32P-Ha-RTT" firstAttribute="top" secondItem="2JY-MC-Kr7" secondAttribute="top" constant="12" id="ROn-Fe-5iW"/>
+                                                <constraint firstItem="zhd-GY-5fu" firstAttribute="leading" secondItem="2JY-MC-Kr7" secondAttribute="leading" constant="8" id="qv2-RT-JLX"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="5CA-sW-eL7"/>
+                                                    <exclude reference="BEl-Ef-Ihw"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="s42-vg-BpA" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="c5g-Yh-aRh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="sjd-Ir-SKm" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="335" width="600" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sjd-Ir-SKm" id="Tsk-PL-GsF">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership_green" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-DS-nMU">
+                                                    <rect key="frame" x="8" y="12" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="1Uf-gW-8TW"/>
+                                                        <constraint firstAttribute="height" constant="35" id="RqC-8A-2Vo"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leadership" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88L-Ib-Evc">
+                                                    <rect key="frame" x="48" y="12" width="120" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="rft-CA-Xi6"/>
+                                                        <constraint firstAttribute="width" constant="120" id="yun-e1-nh8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YKg-DS-nMU" firstAttribute="leading" secondItem="Tsk-PL-GsF" secondAttribute="leading" constant="8" id="0Y5-gi-8pm"/>
+                                                <constraint firstItem="88L-Ib-Evc" firstAttribute="leading" secondItem="YKg-DS-nMU" secondAttribute="trailing" constant="5" id="Vft-RH-fBf"/>
+                                                <constraint firstItem="YKg-DS-nMU" firstAttribute="top" secondItem="Tsk-PL-GsF" secondAttribute="top" constant="10" id="lvl-gI-Zq1"/>
+                                                <constraint firstItem="YKg-DS-nMU" firstAttribute="leading" secondItem="Tsk-PL-GsF" secondAttribute="leading" constant="10" id="pT8-gy-Rny"/>
+                                                <constraint firstItem="88L-Ib-Evc" firstAttribute="top" secondItem="Tsk-PL-GsF" secondAttribute="top" constant="12" id="trq-ee-ldK"/>
+                                                <constraint firstItem="YKg-DS-nMU" firstAttribute="top" secondItem="Tsk-PL-GsF" secondAttribute="top" constant="12" id="x2C-zJ-1pV"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="lvl-gI-Zq1"/>
+                                                    <exclude reference="pT8-gy-Rny"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="3DN-lI-jyE" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="lPq-xc-ACO"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ISP-47-DSf" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">

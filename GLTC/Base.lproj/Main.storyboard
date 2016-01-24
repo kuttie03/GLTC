@@ -267,8 +267,52 @@
                                             <segue destination="1QK-Gh-ifH" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="F70-th-Q3o"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ISP-47-DSf" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="92F-yS-kdI" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="335" width="600" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="92F-yS-kdI" id="sh3-qc-vo0">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_green" translatesAutoresizingMaskIntoConstraints="NO" id="eMx-wu-XjR">
+                                                    <rect key="frame" x="8" y="12" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="Dxh-iL-v8Z"/>
+                                                        <constraint firstAttribute="width" constant="35" id="rdI-NQ-eyy"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Videos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmo-yS-1cm">
+                                                    <rect key="frame" x="48" y="12" width="120" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="XAU-3v-7cT"/>
+                                                        <constraint firstAttribute="height" constant="35" id="lvd-yz-ySS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zmo-yS-1cm" firstAttribute="leading" secondItem="eMx-wu-XjR" secondAttribute="trailing" constant="5" id="3ig-cB-Cub"/>
+                                                <constraint firstItem="eMx-wu-XjR" firstAttribute="leading" secondItem="sh3-qc-vo0" secondAttribute="leading" constant="8" id="8Id-jt-5Ec"/>
+                                                <constraint firstItem="eMx-wu-XjR" firstAttribute="leading" secondItem="sh3-qc-vo0" secondAttribute="leading" constant="10" id="NnR-5R-zjB"/>
+                                                <constraint firstItem="zmo-yS-1cm" firstAttribute="top" secondItem="sh3-qc-vo0" secondAttribute="top" constant="12" id="f8c-zU-PH5"/>
+                                                <constraint firstItem="eMx-wu-XjR" firstAttribute="top" secondItem="sh3-qc-vo0" secondAttribute="top" constant="10" id="fNl-33-ozG"/>
+                                                <constraint firstItem="eMx-wu-XjR" firstAttribute="top" secondItem="sh3-qc-vo0" secondAttribute="top" constant="12" id="mLF-Cs-zsP"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="NnR-5R-zjB"/>
+                                                    <exclude reference="fNl-33-ozG"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sjg-yp-Ab2" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Uca-er-WxK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="ISP-47-DSf" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="400" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ISP-47-DSf" id="hOL-7o-nZG">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -312,7 +356,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="JMI-Wf-gGL" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="400" width="600" height="65"/>
+                                        <rect key="frame" x="0.0" y="465" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JMI-Wf-gGL" id="eRS-fa-PEY">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -356,7 +400,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="S3X-Z9-sQp" customClass="MenuItemCell" customModule="GLTC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="465" width="600" height="65"/>
+                                        <rect key="frame" x="0.0" y="530" width="600" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S3X-Z9-sQp" id="jU7-as-yyL">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
@@ -369,7 +413,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="fHs-Kj-Nxc"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Darshan Labs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUg-hn-87W">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Credits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUg-hn-87W">
                                                     <rect key="frame" x="48" y="12" width="120" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="RQD-Xy-51D"/>
@@ -1439,7 +1483,7 @@ GLTC Team</string>
         <!--GLTC Bylaws-->
         <scene sceneID="bHL-ut-ZvA">
             <objects>
-                <viewController id="B5c-u8-9M6" customClass="PDFViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B5c-u8-9M6" customClass="BylawsViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YQP-35-vSB"/>
                         <viewControllerLayoutGuide type="bottom" id="eDt-Qu-D1S"/>
@@ -1576,7 +1620,94 @@ Email: shravankumar.singireddy@gmail.com</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1z7-d9-bxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="4873"/>
+            <point key="canvasLocation" x="1971" y="4984"/>
+        </scene>
+        <!--GLTC Videos-->
+        <scene sceneID="sBZ-xD-25l">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="01Z-FR-Xvm" customClass="VideoViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zSj-aY-xPc"/>
+                        <viewControllerLayoutGuide type="bottom" id="2ju-w1-25X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a55-vo-2iv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="139" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IuL-ES-jC9">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="139" id="GEo-ne-fxw" customClass="VideoCell" customModule="GLTC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="139"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GEo-ne-fxw" id="2ah-jB-ant">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="139"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZED-FK-Pu9">
+                                                    <rect key="frame" x="8" y="8" width="180" height="120"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="6PH-BQ-pT9"/>
+                                                        <constraint firstAttribute="width" constant="180" id="gbo-eF-iyx"/>
+                                                    </constraints>
+                                                </webView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryx-mL-o1I">
+                                                    <rect key="frame" x="196" y="8" width="396" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="u6V-cz-Uln"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZED-FK-Pu9" firstAttribute="leading" secondItem="2ah-jB-ant" secondAttribute="leading" constant="8" id="EsO-L3-d1E"/>
+                                                <constraint firstItem="ZED-FK-Pu9" firstAttribute="top" secondItem="2ah-jB-ant" secondAttribute="top" constant="8" id="HRA-4I-ABm"/>
+                                                <constraint firstItem="ryx-mL-o1I" firstAttribute="top" secondItem="2ah-jB-ant" secondAttribute="topMargin" id="IQg-9t-28p"/>
+                                                <constraint firstAttribute="bottom" secondItem="ryx-mL-o1I" secondAttribute="bottom" constant="10" id="azm-YU-1KP"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZED-FK-Pu9" secondAttribute="bottom" constant="7" id="cFc-sr-IL4"/>
+                                                <constraint firstItem="ryx-mL-o1I" firstAttribute="leading" secondItem="ZED-FK-Pu9" secondAttribute="trailing" constant="8" id="fHg-5d-AoN"/>
+                                                <constraint firstItem="ryx-mL-o1I" firstAttribute="trailing" secondItem="2ah-jB-ant" secondAttribute="trailingMargin" id="rTg-GP-Yyk"/>
+                                                <constraint firstItem="ZED-FK-Pu9" firstAttribute="top" secondItem="2ah-jB-ant" secondAttribute="top" constant="8" id="rkF-fn-Cc9"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="HRA-4I-ABm"/>
+                                                    <exclude reference="cFc-sr-IL4"/>
+                                                    <exclude reference="azm-YU-1KP"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoLbl" destination="ryx-mL-o1I" id="xsj-FC-iMs"/>
+                                            <outlet property="videoWebView" destination="ZED-FK-Pu9" id="Hwl-vO-kIX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IuL-ES-jC9" firstAttribute="leading" secondItem="a55-vo-2iv" secondAttribute="leading" id="Jkt-31-nhx"/>
+                            <constraint firstItem="IuL-ES-jC9" firstAttribute="top" secondItem="zSj-aY-xPc" secondAttribute="bottom" id="Znc-mJ-PS7"/>
+                            <constraint firstAttribute="trailing" secondItem="IuL-ES-jC9" secondAttribute="trailing" id="m8L-p3-46h"/>
+                            <constraint firstItem="2ju-w1-25X" firstAttribute="top" secondItem="IuL-ES-jC9" secondAttribute="bottom" id="yHC-Zh-nFW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GLTC Videos" id="5TR-wE-Gl9">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="vaJ-5D-fZG"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="vaJ-5D-fZG" id="8rL-ZF-M5o"/>
+                        <outlet property="videTableView" destination="IuL-ES-jC9" id="hme-06-7Xq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="coV-cz-QG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971" y="5843"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7xv-eu-dph">
@@ -1766,6 +1897,28 @@ Email: shravankumar.singireddy@gmail.com</string>
             </objects>
             <point key="canvasLocation" x="1103" y="4873"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Avi-k0-HxJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sjg-yp-Ab2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DbS-c7-fjC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="01Z-FR-Xvm" kind="relationship" relationship="rootViewController" id="9rr-Tx-1tE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ow6-ot-q3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103" y="5843"/>
+        </scene>
     </scenes>
     <resources>
         <image name="contactus_green" width="199" height="199"/>
@@ -1779,9 +1932,10 @@ Email: shravankumar.singireddy@gmail.com</string>
         <image name="mission_green" width="193" height="193"/>
         <image name="news_green" width="256" height="256"/>
         <image name="sponsor_green" width="68" height="68"/>
+        <image name="video_green" width="256" height="256"/>
         <image name="whoweare_green" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xkf-eZ-IRj"/>
+        <segue reference="e7m-uc-0Ho"/>
     </inferredMetricsTieBreakers>
 </document>

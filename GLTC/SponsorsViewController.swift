@@ -14,8 +14,6 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var sponsorTableView: UITableView!
     
-    var loadingView = UIView()
-    
     var sponsors: [GLTCSponsor] = []
     
     override func viewDidLoad() {

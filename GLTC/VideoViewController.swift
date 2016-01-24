@@ -9,20 +9,47 @@
 import UIKit
 import MediaPlayer
 
-class VideoViewController: UIViewController {
+class VideoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var player = AVPlayer()
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    @IBOutlet weak var videTableView: UITableView!
+    
+    var videos: [GLTCVideo] = []
     
     override func viewDidLoad() {
-        let myBaseUrl = "http://jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v"
-        
-        guard let url = NSURL(string: myBaseUrl) else {
-            print("movie trailer not found")
-            return
+        super.viewDidLoad()
+        videos = GLTCDataLoader.sharedInstance.getVideos()
+        videTableView.delegate = self
+        videTableView.dataSource = self
+        videTableView.allowsSelection = false
+        if self.revealViewController() != nil {
+            var image = UIImage(named: "menu_white")
+            image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        player = AVPlayer(URL: url)
-        
-        player.play()
+    }
+    
+    //Returns Number of Sections
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    //Returns number of Rows in each section
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return videos.count
+    }
+    
+    //Called to load each row
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if let videoCell = tableView.dequeueReusableCellWithIdentifier("videoCell") as? VideoCell {
+            let video = videos[indexPath.row]
+            videoCell.configureVideoCell(video.getVideoName(),videoUrl: video.getVideoUrl())
+            return videoCell
+        }else{
+            return VideoCell()
+        }
     }
     
 }

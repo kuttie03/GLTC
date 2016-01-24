@@ -19,6 +19,7 @@ class GLTCDataLoader {
     private var committees: [GLTCCommittee] = []
     private var sponsors: [GLTCSponsor] = []
     private var news: [GLTCNews] = []
+    private var videos: [GLTCVideo] = []
     
     private init() {
         
@@ -38,6 +39,10 @@ class GLTCDataLoader {
     
     func getNews() -> [GLTCNews] {
         return self.news
+    }
+    
+    func getVideos() -> [GLTCVideo] {
+        return self.videos
     }
     
     func loadGLTCJson(){
@@ -72,6 +77,7 @@ class GLTCDataLoader {
        extractCommitteesJsondata(data)
        extractSponsorsJsondata(data)
        extractNewsJsondata(data)
+       extractVideosJsondata(data)
     }
     
     func extractEventsJsondata(data:NSData){
@@ -185,6 +191,30 @@ class GLTCDataLoader {
                         }
                     }
                     self.news.append(news)
+                }
+            }
+        }catch {
+            print(error)
+        }
+    }
+    
+    func extractVideosJsondata(data:NSData){
+        do {
+            let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
+            if let jsonDict = jsonDictionary {
+                let videosJsonArray = jsonDict["videos"] as! NSArray
+                print("Number of Videos: \(videosJsonArray.count)")
+                for videosJson in videosJsonArray {
+                    let video = GLTCVideo()
+                    let videosJsonElement = videosJson as! NSDictionary
+                    for (key, value) in videosJsonElement {
+                        if(key as! String == "videoName"){
+                            video.setVideoName(value as! String)
+                        }else if(key as! String == "videoUrl"){
+                            video.setVideoUrl(value as! String)
+                        }
+                    }
+                    self.videos.append(video)
                 }
             }
         }catch {

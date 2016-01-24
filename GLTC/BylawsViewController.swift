@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PDFViewController: UIViewController {
+class BylawsViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
     

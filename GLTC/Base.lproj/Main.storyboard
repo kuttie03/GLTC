@@ -1329,7 +1329,7 @@ Email: admin@lansingtelangana.org</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJ6-GY-HG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3298" y="3360"/>
+            <point key="canvasLocation" x="3298" y="3678"/>
         </scene>
         <!--News Content View Controller-->
         <scene sceneID="B6s-NM-tL7">
@@ -1355,18 +1355,28 @@ Email: admin@lansingtelangana.org</string>
                                                     <constraint firstAttribute="height" constant="250" id="i3e-dY-pTa"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5t-hC-P1q">
-                                                <rect key="frame" x="29" y="339" width="537" height="467"/>
-                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg0-cL-l8l">
                                                 <rect key="frame" x="207" y="814" width="186" height="57"/>
                                                 <string key="text">Thanks &amp; Regards
 GLTC Team</string>
                                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                                 <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUH-2Y-IOv">
+                                                <rect key="frame" x="120" y="318" width="344" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="344" id="XdL-yp-wOU"/>
+                                                    <constraint firstAttribute="height" constant="26" id="yJ1-q2-BUi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5t-hC-P1q">
+                                                <rect key="frame" x="24" y="364" width="537" height="422"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -1381,12 +1391,16 @@ GLTC Team</string>
                                             <constraint firstItem="0YE-Bl-Z2T" firstAttribute="leading" secondItem="A60-Uv-ksz" secondAttribute="leading" id="R0k-dX-NC2"/>
                                             <constraint firstItem="Dg0-cL-l8l" firstAttribute="centerX" secondItem="A60-Uv-ksz" secondAttribute="centerX" id="UqC-sO-CVk"/>
                                             <constraint firstItem="Dg0-cL-l8l" firstAttribute="top" secondItem="w5t-hC-P1q" secondAttribute="bottom" constant="10" id="a7U-CJ-4rB"/>
+                                            <constraint firstItem="w5t-hC-P1q" firstAttribute="top" secondItem="WUH-2Y-IOv" secondAttribute="bottom" constant="20" id="aNB-xV-DgU"/>
                                             <constraint firstItem="w5t-hC-P1q" firstAttribute="top" secondItem="0YE-Bl-Z2T" secondAttribute="bottom" constant="20" id="fvz-fw-lCA"/>
                                             <constraint firstItem="0YE-Bl-Z2T" firstAttribute="top" secondItem="A60-Uv-ksz" secondAttribute="top" constant="60" id="k9D-dT-n4X"/>
+                                            <constraint firstItem="WUH-2Y-IOv" firstAttribute="top" secondItem="0YE-Bl-Z2T" secondAttribute="bottom" constant="20" id="kuV-rh-8Dg"/>
+                                            <constraint firstItem="WUH-2Y-IOv" firstAttribute="centerX" secondItem="A60-Uv-ksz" secondAttribute="centerX" id="rRm-ea-GIf"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="E8L-Aa-4fy"/>
+                                                <exclude reference="fvz-fw-lCA"/>
                                                 <exclude reference="88o-D8-Zy1"/>
                                             </mask>
                                         </variation>
@@ -1412,6 +1426,7 @@ GLTC Team</string>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="900"/>
                     <connections>
+                        <outlet property="newsDataLbl" destination="WUH-2Y-IOv" id="3Kv-qk-IBB"/>
                         <outlet property="newsImageView" destination="0YE-Bl-Z2T" id="RnP-AP-X2f"/>
                         <outlet property="newsLbl" destination="w5t-hC-P1q" id="jsO-GN-Gyn"/>
                         <outlet property="signLabel" destination="Dg0-cL-l8l" id="7cn-2y-67i"/>
@@ -1505,7 +1520,7 @@ GLTC Team</string>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grr-Rb-ZkZ">
                                                 <rect key="frame" x="94" y="307" width="413" height="292"/>
-                                                <string key="text">Developed by Darshan Labs
+                                                <string key="text">Designed &amp; Developed by Darshan Labs
 
 Tel: 268.823.3534
 

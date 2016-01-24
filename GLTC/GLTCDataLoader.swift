@@ -10,10 +10,7 @@ import UIKit
 
 class GLTCDataLoader {
     
-    let EVENTS_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=eventsJson"
-    let COMMITTEES_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=committeesJson"
-    let SPONSORS_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=sponsorsJson"
-    let NEWS_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=newsJson"
+    let GLTC_JSON_URL = "http://1-dot-jsonloader-0834.appspot.com/jsonloader?jsonType=gltcJson"
     
     //Singleton
     static let sharedInstance = GLTCDataLoader()
@@ -43,60 +40,38 @@ class GLTCDataLoader {
         return self.news
     }
     
-    func loadAllGLTCJson(){
+    func loadGLTCJson(){
         if(events.isEmpty || committees.isEmpty || sponsors.isEmpty || news.isEmpty) {
             print("Content Doesn't Exist - Loading Data from the server")
             emptyContent()
-            loadJson("events")
-            loadJson("committees")
-            loadJson("sponsors")
-            loadJson("news")
+            let url:NSURL = NSURL(string: GLTC_JSON_URL)!
+            let session = NSURLSession.sharedSession()
+            let request = NSMutableURLRequest(URL: url)
+            request.HTTPMethod = "GET"
+            request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
+            let task = session.dataTaskWithRequest(request) {
+                (
+                let data, let response, let error) in
+                guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
+                    print("error")
+                    return
+                }
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.extractJsondata(data!)
+                    return
+                })
+            }
+            task.resume()
         }else{
             print("Content Exists - No need to Load Data from the server")
         }
     }
     
-    func loadJson(type: String) {
-        var urlString = ""
-        if(type == "events"){
-            urlString = EVENTS_JSON_URL
-        }else if(type == "committees"){
-            urlString = COMMITTEES_JSON_URL
-        }else if(type == "sponsors"){
-            urlString = SPONSORS_JSON_URL
-        }else if(type == "news"){
-            urlString = NEWS_JSON_URL
-        }
-        let url:NSURL = NSURL(string: urlString)!
-        let session = NSURLSession.sharedSession()
-        let request = NSMutableURLRequest(URL: url)
-        request.HTTPMethod = "GET"
-        request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
-            guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
-                return
-            }
-            dispatch_async(dispatch_get_main_queue(), {
-                if(type == "events"){
-                    self.extractEventsJsondata(data!)
-                    print("Loaded Events")
-                }else if(type == "committees"){
-                    self.extractCommitteesJsondata(data!)
-                    print("Loaded Committees")
-                }else if(type == "sponsors"){
-                    self.extractSponsorsJsondata(data!)
-                    print("Loaded Sponsors")
-                }else if(type == "news"){
-                    self.extractNewsJsondata(data!)
-                    print("Loaded News")
-                }
-                return
-            })
-        }
-        task.resume()
+    func extractJsondata(data:NSData){
+       extractEventsJsondata(data)
+       extractCommitteesJsondata(data)
+       extractSponsorsJsondata(data)
+       extractNewsJsondata(data)
     }
     
     func extractEventsJsondata(data:NSData){
@@ -126,7 +101,7 @@ class GLTCDataLoader {
         do {
             let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
             if let jsonDict = jsonDictionary {
-                let committeeJsonArray = jsonDict["committee"] as! NSArray
+                let committeeJsonArray = jsonDict["committees"] as! NSArray
                 print("Number of Committees: \(committeeJsonArray.count)")
                 for committeeJson in committeeJsonArray {
                     let committee = GLTCCommittee()
@@ -200,11 +175,13 @@ class GLTCDataLoader {
                     let news = GLTCNews()
                     let newsJsonElement = newsJson as! NSDictionary
                     for (key, value) in newsJsonElement {
-                        if(key as! String == "imageUrl"){
+                        if(key as! String == "newsText"){
+                            news.setNewsText(value as! String)
+                        }else if(key as! String == "newsDate"){
+                            news.setNewsDate(value as! String)
+                        }else if(key as! String == "imageUrl"){
                             news.setNewsImage(UIImageView(image: UIImage(named: "news_blue_medium")))
                             news.getNewsImage().downloadImageFrom(link:value as! String, contentMode: UIViewContentMode.ScaleAspectFit)
-                        }else if(key as! String == "newsText"){
-                            news.setNewsText(value as! String)
                         }
                     }
                     self.news.append(news)

@@ -12,10 +12,13 @@ class GLTCNews {
     
     private var newsText: String!
     
+    private var newsDate: String!
+    
     private var newsImage: UIImageView!
     
-    init(newsText: String, newsImage: UIImageView){
+    init(newsText: String, newsDate: String, newsImage: UIImageView){
         self.newsText = newsText
+        self.newsDate = newsDate
         self.newsImage = newsImage
     }
     
@@ -29,6 +32,14 @@ class GLTCNews {
     
     func setNewsText(newsText: String){
         self.newsText = newsText
+    }
+    
+    func getNewsDate() -> String {
+        return self.newsDate
+    }
+    
+    func setNewsDate(newsDate: String){
+        self.newsDate = newsDate
     }
     
     func getNewsImage() -> UIImageView {

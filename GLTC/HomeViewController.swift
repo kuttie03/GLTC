@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  GLTC
 //
 //  Created by Shravan Kumar Singireddy on 1/14/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
@@ -22,6 +22,10 @@ class ViewController: UIViewController {
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+    }
+    
+    @IBAction func showTelanganaHistory(sender: UIButton!) {
+        
     }
     
     //    func loadCommitteejson(){

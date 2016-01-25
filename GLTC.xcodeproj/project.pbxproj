@@ -25,7 +25,7 @@
 		A4E01D861C557E1A002DD247 /* GLTCVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E01D851C557E1A002DD247 /* GLTCVideo.swift */; };
 		A4E9F1E21C4F367800389995 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9F1E11C4F367800389995 /* VideoViewController.swift */; };
 		A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9161C488FB5007973E3 /* AppDelegate.swift */; };
-		A4EBC9191C488FB5007973E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9181C488FB5007973E3 /* ViewController.swift */; };
+		A4EBC9191C488FB5007973E3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9181C488FB5007973E3 /* HomeViewController.swift */; };
 		A4EBC91C1C488FB5007973E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91A1C488FB5007973E3 /* Main.storyboard */; };
 		A4EBC91E1C488FB5007973E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91D1C488FB5007973E3 /* Assets.xcassets */; };
 		A4EBC9211C488FB5007973E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EBC91F1C488FB5007973E3 /* LaunchScreen.storyboard */; };
@@ -58,7 +58,7 @@
 		A4E9F1E11C4F367800389995 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		A4EBC9131C488FB5007973E3 /* GLTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EBC9161C488FB5007973E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4EBC9181C488FB5007973E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4EBC9181C488FB5007973E3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A4EBC91B1C488FB5007973E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4EBC91D1C488FB5007973E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4EBC9201C488FB5007973E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 				A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */,
 				A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */,
 				A4EBC9341C4890EA007973E3 /* ContactUsViewController.swift */,
-				A4EBC9181C488FB5007973E3 /* ViewController.swift */,
+				A4EBC9181C488FB5007973E3 /* HomeViewController.swift */,
 				A4D086E21C4EBE5300F0675A /* NewsViewController.swift */,
 				A4D086E41C4EC05300F0675A /* NewsContentViewController.swift */,
 				A4E9F1E11C4F367800389995 /* VideoViewController.swift */,
@@ -266,7 +266,7 @@
 				A4D086E71C4ECF4000F0675A /* GLTCNews.swift in Sources */,
 				A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */,
 				A4E9F1E21C4F367800389995 /* VideoViewController.swift in Sources */,
-				A4EBC9191C488FB5007973E3 /* ViewController.swift in Sources */,
+				A4EBC9191C488FB5007973E3 /* HomeViewController.swift in Sources */,
 				A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */,
 				A42E22811C5156C1000171BB /* CreditsViewController.swift in Sources */,
 				A4EBC92D1C489045007973E3 /* GLTCCommittee.swift in Sources */,

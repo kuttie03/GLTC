@@ -369,7 +369,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="oQX-MM-hdk"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GLTC Bylaws" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trk-No-H9a">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bylaws" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trk-No-H9a">
                                                     <rect key="frame" x="48" y="12" width="124" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="NFQ-Ia-cfp"/>
@@ -459,7 +459,7 @@
         <!--Greater Lansing Telangana Community-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -608,6 +608,21 @@
                                                     <constraint firstItem="qv3-6a-YrM" firstAttribute="leading" secondItem="Igr-Q7-UQz" secondAttribute="trailing" constant="10" id="8XU-Yx-XiQ"/>
                                                 </constraints>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QP-6R-RBc" customClass="RoundedButton" customModule="GLTC" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="686" width="150" height="30"/>
+                                                <color key="backgroundColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ILw-aH-QrV"/>
+                                                    <constraint firstAttribute="width" constant="160" id="rAX-se-VN6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                                <state key="normal" title="Telangana History">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showTelanganaHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8GR-dO-M1e"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -616,17 +631,25 @@
                                             <constraint firstAttribute="trailing" secondItem="3tP-xI-Jlj" secondAttribute="trailing" constant="25" id="6v6-Dw-jhY"/>
                                             <constraint firstAttribute="trailing" secondItem="une-Tn-8hO" secondAttribute="trailing" constant="20" id="BXu-rB-4PZ"/>
                                             <constraint firstItem="20m-qm-DlO" firstAttribute="top" secondItem="3tP-xI-Jlj" secondAttribute="bottom" constant="20" id="Ec5-7c-HIc"/>
+                                            <constraint firstAttribute="bottom" secondItem="3QP-6R-RBc" secondAttribute="bottom" constant="20" id="G2Z-lE-inj"/>
                                             <constraint firstItem="MvL-Wx-h6j" firstAttribute="centerX" secondItem="E4x-nX-luo" secondAttribute="centerX" id="JgS-Qh-xVV"/>
                                             <constraint firstItem="20m-qm-DlO" firstAttribute="leading" secondItem="E4x-nX-luo" secondAttribute="leading" constant="20" id="Mpk-K9-7rW"/>
+                                            <constraint firstItem="3QP-6R-RBc" firstAttribute="top" secondItem="une-Tn-8hO" secondAttribute="bottom" constant="20" id="OFy-oH-laA"/>
                                             <constraint firstItem="3Km-gS-ypD" firstAttribute="leading" secondItem="E4x-nX-luo" secondAttribute="leading" constant="20" id="Qbs-LA-WFs"/>
                                             <constraint firstItem="une-Tn-8hO" firstAttribute="leading" secondItem="E4x-nX-luo" secondAttribute="leading" constant="20" id="bYM-g6-Ow9"/>
                                             <constraint firstItem="une-Tn-8hO" firstAttribute="top" secondItem="20m-qm-DlO" secondAttribute="bottom" constant="20" id="be2-hS-a8u"/>
                                             <constraint firstItem="MvL-Wx-h6j" firstAttribute="top" secondItem="E4x-nX-luo" secondAttribute="top" constant="5" id="csM-xX-HWZ"/>
+                                            <constraint firstItem="3QP-6R-RBc" firstAttribute="centerX" secondItem="E4x-nX-luo" secondAttribute="centerX" id="iJF-TL-Ahy"/>
                                             <constraint firstAttribute="trailing" secondItem="3Km-gS-ypD" secondAttribute="trailing" constant="25" id="kXX-sl-r7Y"/>
                                             <constraint firstAttribute="bottom" secondItem="une-Tn-8hO" secondAttribute="bottom" id="qHy-ND-M3T"/>
                                             <constraint firstItem="3tP-xI-Jlj" firstAttribute="leading" secondItem="E4x-nX-luo" secondAttribute="leading" constant="20" id="rML-WA-3T6"/>
                                             <constraint firstItem="3Km-gS-ypD" firstAttribute="top" secondItem="MvL-Wx-h6j" secondAttribute="bottom" constant="10" id="uNw-Fk-Bvn"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="qHy-ND-M3T"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -1659,7 +1682,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                                                         <constraint firstAttribute="height" constant="120" id="u6V-cz-Uln"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>

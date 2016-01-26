@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.lightGrayColor()
-        UIPageControl.appearance().currentPageIndicatorTintColor = UIColor.blueColor()
+        UIPageControl.appearance().currentPageIndicatorTintColor = UIColor.greenColor()
         return true
     }
 

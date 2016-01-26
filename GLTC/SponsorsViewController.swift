@@ -22,6 +22,11 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
         sponsorTableView.delegate = self
         sponsorTableView.dataSource = self
         sponsorTableView.allowsSelection = false
+        
+        /*var calendarImage = UIImage(named: "calendar")
+        calendarImage = calendarImage?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: calendarImage, style: UIBarButtonItemStyle.Plain, target: self, action: nil)*/
+    
         if self.revealViewController() != nil {
             var image = UIImage(named: "menu_white")
             image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)

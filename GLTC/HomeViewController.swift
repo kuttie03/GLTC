@@ -24,10 +24,6 @@ class HomeViewController: UIViewController {
         }
     }
     
-    @IBAction func showTelanganaHistory(sender: UIButton!) {
-        
-    }
-    
     //    func loadCommitteejson(){
     //        //let urlString = "http://swapi.co/api/people/1/"
     //        //let urlString = "http://pokeapi.co/api/v1/pokemon/1/"

@@ -503,7 +503,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greater Lansing Telangana Community (GLTC) is formed to represent the Telangana culture, community and the ‘Telangana’ state." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-Pd-CKg">
                                                                 <rect key="frame" x="0.0" y="31" width="510" height="0.0"/>
                                                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -533,7 +533,7 @@
                                                                 <rect key="frame" x="0.0" y="31" width="510" height="0.0"/>
                                                                 <string key="text">Is to provide a platform for people of Telangana origin and Indian Diaspora in and around Lansing to come together for cultural awareness and community development.</string>
                                                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -566,7 +566,7 @@
                                                                 <rect key="frame" x="0.0" y="31" width="515" height="0.0"/>
                                                                 <string key="text">Is to help the local charities and communities. GLTC represents Telangana culture, promote and celebrate the festivals like Bathukamma.</string>
                                                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -598,7 +598,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GLTC Board is formed with Executive Board, Advisory Committee and Bathukamma Committee." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cI-6L-Ydr">
                                                                 <rect key="frame" x="0.0" y="31" width="515" height="0.0"/>
                                                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -612,15 +612,15 @@
                                                 <rect key="frame" x="225" y="686" width="150" height="30"/>
                                                 <color key="backgroundColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="ILw-aH-QrV"/>
-                                                    <constraint firstAttribute="width" constant="160" id="rAX-se-VN6"/>
+                                                    <constraint firstAttribute="height" constant="40" id="ILw-aH-QrV"/>
+                                                    <constraint firstAttribute="width" constant="170" id="rAX-se-VN6"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="18"/>
                                                 <state key="normal" title="Telangana History">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="showTelanganaHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8GR-dO-M1e"/>
+                                                    <segue destination="oOz-jy-LZh" kind="show" id="JzQ-cu-ije"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -670,6 +670,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Greater Lansing Telangana Community" id="CRy-my-ZQO">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="XqG-4j-ODb"/>
                         <barButtonItem key="leftBarButtonItem" title="Menu" style="plain" id="iRe-r0-rUc"/>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -681,6 +682,236 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1981" y="-424"/>
+        </scene>
+        <!--Telangana History View Controller-->
+        <scene sceneID="5Kp-a7-mfq">
+            <objects>
+                <viewController id="oOz-jy-LZh" customClass="TelanganaHistoryViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gDH-zW-rTH"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZIf-lD-dMC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ipP-dP-3K4">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="history" translatesAutoresizingMaskIntoConstraints="NO" id="WHa-s0-IDJ">
+                                <rect key="frame" x="20" y="0.0" width="560" height="134"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="0l0-fl-dBz"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZb-RD-lTN">
+                                <rect key="frame" x="20" y="191" width="560" height="3165"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Telangana, as a geographical and political entity was born on June 2, 2014 as the 29th and the youngest state in Union of India. However, as an economic, social, cultural and historical entity it has a glorious history of at least two thousand five hundred years or more. Megalithic stone structures like cairns, cists, dolmens and menhirs found in several districts of Telangana show that there were human habitations in this part of the country thousands of years ago. Remnants of iron ore smelting found at many places demonstrate the hoary roots of artisanship and tool making in Telangana for at least two thousand years. The reference to Asmaka Janapada, part of present Telangana, as one of the 16 Janapadas in ancient India proves that there existed an advanced stage of society.
+
+One of the first five disciples of the Buddha, Kondanna is a typical name from Telangana and though there is no exact information about his native place, the earliest known Buddhist township of Kondapur in Medak district is believed to be after him. The Buddha himself famously acknowledged that it was Kondanna who understood him properly. The Buddhist sources say that Bavari, a Brahmin from Badanakurti in Karimnagar sent his disciples to all the way to north India to learn Buddhism and spread the message in this region. Megasthenes, who visited India in the 4th century BCE, wrote that there were 30 fortified towns of Andhras and a majority of them were in Telangana. In the historical age, Telangana had given rise to mighty empires and kingdoms like the Satavahanas, Vakatakas, Ikshvakus, Vishnukundins, Chalukyas, Kakatiyas, Qutb Shahis and Asif Jahis.
+
+The emergence and flourishing of these powerful political formations is in itself a proof of existence of a sturdy economic, social and cultural structure. Thus Telangana has been a vibrant social entity by the time of the Buddha and continued to be so for the next two and a half millennia. Endowed with such rich cultural heritage, despite the attempts by historians and scholars from Andhra region to obfuscate and erase its history, Telangana always retained and fought for its self respect and self rule. Due to the official efforts to ignore, erase, belittle and look down Telangana history and turn it into an appendage or a footnote, particularly during 1956-2014, much of Telangana history is either not properly researched or not recorded even if it was studied. Telangana rose again and secured its political identity now and is in the process of resurrecting its own glorious past. Here is an attempt to reconstruct the history of Telangana, the wonderful musical instrument with a thousand strings.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="TrebuchetMS"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Post-independence">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="18" name="TrebuchetMS-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+When India became independent from the British Empire in 1947, Hyderabad remained an independent princely state for a period of 13 months.
+
+The peasants of Telangana waged an armed struggle to liberate the region. Scores of people lost their lives in the armed struggle. The private militia named Razakars, under the leadership of Qasim Razwi unleashed terror in the state by resorting to looting and murder.
+
+On 17 September 1948, the Indian government conducted a military operation called Operation Polo to bring Hyderabad state into the Indian Union. It appointed a civil servant, M. K. Vellodi, as first chief minister of Hyderabad State on 26 January 1950.
+
+In 1952, Dr. Burgula Ramakrishna Rao was elected chief minister of the Hyderabad State in its first democratic election. During this time, there was an agitation by locals in the state to ensure proper representation was given to locals ( mulkis ) of Hyderabad.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="TrebuchetMS"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="First Telangana Movement">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="18" name="TrebuchetMS-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+In early 1950s, people of Telangana region in Hyderabad state, started organizing themselves with a demand for separate state. In 1953 the Indian government appointed the States Reorganization Commission (SRC) to look into various statehood demands in the country. The Commission was headed by Fazal Ali, Kavalam Madhava Panikkar and H.N. Kunzru
+
+The SRC toured the whole country to seek representations from various sections of the society. People of Telangana region submitted several memorandums to the SRC and expressed their wish to constitute Telangana as a separate state. Telangana intellectuals such as late Prof Jayashankar and political leaders such as Sri HC Heda, Sri Konda Venkat Ranga Reddy gave memorandums containing historic, political, economic, social and cultural justifications for creating the Telangana state. The Commission submitted its report on 30 September 1955, and recommended formation of Telangana state.
+
+During the period between 1955 September and 1956 November, the people of Telangana launched a series of protests demanding statehood by implementing the SRC recommendations. But intense lobbying by leaders from Andhra state in New Delhi resulted in the merger of Telangana region in Andhra state to form the Andhra Pradesh state.
+
+Telangana leaders insisted on a Gentlemen’s Agreement before the merger could take place. The agreement was signed by Andhra and Telangana leaders and provided safeguards with the purpose of preventing discrimination against Telangana by the Andhra leaders.However, the agreement was violated from day one by the Andhra leaders.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="TrebuchetMS"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="1969 Telangana Agitation">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="18" name="TrebuchetMS-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+Non-implementation of Gentlemen’s Agreement and continued discrimination to Telangana region in government jobs, education and public spending resulted in the 1969 statehood agitation.
+
+In January 1969, students intensified the protests for a separate state. On 19 January, all party accord was reached to ensure the proper implementation of Telangana safeguards. Accord's main points were 1) All non-Telangana employees holding posts reserved for Telangana locals will be transferred immediately. 2) Telangana surpluses will be used for Telangana development. 3) Appeal to Telangana students to call off agitation.
+
+But the protests further intensified, as more and more students and employees joined the statehood movement. Police firing on protesters led to the death of about 369 youngsters during this phase of the agitation. Then Prime Minister Indira Gandhi called for a high-level meeting to discuss the statehood issue. After several days of talks with leaders of both regions, on 12 April 1969, the Prime Minister developed an Eight Point Plan. Sri M. Chenna Reddy, founded the Telangana Praja Samithi (TPS) political party in 1969 to spearhead the statehood movement.
+
+Mrs. Indira Gandhi had called snap parliamentary elections in March 1971. In these parliamentary elections, Telangana Praja Samithi won 10 out the 14 Parliament seats in Telangana. However, Indira Gandhi’s Congress (R) Party scored a landslide victory on a platform of progressive policies such as poverty elimination (Garibi Hatao). She was reluctant to accept the Telangana statehood demand at that juncture. Sri M Chenna Reddy then merged TPS in Congress (R) party, after formulating a Six-Point Formula to safeguard Telangana’s interests. The statehood movement continued until 1973, but subsided later.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="TrebuchetMS"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Final Telangana Movement">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="18" name="TrebuchetMS-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+Since mid 1990s, the people of Telangana started organizing themselves under various organizations with a demand for separate state of Telangana.
+
+In 1997, the state unit of the Bharatiya Janata Party (BJP) passed a resolution seeking a separate Telangana. Though the party created the states of Jharkhand, Chhattisgarh, and Uttarakhand in 2000, it did not create a separate Telangana state citing resistance of its coalition partner, Telugu Desam Party.
+
+Sri Kalvakuntla Chandrashekar Rao (KCR), who was then the Deputy Speaker of AP State assembly, had started background work on Telangana issue in early 2000. And after detailed discussions and deliberations with a plethora of Telangana intellectuals, KCR announced the launch of Telangana Rashtra Samithi on May 17th 2001.
+
+KCR had resigned to the post of Deputy Speaker and MLA before launching the Telangana Rashtra Samithi party. Prof Jayashankar, the ideologue of statehood movement extended his support to KCR.
+
+In 2004, TRS entered into a poll alliance with Congress party. The party won 26 MLAs and 5 MPs and entered into both the AP state and Indian government. Telangana issue found a place in UPA-1 Common Minimum Program. Statehood issue was also mentioned by President Abdul Kalam and Prime Minister Manmohan Singh in their speeches.
+
+TRS president KCR, was initially allotted the Shipping portfolio. But another UPA ally DMK demanded Shipping portfolio and threatened to walk out of the coalition, if its demand was not met, KCR voluntarily relinquished the Shipping portfolio to save the fledgling UPA-1 government. KCR remained as a Union Minister without portfolio, before being given the Labour and Employment portfolio. As the UPA government continued to dilly-dally on the decades old demand for Telangana state, KCR resigned to his ministry in 2006.
+
+When a Congress leader made a belittling statement on the statehood movement in September 2006, KCR resigned to the Karimnagar Lok Sabha seat and won it with a thumping majority. The massive majority achieved by KCR in that election proved the strong statehood aspirations in the region.
+
+In April 2008, TRS party MLAs resigned also walked out of the state government in protest against the delay in Telangana formation. But, TRS could retain only 7 MLA and 2 Lok Sabha seats in this by-election.
+
+In 2009 elections, TRS allied with TDP, CPI and CPM parties. The grand alliance did not yield the desired result, as the Pro-Telangana vote got split between TRS, Congress, PRP and BJP. In the end, TRS could win only 10 MLA seats and 2 MP seats.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="TrebuchetMS"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Intensifying the movement">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="18" name="TrebuchetMS-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+On Nov 29th, 2009 , KCR had announced an indefinite hunger strike demanding statehood to Telangana. But en route, the state police had arrested him and sent to Khammam sub-jail. The movement spread like wildfire with students, employees, peoples’ organizations plunging into it. In the next 10 days, the whole of Telangana region came to a standstill.
+
+The state government, headed by Sri K Rosaiah had called for an all-party meeting on 7th December. Leaders of TDP and PRP parties promised that they would support a Telangana statehood resolution if it was tabled in the state Assembly. As KCR’s health was deteriorating very fast, on Dec 9th 2009, the UPA government announced that the process of statehood for Telangana would be initiated.
+
+But within 2 weeks, resistance from Seemandhra leadership resulted in UPA backtracking on this issue. KCR then brought all political forces in Telangana region together to form the Telangana JAC – an umbrella body of several organizations and parties, with Prof Kodandaram as its Chairman. TRS cadre and leaders actively participated in several agitations and protests launched by TJAC.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="TrebuchetMS"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="State Formation">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="18" name="TrebuchetMS-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+After 4 years of peaceful and impactful protests, the UPA government started the statehood process in July 2013 and concluded the process by passing the statehood bill in both houses of Parliament in Feb 2014.
+
+In the General Elections held in April 2014, Telangana Rashtra Samithi emerged victorious by winning 63 of the 119 seats and formed the government. Sri K Chandrashekar Rao was sworn in as the First Chief Minister of Telangana. The Telangana state was inaugurated formally on June 2nd 2014.
+
+Source: Telangana State Portal</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="14" name="TrebuchetMS"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telangana History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hS-Fp-89U">
+                                <rect key="frame" x="224" y="150" width="152" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="MRw-nj-9cw"/>
+                                    <constraint firstAttribute="height" constant="21" id="Sm3-pI-PNN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yZb-RD-lTN" firstAttribute="top" secondItem="WHa-s0-IDJ" secondAttribute="bottom" id="102-QH-eHf"/>
+                            <constraint firstItem="8hS-Fp-89U" firstAttribute="top" secondItem="WHa-s0-IDJ" secondAttribute="bottom" constant="20" id="4yh-t2-lfC"/>
+                            <constraint firstItem="ZIf-lD-dMC" firstAttribute="top" secondItem="yZb-RD-lTN" secondAttribute="bottom" constant="20" id="9Yn-ok-gCD"/>
+                            <constraint firstItem="WHa-s0-IDJ" firstAttribute="top" secondItem="gDH-zW-rTH" secondAttribute="bottom" id="HMT-dS-s8X"/>
+                            <constraint firstItem="8hS-Fp-89U" firstAttribute="centerX" secondItem="ipP-dP-3K4" secondAttribute="centerX" id="N1i-Ia-0Kh"/>
+                            <constraint firstItem="yZb-RD-lTN" firstAttribute="trailing" secondItem="ipP-dP-3K4" secondAttribute="trailingMargin" id="OTI-Yj-dGv"/>
+                            <constraint firstItem="WHa-s0-IDJ" firstAttribute="leading" secondItem="ipP-dP-3K4" secondAttribute="leadingMargin" id="PB2-WE-ZQr"/>
+                            <constraint firstItem="WHa-s0-IDJ" firstAttribute="trailing" secondItem="ipP-dP-3K4" secondAttribute="trailingMargin" id="R0I-pO-UK1"/>
+                            <constraint firstItem="yZb-RD-lTN" firstAttribute="top" secondItem="8hS-Fp-89U" secondAttribute="bottom" constant="20" id="dF0-Tb-79H"/>
+                            <constraint firstItem="yZb-RD-lTN" firstAttribute="leading" secondItem="ipP-dP-3K4" secondAttribute="leadingMargin" id="iqi-ku-lvN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="102-QH-eHf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klh-5a-njg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2729" y="-524"/>
         </scene>
         <!--GLTC Leadership-->
         <scene sceneID="Lvl-kE-Ee3">
@@ -1291,7 +1522,15 @@ Email: admin@lansingtelangana.org</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="GLTC Sponsors" id="6ky-Uc-pRy">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="dlz-ew-kta"/>
+                        <barButtonItem key="backBarButtonItem" title="Sponsors" id="OSM-EH-B6r"/>
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="dlz-ew-kta">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="calendar" id="1gS-EI-cMW">
+                            <connections>
+                                <segue destination="ddo-lO-kaY" kind="show" id="jOM-Mn-RZw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="dlz-ew-kta" id="AJ4-hG-PT6"/>
@@ -1301,6 +1540,39 @@ Email: admin@lansingtelangana.org</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4f-gd-5Ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1981" y="1994"/>
+        </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="G7T-lA-XTq">
+            <objects>
+                <viewController id="ddo-lO-kaY" customClass="CalendarViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tET-V3-5PK"/>
+                        <viewControllerLayoutGuide type="bottom" id="33l-U3-20X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6xS-uO-VPp">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4e-UF-m9W">
+                                <rect key="frame" x="20" y="20" width="560" height="496"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u4e-UF-m9W" firstAttribute="leading" secondItem="6xS-uO-VPp" secondAttribute="leadingMargin" id="4Oo-9Z-eQx"/>
+                            <constraint firstItem="33l-U3-20X" firstAttribute="top" secondItem="u4e-UF-m9W" secondAttribute="bottom" constant="20" id="Gg5-b1-uvi"/>
+                            <constraint firstItem="u4e-UF-m9W" firstAttribute="top" secondItem="tET-V3-5PK" secondAttribute="bottom" constant="20" id="gJU-mJ-fS8"/>
+                            <constraint firstItem="u4e-UF-m9W" firstAttribute="trailing" secondItem="6xS-uO-VPp" secondAttribute="trailingMargin" id="gvr-od-66m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="u4e-UF-m9W" id="Edp-Ty-78v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lr4-Fv-UtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="1994"/>
         </scene>
         <!--GLTC News-->
         <scene sceneID="RxR-4U-DR3">
@@ -1436,14 +1708,14 @@ GLTC Team</string>
                                                     <constraint firstAttribute="width" constant="344" id="XdL-yp-wOU"/>
                                                     <constraint firstAttribute="height" constant="26" id="yJ1-q2-BUi"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5t-hC-P1q">
                                                 <rect key="frame" x="24" y="364" width="537" height="422"/>
                                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -1740,9 +2012,10 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="IlY-1z-l4p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
@@ -1813,6 +2086,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="JHT-Ui-EtN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
@@ -1931,6 +2205,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                         <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1944,11 +2219,13 @@ Email: shravankumar.singireddy@gmail.com</string>
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" width="24" height="24"/>
         <image name="contactus_green" width="199" height="199"/>
         <image name="darshanLabsLogo" width="420" height="434"/>
         <image name="events_green" width="253" height="247"/>
         <image name="gltcLogo" width="232" height="215"/>
         <image name="goal_green" width="344" height="350"/>
+        <image name="history" width="877" height="200"/>
         <image name="home_green" width="74" height="74"/>
         <image name="laws_green" width="450" height="450"/>
         <image name="leadership_green" width="301" height="295"/>

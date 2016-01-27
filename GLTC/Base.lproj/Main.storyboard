@@ -610,7 +610,7 @@
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QP-6R-RBc" customClass="RoundedButton" customModule="GLTC" customModuleProvider="target">
                                                 <rect key="frame" x="225" y="686" width="150" height="30"/>
-                                                <color key="backgroundColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.4823529412" green="0.66666666669999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ILw-aH-QrV"/>
                                                     <constraint firstAttribute="width" constant="170" id="rAX-se-VN6"/>
@@ -1266,7 +1266,7 @@ Email: admin@lansingtelangana.org</string>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pQ-7w-VtX" customClass="RoundedButton" customModule="GLTC" customModuleProvider="target">
                                                 <rect key="frame" x="302" y="561" width="100" height="30"/>
-                                                <color key="backgroundColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.4823529412" green="0.66666666669999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="8j4-cB-xfX"/>
                                                     <constraint firstAttribute="width" constant="100" id="dd8-HU-TE3"/>
@@ -1650,13 +1650,13 @@ Email: admin@lansingtelangana.org</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kzw-yg-R8n">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kzw-yg-R8n">
+                                <rect key="frame" x="0.0" y="60" width="600" height="540"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Kzw-yg-R8n" firstAttribute="top" secondItem="T3s-wo-1lU" secondAttribute="top" id="AK4-E9-h0e"/>
+                            <constraint firstItem="Kzw-yg-R8n" firstAttribute="top" secondItem="T3s-wo-1lU" secondAttribute="top" constant="60" id="AK4-E9-h0e"/>
                             <constraint firstItem="mgH-ui-JXS" firstAttribute="top" secondItem="Kzw-yg-R8n" secondAttribute="bottom" id="UfQ-6d-aBa"/>
                             <constraint firstItem="Kzw-yg-R8n" firstAttribute="leading" secondItem="T3s-wo-1lU" secondAttribute="leading" id="WDN-u9-7UO"/>
                             <constraint firstAttribute="trailing" secondItem="Kzw-yg-R8n" secondAttribute="trailing" id="whn-r7-Idd"/>
@@ -1854,7 +1854,7 @@ GLTC Team</string>
                                                     <constraint firstAttribute="width" constant="239" id="o3p-7D-Ap2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
-                                                <color key="textColor" red="1" green="0.68094642215967083" blue="0.21418752816978348" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="1" green="0.49047676270000001" blue="0.19879750970000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grr-Rb-ZkZ">
@@ -2013,7 +2013,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.4823529412" green="0.66666666669999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

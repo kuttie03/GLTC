@@ -12,11 +12,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.lightGrayColor()
-        UIPageControl.appearance().currentPageIndicatorTintColor = UIColor.greenColor()
+        UIPageControl.appearance().currentPageIndicatorTintColor = ColorUtil.colorWithHexString("#39AA33")
         return true
     }
 

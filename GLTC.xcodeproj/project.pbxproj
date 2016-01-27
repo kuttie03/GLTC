@@ -23,6 +23,7 @@
 		A4D086E31C4EBE5300F0675A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D086E21C4EBE5300F0675A /* NewsViewController.swift */; };
 		A4D086E51C4EC05300F0675A /* NewsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D086E41C4EC05300F0675A /* NewsContentViewController.swift */; };
 		A4D086E71C4ECF4000F0675A /* GLTCNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D086E61C4ECF4000F0675A /* GLTCNews.swift */; };
+		A4DB2D931C581F1D00219F42 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB2D921C581F1D00219F42 /* ColorUtil.swift */; };
 		A4DFFDD21C56BC2B00336F21 /* TelanganaHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DFFDD11C56BC2B00336F21 /* TelanganaHistoryViewController.swift */; };
 		A4E01D841C557784002DD247 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E01D831C557784002DD247 /* VideoCell.swift */; };
 		A4E01D861C557E1A002DD247 /* GLTCVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E01D851C557E1A002DD247 /* GLTCVideo.swift */; };
@@ -58,6 +59,7 @@
 		A4D086E21C4EBE5300F0675A /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		A4D086E41C4EC05300F0675A /* NewsContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsContentViewController.swift; sourceTree = "<group>"; };
 		A4D086E61C4ECF4000F0675A /* GLTCNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCNews.swift; sourceTree = "<group>"; };
+		A4DB2D921C581F1D00219F42 /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		A4DFFDD11C56BC2B00336F21 /* TelanganaHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelanganaHistoryViewController.swift; sourceTree = "<group>"; };
 		A4E01D831C557784002DD247 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		A4E01D851C557E1A002DD247 /* GLTCVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCVideo.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 			name = Service;
 			sourceTree = "<group>";
 		};
+		A4DB2D911C581EDE00219F42 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A4DB2D921C581F1D00219F42 /* ColorUtil.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		A4EBC90A1C488FB5007973E3 = {
 			isa = PBXGroup;
 			children = (
@@ -127,12 +137,13 @@
 		A4EBC9151C488FB5007973E3 /* GLTC */ = {
 			isa = PBXGroup;
 			children = (
-				A43137A81C502627001FEB75 /* Resources */,
-				A4721EF01C4FFA9B00EB62AC /* Service */,
-				A4EBC9371C489118007973E3 /* SWRevealViewController */,
-				A4EBC92A1C488FF8007973E3 /* Controller */,
-				A4EBC9291C488FF1007973E3 /* View */,
 				A4EBC9281C488FE5007973E3 /* Model */,
+				A4EBC9291C488FF1007973E3 /* View */,
+				A4EBC92A1C488FF8007973E3 /* Controller */,
+				A4721EF01C4FFA9B00EB62AC /* Service */,
+				A43137A81C502627001FEB75 /* Resources */,
+				A4DB2D911C581EDE00219F42 /* Util */,
+				A4EBC9371C489118007973E3 /* SWRevealViewController */,
 				A4EBC9161C488FB5007973E3 /* AppDelegate.swift */,
 				A4EBC91A1C488FB5007973E3 /* Main.storyboard */,
 				A4EBC91D1C488FB5007973E3 /* Assets.xcassets */,
@@ -290,6 +301,7 @@
 				A4EBC93B1C48913D007973E3 /* SWRevealViewController.m in Sources */,
 				A4EBC9351C4890EA007973E3 /* CommitteViewController.swift in Sources */,
 				A47262C11C49A6FE007DE47C /* RoundedButton.swift in Sources */,
+				A4DB2D931C581F1D00219F42 /* ColorUtil.swift in Sources */,
 				A4E01D841C557784002DD247 /* VideoCell.swift in Sources */,
 				A4D086E31C4EBE5300F0675A /* NewsViewController.swift in Sources */,
 				A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */,

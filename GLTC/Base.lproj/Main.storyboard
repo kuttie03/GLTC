@@ -406,7 +406,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darshanLabsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bEx-np-iV2">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DarshanLabs" translatesAutoresizingMaskIntoConstraints="NO" id="bEx-np-iV2">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="DYG-us-eGx"/>
@@ -1650,7 +1650,7 @@ Email: admin@lansingtelangana.org</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kzw-yg-R8n">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kzw-yg-R8n">
                                 <rect key="frame" x="0.0" y="60" width="600" height="540"/>
                             </imageView>
                         </subviews>
@@ -1841,24 +1841,17 @@ GLTC Team</string>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gK6-Ih-HM4">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="836"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="darshanLabsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="nh1-Ve-Qlq">
-                                                <rect key="frame" x="23" y="0.0" width="555" height="250"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DarshanLabs" translatesAutoresizingMaskIntoConstraints="NO" id="nh1-Ve-Qlq">
+                                                <rect key="frame" x="23" y="0.0" width="555" height="188"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="250" id="Ksl-7c-gGx"/>
+                                                    <constraint firstAttribute="height" constant="190" id="Ksl-7c-gGx"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Darshan Labs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDx-GY-YXc">
-                                                <rect key="frame" x="181" y="252" width="239" height="35"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="35" id="Uy9-mL-blA"/>
-                                                    <constraint firstAttribute="width" constant="239" id="o3p-7D-Ap2"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
-                                                <color key="textColor" red="1" green="0.49047676270000001" blue="0.19879750970000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grr-Rb-ZkZ">
-                                                <rect key="frame" x="94" y="307" width="413" height="292"/>
+                                                <rect key="frame" x="23" y="196" width="555" height="112"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="112" id="yFr-9F-CVg"/>
+                                                </constraints>
                                                 <string key="text">Designed &amp; Developed by Darshan Labs
 
 Tel: 268.823.3534
@@ -1871,21 +1864,34 @@ Email: shravankumar.singireddy@gmail.com</string>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="hDx-GY-YXc" firstAttribute="top" secondItem="nh1-Ve-Qlq" secondAttribute="bottom" id="0Ox-Ag-I5A"/>
+                                            <constraint firstItem="grr-Rb-ZkZ" firstAttribute="top" secondItem="nh1-Ve-Qlq" secondAttribute="bottom" id="08L-Q0-bGZ"/>
+                                            <constraint firstItem="grr-Rb-ZkZ" firstAttribute="leading" secondItem="gK6-Ih-HM4" secondAttribute="leadingMargin" id="C9l-QM-h2R"/>
+                                            <constraint firstAttribute="trailing" secondItem="grr-Rb-ZkZ" secondAttribute="trailing" id="CrG-O4-kLV"/>
+                                            <constraint firstAttribute="bottom" secondItem="grr-Rb-ZkZ" secondAttribute="bottom" constant="20" id="DLb-Qk-Mda"/>
                                             <constraint firstItem="grr-Rb-ZkZ" firstAttribute="centerX" secondItem="gK6-Ih-HM4" secondAttribute="centerX" id="FO6-YS-czh"/>
-                                            <constraint firstAttribute="bottom" secondItem="hDx-GY-YXc" secondAttribute="bottom" constant="559" id="LlE-dL-k6O"/>
+                                            <constraint firstItem="grr-Rb-ZkZ" firstAttribute="top" secondItem="nh1-Ve-Qlq" secondAttribute="bottom" constant="8" id="JaS-ce-AWR"/>
                                             <constraint firstItem="nh1-Ve-Qlq" firstAttribute="leading" secondItem="gK6-Ih-HM4" secondAttribute="leading" constant="20" id="N4T-FH-PY2"/>
-                                            <constraint firstItem="grr-Rb-ZkZ" firstAttribute="top" secondItem="hDx-GY-YXc" secondAttribute="bottom" constant="20" id="Vfe-dH-lN0"/>
+                                            <constraint firstItem="grr-Rb-ZkZ" firstAttribute="leading" secondItem="gK6-Ih-HM4" secondAttribute="leading" id="OS5-QC-tu8"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="grr-Rb-ZkZ" secondAttribute="trailing" id="VTh-8L-HE4"/>
                                             <constraint firstAttribute="bottom" secondItem="grr-Rb-ZkZ" secondAttribute="bottom" constant="237" id="XBz-Xv-aDg"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="grr-Rb-ZkZ" secondAttribute="trailing" id="XPX-T7-xPq"/>
                                             <constraint firstItem="nh1-Ve-Qlq" firstAttribute="top" secondItem="gK6-Ih-HM4" secondAttribute="top" id="dUX-b5-4Cf"/>
+                                            <constraint firstAttribute="bottom" secondItem="grr-Rb-ZkZ" secondAttribute="bottom" constant="286" id="h7c-4D-1gW"/>
                                             <constraint firstAttribute="trailing" secondItem="nh1-Ve-Qlq" secondAttribute="trailing" constant="20" id="hVO-xK-E5d"/>
                                             <constraint firstItem="nh1-Ve-Qlq" firstAttribute="top" secondItem="gK6-Ih-HM4" secondAttribute="top" constant="-20" id="lUW-0G-SVf"/>
-                                            <constraint firstItem="hDx-GY-YXc" firstAttribute="centerX" secondItem="gK6-Ih-HM4" secondAttribute="centerX" id="oeo-2E-z4p"/>
+                                            <constraint firstItem="grr-Rb-ZkZ" firstAttribute="leading" secondItem="gK6-Ih-HM4" secondAttribute="leadingMargin" id="wgb-vb-hHS"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="lUW-0G-SVf"/>
-                                                <exclude reference="LlE-dL-k6O"/>
+                                                <exclude reference="CrG-O4-kLV"/>
+                                                <exclude reference="FO6-YS-czh"/>
+                                                <exclude reference="JaS-ce-AWR"/>
+                                                <exclude reference="OS5-QC-tu8"/>
+                                                <exclude reference="VTh-8L-HE4"/>
+                                                <exclude reference="XBz-Xv-aDg"/>
+                                                <exclude reference="h7c-4D-1gW"/>
+                                                <exclude reference="wgb-vb-hHS"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -2219,9 +2225,9 @@ Email: shravankumar.singireddy@gmail.com</string>
         </scene>
     </scenes>
     <resources>
+        <image name="DarshanLabs" width="3000" height="1800"/>
         <image name="calendar" width="24" height="24"/>
         <image name="contactus_green" width="199" height="199"/>
-        <image name="darshanLabsLogo" width="420" height="434"/>
         <image name="events_green" width="253" height="247"/>
         <image name="gltcLogo" width="232" height="215"/>
         <image name="goal_green" width="344" height="350"/>

@@ -24,13 +24,13 @@ class EventsContentViewController: UIViewController {
         }
     }
     
-    override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
-        let app = UIApplication.sharedApplication()
-        if(app.statusBarOrientation.isLandscape) {
-            self.eventImageView.contentMode = .ScaleAspectFit
-        }else{
-            self.eventImageView.contentMode = .ScaleToFill
-        }
-    }
+//    override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
+//        let app = UIApplication.sharedApplication()
+//        if(app.statusBarOrientation.isLandscape) {
+//            self.eventImageView.contentMode = .ScaleAspectFit
+//        }else{
+//            self.eventImageView.contentMode = .ScaleToFill
+//        }
+//    }
     
 }

@@ -15,7 +15,7 @@ class CalendarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "GLTC Calendar 2016"
-        let path = NSBundle.mainBundle().pathForResource("GLTC_Calendar_2016", ofType: "pdf")
+        let path = NSBundle.mainBundle().pathForResource("gltc_calendar_2016", ofType: "pdf")
         let url = NSURL.fileURLWithPath(path!)
         self.webView.loadRequest(NSURLRequest(URL: url))
     }

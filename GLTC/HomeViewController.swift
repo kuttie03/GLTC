@@ -18,9 +18,17 @@ class HomeViewController: UIViewController {
             //self.revealViewController().rearViewRevealWidth = 300
             var image = UIImage(named: "menu_white")
             image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-            //self.navigationItem.titleView = UIImageView(image: UIImage(named: "gltcBanner"))
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+    }
+    
+    override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
+        let app = UIApplication.sharedApplication()
+        if(app.statusBarOrientation.isLandscape) {
+            self.navigationItem.title = "Greater Lansing Telangana Community"
+        }else{
+            self.navigationItem.title = "GLTC"
         }
     }
     

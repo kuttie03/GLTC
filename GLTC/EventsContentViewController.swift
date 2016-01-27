@@ -23,14 +23,4 @@ class EventsContentViewController: UIViewController {
             print("No image found")
         }
     }
-    
-//    override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
-//        let app = UIApplication.sharedApplication()
-//        if(app.statusBarOrientation.isLandscape) {
-//            self.eventImageView.contentMode = .ScaleAspectFit
-//        }else{
-//            self.eventImageView.contentMode = .ScaleToFill
-//        }
-//    }
-    
 }

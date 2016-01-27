@@ -456,7 +456,7 @@
             </objects>
             <point key="canvasLocation" x="63" y="323"/>
         </scene>
-        <!--Greater Lansing Telangana Community-->
+        <!--GLTC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="GLTC" customModuleProvider="target" sceneMemberID="viewController">
@@ -669,7 +669,7 @@
                             <constraint firstItem="E4x-nX-luo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="rAw-SC-FnN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Greater Lansing Telangana Community" id="CRy-my-ZQO">
+                    <navigationItem key="navigationItem" title="GLTC" id="CRy-my-ZQO">
                         <barButtonItem key="backBarButtonItem" title="Home" id="XqG-4j-ODb"/>
                         <barButtonItem key="leftBarButtonItem" title="Menu" style="plain" id="iRe-r0-rUc"/>
                     </navigationItem>
@@ -950,7 +950,7 @@ Source: Telangana State Portal</string>
                                                         <constraint firstAttribute="width" constant="452" id="uv3-ac-SfA"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKS-2v-a71">
@@ -960,7 +960,7 @@ Source: Telangana State Portal</string>
                                                         <constraint firstAttribute="height" constant="21" id="aLE-ch-62L"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1050,7 +1050,7 @@ Fax: 517.580.0828
 
 Email: admin@lansingtelangana.org</string>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -1073,13 +1073,13 @@ Email: admin@lansingtelangana.org</string>
                                                     </mask>
                                                 </variation>
                                                 <variation key="heightClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="21" y="258" width="240" height="264"/>
+                                                    <rect key="frame" x="21" y="258" width="240" height="192"/>
                                                     <mask key="constraints">
                                                         <include reference="ExK-NH-emQ"/>
                                                     </mask>
                                                 </variation>
                                                 <variation key="widthClass=regular" misplaced="YES">
-                                                    <rect key="frame" x="24" y="260" width="300" height="224"/>
+                                                    <rect key="frame" x="24" y="260" width="300" height="175"/>
                                                     <mask key="constraints">
                                                         <include reference="Lik-DQ-P6L"/>
                                                     </mask>
@@ -1858,7 +1858,7 @@ Tel: 268.823.3534
 
 Email: shravankumar.singireddy@gmail.com</string>
                                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -1960,7 +1960,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                                                         <constraint firstAttribute="height" constant="120" id="u6V-cz-Uln"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -2018,11 +2018,8 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="IlY-1z-l4p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.4823529412" green="0.66666666669999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2042,10 +2039,8 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="0Eq-sY-0td">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2069,10 +2064,8 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KRN-Pp-AlE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2092,11 +2085,8 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="JHT-Ui-EtN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2116,10 +2106,8 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3MS-dh-z6S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2139,10 +2127,8 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mrG-2C-m8e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2162,10 +2148,8 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qSQ-k0-KQ5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2185,10 +2169,8 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KXF-5k-6hJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2208,10 +2190,8 @@ Email: shravankumar.singireddy@gmail.com</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DbS-c7-fjC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>

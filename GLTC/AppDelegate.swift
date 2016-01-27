@@ -13,10 +13,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    let PAGEVIEW_HEX_COLOR = "#39AA33"
+    let NAVBAR_TINT_HEX_COLOR = "#7BAA53"
+    
+    let NAVBAR_FONT_NAME = "Papyrus"
+    let NAVBAR_FONT_SIZE = CGFloat(20)
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        //PageView Attributes
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.lightGrayColor()
-        UIPageControl.appearance().currentPageIndicatorTintColor = ColorUtil.colorWithHexString("#39AA33")
+        UIPageControl.appearance().currentPageIndicatorTintColor = ColorUtil.colorWithHexString(PAGEVIEW_HEX_COLOR)
+        
+        //Navigation Bar Attributes
+        UINavigationBar.appearance().barTintColor = ColorUtil.colorWithHexString(NAVBAR_TINT_HEX_COLOR)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: NAVBAR_FONT_NAME, size: NAVBAR_FONT_SIZE)!]
+        UIBarButtonItem.appearance().tintColor = UIColor.whiteColor()
         return true
     }
 

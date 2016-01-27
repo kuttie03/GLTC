@@ -16,7 +16,7 @@
 		A482AC2E1C50728B00892F16 /* GLTCEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482AC2D1C50728B00892F16 /* GLTCEvent.swift */; };
 		A482AC301C5073A100892F16 /* EventsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482AC2F1C5073A100892F16 /* EventsContentViewController.swift */; };
 		A4AFCBB51C57DDBB000ACE4E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFCBB41C57DDBB000ACE4E /* CalendarViewController.swift */; };
-		A4AFCBB71C57DDE8000ACE4E /* GLTC_Calendar_2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A4AFCBB61C57DDE8000ACE4E /* GLTC_Calendar_2016.pdf */; };
+		A4AFCBB71C57DDE8000ACE4E /* gltc_calendar_2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A4AFCBB61C57DDE8000ACE4E /* gltc_calendar_2016.pdf */; };
 		A4C9EEA91C494BC200B7067E /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */; };
 		A4C9EEAB1C494C3800B7067E /* GLTCSponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */; };
 		A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */; };
@@ -36,7 +36,6 @@
 		A4EBC92D1C489045007973E3 /* GLTCCommittee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92B1C489045007973E3 /* GLTCCommittee.swift */; };
 		A4EBC92E1C489045007973E3 /* GLTCCommitteeMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92C1C489045007973E3 /* GLTCCommitteeMember.swift */; };
 		A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */; };
-		A4EBC9321C48908E007973E3 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9311C48908E007973E3 /* MenuItemCell.swift */; };
 		A4EBC9351C4890EA007973E3 /* CommitteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */; };
 		A4EBC9361C4890EA007973E3 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9341C4890EA007973E3 /* ContactUsViewController.swift */; };
 		A4EBC93B1C48913D007973E3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC93A1C48913D007973E3 /* SWRevealViewController.m */; };
@@ -52,7 +51,7 @@
 		A482AC2D1C50728B00892F16 /* GLTCEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCEvent.swift; sourceTree = "<group>"; };
 		A482AC2F1C5073A100892F16 /* EventsContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsContentViewController.swift; sourceTree = "<group>"; };
 		A4AFCBB41C57DDBB000ACE4E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		A4AFCBB61C57DDE8000ACE4E /* GLTC_Calendar_2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GLTC_Calendar_2016.pdf; sourceTree = "<group>"; };
+		A4AFCBB61C57DDE8000ACE4E /* gltc_calendar_2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gltc_calendar_2016.pdf; sourceTree = "<group>"; };
 		A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
 		A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCSponsor.swift; sourceTree = "<group>"; };
 		A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorCell.swift; sourceTree = "<group>"; };
@@ -74,7 +73,6 @@
 		A4EBC92B1C489045007973E3 /* GLTCCommittee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCCommittee.swift; sourceTree = "<group>"; };
 		A4EBC92C1C489045007973E3 /* GLTCCommitteeMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCCommitteeMember.swift; sourceTree = "<group>"; };
 		A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteeMemberCell.swift; sourceTree = "<group>"; };
-		A4EBC9311C48908E007973E3 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitteViewController.swift; sourceTree = "<group>"; };
 		A4EBC9341C4890EA007973E3 /* ContactUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		A4EBC9381C48913C007973E3 /* GLTC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLTC-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -96,7 +94,7 @@
 		A43137A81C502627001FEB75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A4AFCBB61C57DDE8000ACE4E /* GLTC_Calendar_2016.pdf */,
+				A4AFCBB61C57DDE8000ACE4E /* gltc_calendar_2016.pdf */,
 				A43137A91C502642001FEB75 /* gltc_bylaws.pdf */,
 			);
 			name = Resources;
@@ -140,10 +138,10 @@
 				A4EBC9281C488FE5007973E3 /* Model */,
 				A4EBC9291C488FF1007973E3 /* View */,
 				A4EBC92A1C488FF8007973E3 /* Controller */,
-				A4721EF01C4FFA9B00EB62AC /* Service */,
-				A43137A81C502627001FEB75 /* Resources */,
-				A4DB2D911C581EDE00219F42 /* Util */,
 				A4EBC9371C489118007973E3 /* SWRevealViewController */,
+				A4721EF01C4FFA9B00EB62AC /* Service */,
+				A4DB2D911C581EDE00219F42 /* Util */,
+				A43137A81C502627001FEB75 /* Resources */,
 				A4EBC9161C488FB5007973E3 /* AppDelegate.swift */,
 				A4EBC91A1C488FB5007973E3 /* Main.storyboard */,
 				A4EBC91D1C488FB5007973E3 /* Assets.xcassets */,
@@ -170,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */,
-				A4EBC9311C48908E007973E3 /* MenuItemCell.swift */,
 				A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */,
 				A47262C01C49A6FE007DE47C /* RoundedButton.swift */,
 				A4E01D831C557784002DD247 /* VideoCell.swift */,
@@ -269,7 +266,7 @@
 			files = (
 				A43137AA1C502642001FEB75 /* gltc_bylaws.pdf in Resources */,
 				A4EBC9211C488FB5007973E3 /* LaunchScreen.storyboard in Resources */,
-				A4AFCBB71C57DDE8000ACE4E /* GLTC_Calendar_2016.pdf in Resources */,
+				A4AFCBB71C57DDE8000ACE4E /* gltc_calendar_2016.pdf in Resources */,
 				A4EBC91E1C488FB5007973E3 /* Assets.xcassets in Resources */,
 				A4EBC91C1C488FB5007973E3 /* Main.storyboard in Resources */,
 			);
@@ -295,7 +292,6 @@
 				A4EBC9361C4890EA007973E3 /* ContactUsViewController.swift in Sources */,
 				A4DFFDD21C56BC2B00336F21 /* TelanganaHistoryViewController.swift in Sources */,
 				A482AC2C1C50721400892F16 /* EventsViewController.swift in Sources */,
-				A4EBC9321C48908E007973E3 /* MenuItemCell.swift in Sources */,
 				A4C9EEA91C494BC200B7067E /* SponsorsViewController.swift in Sources */,
 				A4C9EEAB1C494C3800B7067E /* GLTCSponsor.swift in Sources */,
 				A4EBC93B1C48913D007973E3 /* SWRevealViewController.m in Sources */,

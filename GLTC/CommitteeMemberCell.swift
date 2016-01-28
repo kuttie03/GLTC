@@ -18,8 +18,7 @@ class CommitteeMemberCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        //memberImg.layer.cornerRadius = memberImg.frame.size.width/2
-        memberImg.layer.cornerRadius = 10.0
+        memberImg.layer.cornerRadius = memberImg.frame.size.height/2
         memberImg.clipsToBounds = true
     }
 

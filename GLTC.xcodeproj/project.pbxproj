@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A408315C1C5A8C840008EC9F /* loader_green.gif in Resources */ = {isa = PBXBuildFile; fileRef = A408315B1C5A8C840008EC9F /* loader_green.gif */; };
 		A41FEF631C596DDC00ADB864 /* GLTCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41FEF621C596DDC00ADB864 /* GLTCConstants.swift */; };
 		A42E22811C5156C1000171BB /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E22801C5156C1000171BB /* CreditsViewController.swift */; };
 		A43137AA1C502642001FEB75 /* gltc_bylaws.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A43137A91C502642001FEB75 /* gltc_bylaws.pdf */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		1DD81F629387961327E76569 /* Pods-GLTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLTC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLTC/Pods-GLTC.debug.xcconfig"; sourceTree = "<group>"; };
 		4202E7E09DEA4D91EF3EDB5D /* Pods-GLTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLTC/Pods-GLTC.release.xcconfig"; sourceTree = "<group>"; };
+		A40831571C5A87380008EC9F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A408315B1C5A8C840008EC9F /* loader_green.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader_green.gif; sourceTree = "<group>"; };
 		A41FEF621C596DDC00ADB864 /* GLTCConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCConstants.swift; sourceTree = "<group>"; };
 		A42E22801C5156C1000171BB /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		A43137A91C502642001FEB75 /* gltc_bylaws.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gltc_bylaws.pdf; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 		A43137A81C502627001FEB75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A408315B1C5A8C840008EC9F /* loader_green.gif */,
 				A4AFCBB61C57DDE8000ACE4E /* gltc_calendar_2016.pdf */,
 				A43137A91C502642001FEB75 /* gltc_bylaws.pdf */,
 			);
@@ -227,6 +231,7 @@
 		C491B551D407A7A243C31C28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A40831571C5A87380008EC9F /* ImageIO.framework */,
 				C45475C6ED013930DB6FA45E /* Pods_GLTC.framework */,
 			);
 			name = Frameworks;
@@ -299,6 +304,7 @@
 				A4AFCBB71C57DDE8000ACE4E /* gltc_calendar_2016.pdf in Resources */,
 				A4EBC91E1C488FB5007973E3 /* Assets.xcassets in Resources */,
 				A4EBC91C1C488FB5007973E3 /* Main.storyboard in Resources */,
+				A408315C1C5A8C840008EC9F /* loader_green.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

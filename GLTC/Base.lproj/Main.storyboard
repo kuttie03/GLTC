@@ -1653,15 +1653,22 @@ Email: admin@lansingtelangana.org</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kzw-yg-R8n">
                                 <rect key="frame" x="20" y="60" width="560" height="520"/>
                             </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="oXz-88-Ztu">
+                                <rect key="frame" x="282" y="301" width="37" height="37"/>
+                                <color key="color" red="0.4823529412" green="0.66666666669999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="oXz-88-Ztu" firstAttribute="centerX" secondItem="Kzw-yg-R8n" secondAttribute="centerX" id="818-yF-PUJ"/>
                             <constraint firstItem="Kzw-yg-R8n" firstAttribute="top" secondItem="T3s-wo-1lU" secondAttribute="top" constant="60" id="AK4-E9-h0e"/>
                             <constraint firstItem="mgH-ui-JXS" firstAttribute="top" secondItem="Kzw-yg-R8n" secondAttribute="bottom" constant="20" id="UfQ-6d-aBa"/>
                             <constraint firstItem="Kzw-yg-R8n" firstAttribute="leading" secondItem="T3s-wo-1lU" secondAttribute="leading" constant="20" id="WDN-u9-7UO"/>
+                            <constraint firstItem="oXz-88-Ztu" firstAttribute="centerY" secondItem="Kzw-yg-R8n" secondAttribute="centerY" id="t6V-dw-5pI"/>
                             <constraint firstAttribute="trailing" secondItem="Kzw-yg-R8n" secondAttribute="trailing" constant="20" id="whn-r7-Idd"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="oXz-88-Ztu" id="zae-z3-75F"/>
                         <outlet property="eventImageView" destination="Kzw-yg-R8n" id="kk1-tp-Lm8"/>
                     </connections>
                 </viewController>
@@ -1717,6 +1724,10 @@ GLTC Team</string>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2O6-w6-9A6">
+                                                <rect key="frame" x="282" y="153" width="37" height="37"/>
+                                                <color key="color" red="0.4823529412" green="0.66666666669999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1731,9 +1742,11 @@ GLTC Team</string>
                                             <constraint firstItem="Dg0-cL-l8l" firstAttribute="top" secondItem="w5t-hC-P1q" secondAttribute="bottom" constant="10" id="a7U-CJ-4rB"/>
                                             <constraint firstItem="w5t-hC-P1q" firstAttribute="top" secondItem="WUH-2Y-IOv" secondAttribute="bottom" constant="20" id="aNB-xV-DgU"/>
                                             <constraint firstItem="w5t-hC-P1q" firstAttribute="top" secondItem="0YE-Bl-Z2T" secondAttribute="bottom" constant="20" id="fvz-fw-lCA"/>
+                                            <constraint firstItem="2O6-w6-9A6" firstAttribute="centerY" secondItem="0YE-Bl-Z2T" secondAttribute="centerY" id="jIk-7R-saY"/>
                                             <constraint firstItem="0YE-Bl-Z2T" firstAttribute="top" secondItem="A60-Uv-ksz" secondAttribute="top" constant="60" id="k9D-dT-n4X"/>
                                             <constraint firstItem="WUH-2Y-IOv" firstAttribute="top" secondItem="0YE-Bl-Z2T" secondAttribute="bottom" constant="20" id="kuV-rh-8Dg"/>
                                             <constraint firstItem="WUH-2Y-IOv" firstAttribute="centerX" secondItem="A60-Uv-ksz" secondAttribute="centerX" id="rRm-ea-GIf"/>
+                                            <constraint firstItem="2O6-w6-9A6" firstAttribute="centerX" secondItem="0YE-Bl-Z2T" secondAttribute="centerX" id="sR7-rY-smB"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -1764,6 +1777,7 @@ GLTC Team</string>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="900"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="2O6-w6-9A6" id="0Pq-t1-AnN"/>
                         <outlet property="newsDataLbl" destination="WUH-2Y-IOv" id="3Kv-qk-IBB"/>
                         <outlet property="newsImageView" destination="0YE-Bl-Z2T" id="RnP-AP-X2f"/>
                         <outlet property="newsLbl" destination="w5t-hC-P1q" id="jsO-GN-Gyn"/>

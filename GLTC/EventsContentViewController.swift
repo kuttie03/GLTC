@@ -10,6 +10,8 @@ import UIKit
 
 class EventsContentViewController: UIViewController {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     @IBOutlet weak var eventImageView: UIImageView!
 
     var imageUrl: String!
@@ -17,7 +19,13 @@ class EventsContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.eventImageView.image  = UIImage(named: "events_green")
+        self.activityIndicator.startAnimating()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "stopActivityIndicator:", name: "imageDownloaded", object: nil)
+        self.eventImageView.image  = UIImage()
         self.eventImageView.downloadImageFrom(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
+    }
+    
+    func stopActivityIndicator(notif: AnyObject) {
+        self.activityIndicator.stopAnimating()
     }
 }

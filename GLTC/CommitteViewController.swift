@@ -47,7 +47,7 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
             let committee = committees[indexPath.section]
             let committeeMember = committee.getMembers()[indexPath.row]
             committeeMemberCell.memberImg.image = UIImage(named: "user_medium_green")
-            committeeMemberCell.memberImg.downloadImageFrom(link:committeeMember.getImageUrl(), contentMode: UIViewContentMode.ScaleAspectFit)
+            committeeMemberCell.memberImg.downloadImageFrom(link:committeeMember.getImageUrl(), contentMode: UIViewContentMode.ScaleAspectFill)
             committeeMemberCell.nameLbl.text = committeeMember.getName()
             committeeMemberCell.titleLbl.text = committeeMember.getTitle()
             return committeeMemberCell

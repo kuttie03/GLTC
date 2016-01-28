@@ -42,6 +42,7 @@ extension UIImageView {
             dispatch_async(dispatch_get_main_queue()) {
                 self.contentMode =  contentMode
                 if let data = data {
+                    NSNotificationCenter.defaultCenter().postNotificationName("imageDownloaded", object: nil)
                     self.image = UIImage(data: data)
                     print("Loaded image: \(link)")
                 }

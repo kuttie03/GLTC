@@ -10,6 +10,8 @@ import UIKit
 
 class NewsContentViewController: UIViewController {
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     @IBOutlet weak var newsImageView: UIImageView!
     
     @IBOutlet weak var newsDataLbl: UILabel!
@@ -25,10 +27,16 @@ class NewsContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.newsImageView.image  = UIImage(named: "news_green")
+        self.activityIndicator.startAnimating()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "stopActivityIndicator:", name: "imageDownloaded", object: nil)
+        self.newsImageView.image  = UIImage()
         self.newsImageView.downloadImageFrom(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
         self.newsDataLbl.text = newsDate
         self.newsLbl.text = newsTxt
+    }
+    
+    func stopActivityIndicator(notif: AnyObject) {
+        self.activityIndicator.stopAnimating()
     }
 
 }

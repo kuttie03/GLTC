@@ -79,7 +79,7 @@ class NewsViewController: UIViewController, UIPageViewControllerDataSource {
         if(news.count > 0){
             newsContentViewController.newsTxt = news[index].getNewsText()
             newsContentViewController.newsDate = news[index].getNewsDate()
-            newsContentViewController.newsImage = news[index].getNewsImage()
+            newsContentViewController.imageUrl = news[index].getImageUrl()
         }
         newsContentViewController.pageIndex = index
         return newsContentViewController        

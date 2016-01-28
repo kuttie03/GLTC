@@ -12,16 +12,7 @@ class GLTCSponsor {
     
     private var name: String!
     
-    private var sponsorImage: UIImageView!
-    
-    init(name: String, sponsorImage: UIImageView){
-        self.name = name
-        self.sponsorImage = sponsorImage
-    }
-    
-    init() {
-        
-    }
+    private var imageUrl: String!
     
     func getName() -> String {
         return self.name
@@ -31,11 +22,11 @@ class GLTCSponsor {
         self.name = name
     }
     
-    func getSponsorImage() -> UIImageView {
-        return self.sponsorImage
+    func getImageUrl() -> String {
+        return self.imageUrl
     }
     
-    func setSponsorImage(sponsorImage: UIImageView){
-        self.sponsorImage = sponsorImage
+    func setImageUrl(imageUrl: String){
+        self.imageUrl = imageUrl
     }
 }

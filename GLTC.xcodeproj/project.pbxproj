@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41FEF631C596DDC00ADB864 /* GLTCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41FEF621C596DDC00ADB864 /* GLTCConstants.swift */; };
 		A42E22811C5156C1000171BB /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E22801C5156C1000171BB /* CreditsViewController.swift */; };
 		A43137AA1C502642001FEB75 /* gltc_bylaws.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A43137A91C502642001FEB75 /* gltc_bylaws.pdf */; };
 		A43137AC1C502689001FEB75 /* BylawsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43137AB1C502689001FEB75 /* BylawsViewController.swift */; };
@@ -39,9 +40,13 @@
 		A4EBC9351C4890EA007973E3 /* CommitteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */; };
 		A4EBC9361C4890EA007973E3 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9341C4890EA007973E3 /* ContactUsViewController.swift */; };
 		A4EBC93B1C48913D007973E3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC93A1C48913D007973E3 /* SWRevealViewController.m */; };
+		A9D760AD4B6D0E623A003AA8 /* Pods_GLTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45475C6ED013930DB6FA45E /* Pods_GLTC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DD81F629387961327E76569 /* Pods-GLTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLTC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLTC/Pods-GLTC.debug.xcconfig"; sourceTree = "<group>"; };
+		4202E7E09DEA4D91EF3EDB5D /* Pods-GLTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLTC/Pods-GLTC.release.xcconfig"; sourceTree = "<group>"; };
+		A41FEF621C596DDC00ADB864 /* GLTCConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCConstants.swift; sourceTree = "<group>"; };
 		A42E22801C5156C1000171BB /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		A43137A91C502642001FEB75 /* gltc_bylaws.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gltc_bylaws.pdf; sourceTree = "<group>"; };
 		A43137AB1C502689001FEB75 /* BylawsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BylawsViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		A4EBC9381C48913C007973E3 /* GLTC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLTC-Bridging-Header.h"; sourceTree = "<group>"; };
 		A4EBC9391C48913D007973E3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		A4EBC93A1C48913D007973E3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C45475C6ED013930DB6FA45E /* Pods_GLTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +91,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D760AD4B6D0E623A003AA8 /* Pods_GLTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86954A947F30D450887ECFD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DD81F629387961327E76569 /* Pods-GLTC.debug.xcconfig */,
+				4202E7E09DEA4D91EF3EDB5D /* Pods-GLTC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A43137A81C502627001FEB75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				A4DB2D921C581F1D00219F42 /* ColorUtil.swift */,
+				A41FEF621C596DDC00ADB864 /* GLTCConstants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -121,6 +138,8 @@
 			children = (
 				A4EBC9151C488FB5007973E3 /* GLTC */,
 				A4EBC9141C488FB5007973E3 /* Products */,
+				86954A947F30D450887ECFD2 /* Pods */,
+				C491B551D407A7A243C31C28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +224,14 @@
 			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
+		C491B551D407A7A243C31C28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C45475C6ED013930DB6FA45E /* Pods_GLTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4EBC9251C488FB5007973E3 /* Build configuration list for PBXNativeTarget "GLTC" */;
 			buildPhases = (
+				E9D33EA1B6EA819CE64A4268 /* Check Pods Manifest.lock */,
 				A4EBC90F1C488FB5007973E3 /* Sources */,
 				A4EBC9101C488FB5007973E3 /* Frameworks */,
 				A4EBC9111C488FB5007973E3 /* Resources */,
+				2044DDDA55AC7D4969B5126B /* Embed Pods Frameworks */,
+				466A8D4B27716520D888639D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,12 +304,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2044DDDA55AC7D4969B5126B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLTC/Pods-GLTC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		466A8D4B27716520D888639D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GLTC/Pods-GLTC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D33EA1B6EA819CE64A4268 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4EBC90F1C488FB5007973E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A4721EF21C4FFADC00EB62AC /* GLTCDataLoader.swift in Sources */,
+				A41FEF631C596DDC00ADB864 /* GLTCConstants.swift in Sources */,
 				A43137AC1C502689001FEB75 /* BylawsViewController.swift in Sources */,
 				A4D086E71C4ECF4000F0675A /* GLTCNews.swift in Sources */,
 				A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */,
@@ -416,6 +495,7 @@
 		};
 		A4EBC9261C488FB5007973E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD81F629387961327E76569 /* Pods-GLTC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -430,6 +510,7 @@
 		};
 		A4EBC9271C488FB5007973E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4202E7E09DEA4D91EF3EDB5D /* Pods-GLTC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

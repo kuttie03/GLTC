@@ -18,19 +18,17 @@ class NewsContentViewController: UIViewController {
     
     @IBOutlet weak var signLabel: UILabel!
     
-    var newsImage: UIImageView!
+    var imageUrl: String!
     var newsTxt: String!
     var newsDate: String!
     var pageIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.newsImageView.image  = UIImage(named: "news_green")
+        self.newsImageView.downloadImageFrom(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
         self.newsDataLbl.text = newsDate
         self.newsLbl.text = newsTxt
-        if let newsImage = newsImage {
-            signLabel.hidden = false
-            self.newsImageView.image = newsImage.image
-        }
     }
 
 }

@@ -51,7 +51,8 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
         if let sponsorCell = tableView.dequeueReusableCellWithIdentifier("sponsorCell") as? SponsorCell {
             let sponsor = sponsors[indexPath.row]
             sponsorCell.setSponsorName(sponsor.getName())
-            sponsorCell.sponsorImg.image = sponsor.getSponsorImage().image
+            sponsorCell.sponsorImg.image = UIImage(named: "sponsor_medium_green")
+            sponsorCell.sponsorImg.downloadImageFrom(link:sponsor.getImageUrl(), contentMode: UIViewContentMode.ScaleAspectFit)
             return sponsorCell
         }else{
             return SponsorCell()

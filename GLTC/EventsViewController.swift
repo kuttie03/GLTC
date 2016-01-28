@@ -75,7 +75,7 @@ class EventsViewController: UIViewController, UIPageViewControllerDataSource {
     func eventAtIndex(index: Int) -> EventsContentViewController {
         let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("EventsContentViewController") as! EventsContentViewController
         if(events.count > 0){
-            pageContentViewController.eventImage = events[index].getEventImage()
+            pageContentViewController.imageUrl = events[index].getImageUrl()
         }
         pageContentViewController.pageIndex = index
         return pageContentViewController

@@ -10,22 +10,14 @@ import Foundation
 
 class GLTCEvent {
     
-    private var eventImage: UIImageView!
+    private var imageUrl: String!
     
-    init(eventImage: UIImageView){
-        self.eventImage = eventImage
+    func getImageUrl() -> String {
+        return self.imageUrl
     }
     
-    init() {
-        
-    }
-    
-    func getEventImage() -> UIImageView {
-        return self.eventImage
-    }
-    
-    func setEventImage(eventImage: UIImageView){
-        self.eventImage = eventImage
+    func setImageUrl(imageUrl: String){
+        self.imageUrl = imageUrl
     }
     
 }

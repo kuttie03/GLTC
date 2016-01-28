@@ -14,17 +14,7 @@ class GLTCNews {
     
     private var newsDate: String!
     
-    private var newsImage: UIImageView!
-    
-    init(newsText: String, newsDate: String, newsImage: UIImageView){
-        self.newsText = newsText
-        self.newsDate = newsDate
-        self.newsImage = newsImage
-    }
-    
-    init() {
-        
-    }
+    private var imageUrl: String!
     
     func getNewsText() -> String {
         return self.newsText
@@ -42,11 +32,11 @@ class GLTCNews {
         self.newsDate = newsDate
     }
     
-    func getNewsImage() -> UIImageView {
-        return self.newsImage
+    func getImageUrl() -> String {
+        return self.imageUrl
     }
     
-    func setNewsImage(newsImage: UIImageView){
-        self.newsImage = newsImage
+    func setImageUrl(imageUrl: String){
+        self.imageUrl = imageUrl
     }
 }

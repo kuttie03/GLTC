@@ -1,0 +1,6 @@
+framework module Pods_GLTC {
+  umbrella header "Pods-GLTC-umbrella.h"
+
+  export *
+  module * { export * }
+}

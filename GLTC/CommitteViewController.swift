@@ -46,7 +46,8 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
         if let committeeMemberCell = tableView.dequeueReusableCellWithIdentifier("committeeMemberCell") as? CommitteeMemberCell {
             let committee = committees[indexPath.section]
             let committeeMember = committee.getMembers()[indexPath.row]
-            committeeMemberCell.memberImg.image = committeeMember.getMemberImage().image
+            committeeMemberCell.memberImg.image = UIImage(named: "user_medium_green")
+            committeeMemberCell.memberImg.downloadImageFrom(link:committeeMember.getImageUrl(), contentMode: UIViewContentMode.ScaleAspectFit)
             committeeMemberCell.nameLbl.text = committeeMember.getName()
             committeeMemberCell.titleLbl.text = committeeMember.getTitle()
             return committeeMemberCell

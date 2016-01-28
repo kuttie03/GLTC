@@ -14,17 +14,7 @@ class GLTCCommitteeMember {
     
     private var title: String!
     
-    private var memberImage: UIImageView!
-    
-    init(name: String, title: String, memberImage: UIImageView){
-        self.name = name
-        self.title = title
-        self.memberImage = memberImage
-    }
-    
-    init(){
-        
-    }
+    private var imageUrl: String!
     
     func getName() -> String {
         return self.name
@@ -42,12 +32,12 @@ class GLTCCommitteeMember {
         self.title = title
     }
     
-    func getMemberImage() -> UIImageView {
-        return self.memberImage
+    func getImageUrl() -> String {
+        return self.imageUrl
     }
     
-    func setMemberImage(memberImage: UIImageView){
-        self.memberImage = memberImage
+    func setImageUrl(imageUrl: String){
+        self.imageUrl = imageUrl
     }
     
 }

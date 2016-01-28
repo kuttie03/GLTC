@@ -16,12 +16,14 @@ class SponsorCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        sponsorImg.layer.cornerRadius = 5.0
-        sponsorImg.clipsToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    func getSponsorImage() -> UIImageView{
+        return self.sponsorImg
     }
     
     func setSponsorImage(sponsorImg: UIImageView){

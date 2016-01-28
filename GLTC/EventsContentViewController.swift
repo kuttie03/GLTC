@@ -12,15 +12,12 @@ class EventsContentViewController: UIViewController {
 
     @IBOutlet weak var eventImageView: UIImageView!
 
-    var eventImage: UIImageView!
+    var imageUrl: String!
     var pageIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let eventImage = eventImage {
-            self.eventImageView.image = eventImage.image
-        }else{
-            print("No image found")
-        }
+        self.eventImageView.image  = UIImage(named: "events_green")
+        self.eventImageView.downloadImageFrom(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
     }
 }

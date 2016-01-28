@@ -1651,15 +1651,14 @@ Email: admin@lansingtelangana.org</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kzw-yg-R8n">
-                                <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                                <rect key="frame" x="20" y="60" width="560" height="520"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Kzw-yg-R8n" firstAttribute="top" secondItem="T3s-wo-1lU" secondAttribute="top" constant="60" id="AK4-E9-h0e"/>
-                            <constraint firstItem="mgH-ui-JXS" firstAttribute="top" secondItem="Kzw-yg-R8n" secondAttribute="bottom" id="UfQ-6d-aBa"/>
-                            <constraint firstItem="Kzw-yg-R8n" firstAttribute="leading" secondItem="T3s-wo-1lU" secondAttribute="leading" id="WDN-u9-7UO"/>
-                            <constraint firstAttribute="trailing" secondItem="Kzw-yg-R8n" secondAttribute="trailing" id="whn-r7-Idd"/>
+                            <constraint firstItem="mgH-ui-JXS" firstAttribute="top" secondItem="Kzw-yg-R8n" secondAttribute="bottom" constant="20" id="UfQ-6d-aBa"/>
+                            <constraint firstItem="Kzw-yg-R8n" firstAttribute="leading" secondItem="T3s-wo-1lU" secondAttribute="leading" constant="20" id="WDN-u9-7UO"/>
+                            <constraint firstAttribute="trailing" secondItem="Kzw-yg-R8n" secondAttribute="trailing" constant="20" id="whn-r7-Idd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1694,7 +1693,7 @@ Email: admin@lansingtelangana.org</string>
                                                     <constraint firstAttribute="height" constant="250" id="i3e-dY-pTa"/>
                                                 </constraints>
                                             </imageView>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg0-cL-l8l">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg0-cL-l8l">
                                                 <rect key="frame" x="207" y="814" width="186" height="57"/>
                                                 <string key="text">Thanks &amp; Regards
 GLTC Team</string>

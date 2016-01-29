@@ -15,6 +15,7 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var committeeTableView: UITableView!
     
     var committees: [GLTCCommittee] = []
+    var imageCache = Dictionary<String,UIImage>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +47,22 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
         if let committeeMemberCell = tableView.dequeueReusableCellWithIdentifier("committeeMemberCell") as? CommitteeMemberCell {
             let committee = committees[indexPath.section]
             let committeeMember = committee.getMembers()[indexPath.row]
-            committeeMemberCell.memberImg.image = UIImage(named: "user_medium_green")
-            committeeMemberCell.memberImg.downloadImageFrom(link:committeeMember.getImageUrl(), contentMode: UIViewContentMode.ScaleAspectFill)
+            let imageUrl = committeeMember.getImageUrl()
+            if let image = imageCache[imageUrl] {
+                committeeMemberCell.memberImg.image = image
+            }else{
+                committeeMemberCell.memberImg.image = UIImage(named: "user_medium_green")
+                NSURLSession.sharedSession().dataTaskWithURL( NSURL(string:imageUrl)!, completionHandler: {
+                    (data, response, error) -> Void in
+                    dispatch_async(dispatch_get_main_queue()) {
+                        committeeMemberCell.memberImg.contentMode =  UIViewContentMode.ScaleAspectFill
+                        if let data = data {
+                            committeeMemberCell.memberImg.image = UIImage(data: data)
+                            self.imageCache[imageUrl] = committeeMemberCell.memberImg.image
+                        }
+                    }
+                }).resume()
+            }
             committeeMemberCell.nameLbl.text = committeeMember.getName()
             committeeMemberCell.titleLbl.text = committeeMember.getTitle()
             return committeeMemberCell
@@ -60,5 +75,9 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let committee = committees[section]
         return committee.getName()
+    }
+    
+    func stopActivityIndicator(notif: AnyObject) {
+        print("stopActivityIndicator")
     }
 }

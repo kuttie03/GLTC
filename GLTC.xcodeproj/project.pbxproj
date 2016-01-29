@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A408315C1C5A8C840008EC9F /* loader_green.gif in Resources */ = {isa = PBXBuildFile; fileRef = A408315B1C5A8C840008EC9F /* loader_green.gif */; };
 		A41FEF631C596DDC00ADB864 /* GLTCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41FEF621C596DDC00ADB864 /* GLTCConstants.swift */; };
 		A42E22811C5156C1000171BB /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E22801C5156C1000171BB /* CreditsViewController.swift */; };
 		A43137AA1C502642001FEB75 /* gltc_bylaws.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A43137A91C502642001FEB75 /* gltc_bylaws.pdf */; };
@@ -17,6 +16,7 @@
 		A482AC2C1C50721400892F16 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482AC2B1C50721400892F16 /* EventsViewController.swift */; };
 		A482AC2E1C50728B00892F16 /* GLTCEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482AC2D1C50728B00892F16 /* GLTCEvent.swift */; };
 		A482AC301C5073A100892F16 /* EventsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482AC2F1C5073A100892F16 /* EventsContentViewController.swift */; };
+		A49A64AB1C5AEACF00FC00E4 /* ImageAsyncDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A64AA1C5AEACF00FC00E4 /* ImageAsyncDownloader.swift */; };
 		A4AFCBB51C57DDBB000ACE4E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFCBB41C57DDBB000ACE4E /* CalendarViewController.swift */; };
 		A4AFCBB71C57DDE8000ACE4E /* gltc_calendar_2016.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A4AFCBB61C57DDE8000ACE4E /* gltc_calendar_2016.pdf */; };
 		A4C9EEA91C494BC200B7067E /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */; };
@@ -48,7 +48,6 @@
 		1DD81F629387961327E76569 /* Pods-GLTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLTC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLTC/Pods-GLTC.debug.xcconfig"; sourceTree = "<group>"; };
 		4202E7E09DEA4D91EF3EDB5D /* Pods-GLTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLTC.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLTC/Pods-GLTC.release.xcconfig"; sourceTree = "<group>"; };
 		A40831571C5A87380008EC9F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		A408315B1C5A8C840008EC9F /* loader_green.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader_green.gif; sourceTree = "<group>"; };
 		A41FEF621C596DDC00ADB864 /* GLTCConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCConstants.swift; sourceTree = "<group>"; };
 		A42E22801C5156C1000171BB /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		A43137A91C502642001FEB75 /* gltc_bylaws.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gltc_bylaws.pdf; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		A482AC2B1C50721400892F16 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		A482AC2D1C50728B00892F16 /* GLTCEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCEvent.swift; sourceTree = "<group>"; };
 		A482AC2F1C5073A100892F16 /* EventsContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsContentViewController.swift; sourceTree = "<group>"; };
+		A49A64AA1C5AEACF00FC00E4 /* ImageAsyncDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAsyncDownloader.swift; sourceTree = "<group>"; };
 		A4AFCBB41C57DDBB000ACE4E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A4AFCBB61C57DDE8000ACE4E /* gltc_calendar_2016.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gltc_calendar_2016.pdf; sourceTree = "<group>"; };
 		A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +113,6 @@
 		A43137A81C502627001FEB75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A408315B1C5A8C840008EC9F /* loader_green.gif */,
 				A4AFCBB61C57DDE8000ACE4E /* gltc_calendar_2016.pdf */,
 				A43137A91C502642001FEB75 /* gltc_bylaws.pdf */,
 			);
@@ -194,6 +193,7 @@
 				A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */,
 				A47262C01C49A6FE007DE47C /* RoundedButton.swift */,
 				A4E01D831C557784002DD247 /* VideoCell.swift */,
+				A49A64AA1C5AEACF00FC00E4 /* ImageAsyncDownloader.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -304,7 +304,6 @@
 				A4AFCBB71C57DDE8000ACE4E /* gltc_calendar_2016.pdf in Resources */,
 				A4EBC91E1C488FB5007973E3 /* Assets.xcassets in Resources */,
 				A4EBC91C1C488FB5007973E3 /* Main.storyboard in Resources */,
-				A408315C1C5A8C840008EC9F /* loader_green.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +370,7 @@
 				A4E9F1E21C4F367800389995 /* VideoViewController.swift in Sources */,
 				A4EBC9191C488FB5007973E3 /* HomeViewController.swift in Sources */,
 				A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */,
+				A49A64AB1C5AEACF00FC00E4 /* ImageAsyncDownloader.swift in Sources */,
 				A42E22811C5156C1000171BB /* CreditsViewController.swift in Sources */,
 				A4EBC92D1C489045007973E3 /* GLTCCommittee.swift in Sources */,
 				A4E01D861C557E1A002DD247 /* GLTCVideo.swift in Sources */,

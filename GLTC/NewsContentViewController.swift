@@ -27,10 +27,11 @@ class NewsContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.activityIndicator.startAnimating()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "stopActivityIndicator:", name: "imageDownloaded", object: nil)
         self.newsImageView.image  = UIImage()
-        self.newsImageView.downloadImageFrom(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
+        if(imageUrl != nil && imageUrl != "") {
+            self.newsImageView.downloadImageFrom(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
+        }
         self.newsDataLbl.text = newsDate
         self.newsLbl.text = newsTxt
     }

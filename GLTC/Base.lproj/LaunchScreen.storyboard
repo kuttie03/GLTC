@@ -25,7 +25,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DarshanLabs" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-59-Uu8">
-                                <rect key="frame" x="200" y="502" width="200" height="128"/>
+                                <rect key="frame" x="200" y="482" width="200" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="i77-ua-KgQ"/>
                                     <constraint firstAttribute="height" constant="128" id="qKm-7K-aeL"/>
@@ -34,7 +34,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="NZ7-59-Uu8" secondAttribute="bottom" constant="-30" id="AyH-HD-v2r"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="NZ7-59-Uu8" secondAttribute="bottom" constant="-10" id="AyH-HD-v2r"/>
                             <constraint firstItem="NZ7-59-Uu8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZUj-wK-iiQ"/>
                             <constraint firstItem="kxC-Yq-g5g" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sHa-se-eoi"/>
                             <constraint firstItem="kxC-Yq-g5g" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xh5-qB-aQb"/>

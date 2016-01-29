@@ -15,6 +15,7 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var sponsorTableView: UITableView!
     
     var sponsors: [GLTCSponsor] = []
+    var imageCache = Dictionary<String,UIImage>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,8 +52,22 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
         if let sponsorCell = tableView.dequeueReusableCellWithIdentifier("sponsorCell") as? SponsorCell {
             let sponsor = sponsors[indexPath.row]
             sponsorCell.setSponsorName(sponsor.getName())
-            sponsorCell.sponsorImg.image = UIImage(named: "sponsor_medium_green")
-            sponsorCell.sponsorImg.downloadImageFrom(link:sponsor.getImageUrl(), contentMode: UIViewContentMode.ScaleAspectFit)
+            let imageUrl = sponsor.getImageUrl()
+            if let image = imageCache[imageUrl] {
+                sponsorCell.sponsorImg.image = image
+            }else{
+                sponsorCell.sponsorImg.image = UIImage(named: "sponsor_medium_green")
+                NSURLSession.sharedSession().dataTaskWithURL( NSURL(string:imageUrl)!, completionHandler: {
+                    (data, response, error) -> Void in
+                    dispatch_async(dispatch_get_main_queue()) {
+                        sponsorCell.sponsorImg.contentMode =  UIViewContentMode.ScaleAspectFit
+                        if let data = data {
+                            sponsorCell.sponsorImg.image = UIImage(data: data)
+                            self.imageCache[imageUrl] = sponsorCell.sponsorImg.image
+                        }
+                    }
+                }).resume()
+            }
             return sponsorCell
         }else{
             return SponsorCell()

@@ -19,10 +19,11 @@ class EventsContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.activityIndicator.startAnimating()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "stopActivityIndicator:", name: "imageDownloaded", object: nil)
         self.eventImageView.image  = UIImage()
-        self.eventImageView.downloadImageFrom(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
+        if(imageUrl != nil && imageUrl != "") {
+            self.eventImageView.downloadImageFrom(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
+        }
     }
     
     func stopActivityIndicator(notif: AnyObject) {

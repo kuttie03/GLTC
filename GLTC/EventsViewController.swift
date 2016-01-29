@@ -17,28 +17,29 @@ class EventsViewController: UIViewController, UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        events = GLTCDataLoader.sharedInstance.getEvents()
         if self.revealViewController() != nil {
             var image = UIImage(named: "menu_white")
             image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        self.eventsContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("EventsPageViewController") as! UIPageViewController
-        
-        self.eventsContentViewController.dataSource = self
-        
-        let initialContenViewController = self.eventAtIndex(0) as EventsContentViewController
-        
-        let viewControllers = NSArray(object: initialContenViewController)
-        
-        
-        self.eventsContentViewController.setViewControllers((viewControllers as! [UIViewController]), direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
-        
-        self.addChildViewController(self.eventsContentViewController)
-        self.view.addSubview(self.eventsContentViewController.view)
-        self.eventsContentViewController.didMoveToParentViewController(self)
-        
+        events = GLTCDataLoader.sharedInstance.getEvents()
+        if(events.count > 0){
+            self.eventsContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("EventsPageViewController") as! UIPageViewController
+            
+            self.eventsContentViewController.dataSource = self
+            
+            let initialContenViewController = self.eventAtIndex(0) as EventsContentViewController
+            
+            let viewControllers = NSArray(object: initialContenViewController)
+            
+            
+            self.eventsContentViewController.setViewControllers((viewControllers as! [UIViewController]), direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
+            
+            self.addChildViewController(self.eventsContentViewController)
+            self.view.addSubview(self.eventsContentViewController.view)
+            self.eventsContentViewController.didMoveToParentViewController(self)
+        }
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {

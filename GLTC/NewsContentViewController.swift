@@ -30,7 +30,7 @@ class NewsContentViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "stopActivityIndicator:", name: "imageDownloaded", object: nil)
         self.newsImageView.image  = UIImage()
         if(imageUrl != nil && imageUrl != "") {
-            self.newsImageView.downloadImageFrom(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
+            self.newsImageView.downloadImageAndNotify(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
         }
         self.newsDataLbl.text = newsDate
         self.newsLbl.text = newsTxt

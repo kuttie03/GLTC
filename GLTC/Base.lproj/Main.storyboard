@@ -46,7 +46,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_green" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-SB-ho4">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-SB-ho4">
                                                     <rect key="frame" x="8" y="26" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="VFP-0a-skk"/>
@@ -98,7 +98,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="events_green" translatesAutoresizingMaskIntoConstraints="NO" id="sap-wA-AvV">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="events" translatesAutoresizingMaskIntoConstraints="NO" id="sap-wA-AvV">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="mpH-zO-QS7"/>
@@ -142,7 +142,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_green" translatesAutoresizingMaskIntoConstraints="NO" id="7Ai-2l-mC3">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="7Ai-2l-mC3">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="SrC-p5-Hpz"/>
@@ -186,7 +186,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_green" translatesAutoresizingMaskIntoConstraints="NO" id="eMx-wu-XjR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="eMx-wu-XjR">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="Dxh-iL-v8Z"/>
@@ -230,7 +230,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sponsor_green" translatesAutoresizingMaskIntoConstraints="NO" id="zhd-GY-5fu">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sponsor" translatesAutoresizingMaskIntoConstraints="NO" id="zhd-GY-5fu">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="n7P-Yj-yel"/>
@@ -274,7 +274,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership_green" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-DS-nMU">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-DS-nMU">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="1Uf-gW-8TW"/>
@@ -318,7 +318,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactus_green" translatesAutoresizingMaskIntoConstraints="NO" id="sQl-RW-601">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactus" translatesAutoresizingMaskIntoConstraints="NO" id="sQl-RW-601">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="JpT-bu-SNl"/>
@@ -362,7 +362,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laws_green" translatesAutoresizingMaskIntoConstraints="NO" id="jXp-Mv-Prv">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="law" translatesAutoresizingMaskIntoConstraints="NO" id="jXp-Mv-Prv">
                                                     <rect key="frame" x="8" y="12" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="P7z-x7-itw"/>
@@ -484,7 +484,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Km-gS-ypD">
                                                 <rect key="frame" x="18" y="255" width="555" height="35"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whoweare_green" translatesAutoresizingMaskIntoConstraints="NO" id="KyS-nZ-ieR">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unknown" translatesAutoresizingMaskIntoConstraints="NO" id="KyS-nZ-ieR">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="3Ri-5L-08H"/>
@@ -513,7 +513,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3tP-xI-Jlj">
                                                 <rect key="frame" x="22" y="340" width="555" height="35"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goal_green" translatesAutoresizingMaskIntoConstraints="NO" id="qOg-GL-ttz">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goal" translatesAutoresizingMaskIntoConstraints="NO" id="qOg-GL-ttz">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="1fp-4q-DO8"/>
@@ -546,7 +546,7 @@
                                             <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="20m-qm-DlO">
                                                 <rect key="frame" x="22" y="445" width="560" height="35"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mission_green" translatesAutoresizingMaskIntoConstraints="NO" id="Sag-Mj-LLE">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mission" translatesAutoresizingMaskIntoConstraints="NO" id="Sag-Mj-LLE">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="35" id="Dfk-uw-Mt1"/>
@@ -579,7 +579,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="une-Tn-8hO">
                                                 <rect key="frame" x="20" y="535" width="560" height="35"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership_green" translatesAutoresizingMaskIntoConstraints="NO" id="Igr-Q7-UQz">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leadership" translatesAutoresizingMaskIntoConstraints="NO" id="Igr-Q7-UQz">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="P5G-QJ-c3u"/>
@@ -1620,7 +1620,7 @@ Email: admin@lansingtelangana.org</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7Q-XG-3Oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="3360"/>
+            <point key="canvasLocation" x="1980" y="3678"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="0Pn-73-iyP">
@@ -1636,7 +1636,7 @@ Email: admin@lansingtelangana.org</string>
                 <pageViewController storyboardIdentifier="EventsPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="rAS-3I-RQR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KzH-um-jS0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2640" y="3360"/>
+            <point key="canvasLocation" x="2640" y="3678"/>
         </scene>
         <!--Events Content View Controller-->
         <scene sceneID="gCw-QA-YXN">
@@ -1834,7 +1834,7 @@ GLTC Team</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iyh-lW-aGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="4168"/>
+            <point key="canvasLocation" x="1980" y="4428"/>
         </scene>
         <!--Darshan Labs-->
         <scene sceneID="i8w-dr-TIq">
@@ -1934,7 +1934,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1z7-d9-bxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="4984"/>
+            <point key="canvasLocation" x="1980" y="5337"/>
         </scene>
         <!--GLTC Videos-->
         <scene sceneID="sBZ-xD-25l">
@@ -2021,7 +2021,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coV-cz-QG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="5843"/>
+            <point key="canvasLocation" x="1980" y="6269"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7xv-eu-dph">
@@ -2151,7 +2151,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byO-zl-8N1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="4168"/>
+            <point key="canvasLocation" x="1103" y="4428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b1P-7W-0AX">
@@ -2172,7 +2172,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lc4-No-1U5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="3353"/>
+            <point key="canvasLocation" x="1103" y="3678"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZnA-0V-7Y6">
@@ -2193,7 +2193,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltA-SP-YS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="4873"/>
+            <point key="canvasLocation" x="1103" y="5187"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Avi-k0-HxJ">
@@ -2214,25 +2214,25 @@ Email: shravankumar.singireddy@gmail.com</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ow6-ot-q3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="5843"/>
+            <point key="canvasLocation" x="1103" y="6269"/>
         </scene>
     </scenes>
     <resources>
         <image name="DarshanLabs" width="3000" height="1800"/>
-        <image name="calendar" width="24" height="24"/>
-        <image name="contactus_green" width="199" height="199"/>
-        <image name="events_green" width="253" height="247"/>
+        <image name="calendar" width="700" height="700"/>
+        <image name="contactus" width="700" height="700"/>
+        <image name="events" width="700" height="700"/>
         <image name="gltcLogo" width="232" height="215"/>
-        <image name="goal_green" width="344" height="350"/>
+        <image name="goal" width="700" height="700"/>
         <image name="history" width="877" height="200"/>
-        <image name="home_green" width="74" height="74"/>
-        <image name="laws_green" width="450" height="450"/>
-        <image name="leadership_green" width="301" height="295"/>
-        <image name="mission_green" width="193" height="193"/>
-        <image name="news_green" width="256" height="256"/>
-        <image name="sponsor_green" width="68" height="68"/>
-        <image name="video_green" width="256" height="256"/>
-        <image name="whoweare_green" width="600" height="600"/>
+        <image name="home" width="700" height="700"/>
+        <image name="law" width="700" height="700"/>
+        <image name="leadership" width="700" height="700"/>
+        <image name="mission" width="700" height="700"/>
+        <image name="news" width="700" height="700"/>
+        <image name="sponsor" width="700" height="700"/>
+        <image name="unknown" width="700" height="700"/>
+        <image name="video" width="700" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="e7m-uc-0Ho"/>

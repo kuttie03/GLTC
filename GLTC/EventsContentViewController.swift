@@ -22,7 +22,7 @@ class EventsContentViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "stopActivityIndicator:", name: "imageDownloaded", object: nil)
         self.eventImageView.image  = UIImage()
         if(imageUrl != nil && imageUrl != "") {
-            self.eventImageView.downloadImageFrom(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
+            self.eventImageView.downloadImageAndNotify(link:imageUrl, contentMode: UIViewContentMode.ScaleAspectFit)
         }
     }
     

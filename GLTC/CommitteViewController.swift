@@ -51,7 +51,7 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
             if let image = imageCache[imageUrl] {
                 committeeMemberCell.memberImg.image = image
             }else{
-                committeeMemberCell.memberImg.image = UIImage(named: "user_medium_green")
+                committeeMemberCell.memberImg.image = UIImage(named: "leadership")
                 NSURLSession.sharedSession().dataTaskWithURL( NSURL(string:imageUrl)!, completionHandler: {
                     (data, response, error) -> Void in
                     dispatch_async(dispatch_get_main_queue()) {

@@ -34,7 +34,6 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
     }
     
     //Returns Number of Sections
@@ -56,7 +55,7 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
             if let image = imageCache[imageUrl] {
                 sponsorCell.sponsorImg.image = image
             }else{
-                sponsorCell.sponsorImg.image = UIImage(named: "sponsor_medium_green")
+                sponsorCell.sponsorImg.image = UIImage(named: "sponsor")
                 NSURLSession.sharedSession().dataTaskWithURL( NSURL(string:imageUrl)!, completionHandler: {
                     (data, response, error) -> Void in
                     dispatch_async(dispatch_get_main_queue()) {
@@ -73,4 +72,21 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
             return SponsorCell()
         }
     }
+    
+    /*func getAllVisibleCells() -> [UITableViewCell] {
+        var cells = [UITableViewCell]()
+        // assuming tableView is your self.tableView defined somewhere
+        for i in 0...sponsorTableView.numberOfSections-1
+        {
+            for j in 0...sponsorTableView.numberOfRowsInSection(i)-1
+            {
+                if let cell = sponsorTableView.cellForRowAtIndexPath(NSIndexPath(forRow: j, inSection: i)) {
+                    
+                    cells.append(cell)
+                }
+                
+            }
+        }
+        return cells
+    }*/
 }

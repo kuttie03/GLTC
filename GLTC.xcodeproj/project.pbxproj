@@ -182,6 +182,7 @@
 				A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */,
 				A482AC2D1C50728B00892F16 /* GLTCEvent.swift */,
 				A4E01D851C557E1A002DD247 /* GLTCVideo.swift */,
+				A49A64AA1C5AEACF00FC00E4 /* ImageAsyncDownloader.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -193,7 +194,6 @@
 				A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */,
 				A47262C01C49A6FE007DE47C /* RoundedButton.swift */,
 				A4E01D831C557784002DD247 /* VideoCell.swift */,
-				A49A64AA1C5AEACF00FC00E4 /* ImageAsyncDownloader.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";

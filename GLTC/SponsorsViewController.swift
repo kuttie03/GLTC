@@ -38,7 +38,13 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     //Returns Number of Sections
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        if(sponsors.count > 0) {
+            return 1
+        }else{
+            let messageLabel = GLTCUtil.getNoDataMessageLabel(CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
+            self.sponsorTableView.backgroundView = messageLabel
+        }
+        return 0
     }
     
     //Returns number of Rows in each section

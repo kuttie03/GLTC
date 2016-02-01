@@ -1,5 +1,5 @@
 //
-//  ColorUtil.swift
+//  GLTCUtil.swift
 //  GLTC
 //
 //  Created by Shravan Kumar Singireddy on 1/26/16.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ColorUtil {
+class GLTCUtil {
     
-    static func colorWithHexString (hex:String) -> UIColor {
+    static func getColorWithHexString (hex:String) -> UIColor {
         var cString:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
         
         if (cString.hasPrefix("#")) {
@@ -32,6 +32,17 @@ class ColorUtil {
         
         
         return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(1))
+    }
+    
+    static func getNoDataMessageLabel(frame: CGRect) -> UILabel {
+        let messageLabel = UILabel(frame: frame)
+        messageLabel.text = "No data is currently available. Please check your Internet connection or pull down to refresh"
+        messageLabel.textColor = UIColor.darkGrayColor()
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = NSTextAlignment.Center
+        messageLabel.font = UIFont(name: "Palatino-Italic", size: 20)
+        messageLabel.sizeToFit()
+        return messageLabel
     }
     
 }

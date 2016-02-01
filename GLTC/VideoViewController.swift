@@ -33,7 +33,13 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     //Returns Number of Sections
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        if(videos.count > 0) {
+            return 1
+        }else{
+            let messageLabel = GLTCUtil.getNoDataMessageLabel(CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
+            self.videTableView.backgroundView = messageLabel
+        }
+        return 0
     }
     
     //Returns number of Rows in each section

@@ -33,7 +33,13 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
     
     //Returns Number of Sections
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return committees.count
+        if(committees.count > 0) {
+            return committees.count
+        }else{
+            let messageLabel = GLTCUtil.getNoDataMessageLabel(CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
+            self.committeeTableView.backgroundView = messageLabel
+        }
+        return 0
     }
     
     //Returns number of Rows in each section

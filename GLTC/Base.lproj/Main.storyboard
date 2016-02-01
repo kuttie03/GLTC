@@ -2219,7 +2219,7 @@ Email: shravankumar.singireddy@gmail.com</string>
     </scenes>
     <resources>
         <image name="DarshanLabs" width="3000" height="1800"/>
-        <image name="calendar" width="700" height="700"/>
+        <image name="calendar" width="24" height="24"/>
         <image name="contactus" width="700" height="700"/>
         <image name="events" width="700" height="700"/>
         <image name="gltcLogo" width="232" height="215"/>

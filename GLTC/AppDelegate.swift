@@ -24,10 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //PageView Attributes
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.lightGrayColor()
-        UIPageControl.appearance().currentPageIndicatorTintColor = ColorUtil.colorWithHexString(PAGEVIEW_HEX_COLOR)
+        UIPageControl.appearance().currentPageIndicatorTintColor = GLTCUtil.getColorWithHexString(PAGEVIEW_HEX_COLOR)
         
         //Navigation Bar Attributes
-        UINavigationBar.appearance().barTintColor = ColorUtil.colorWithHexString(NAVBAR_TINT_HEX_COLOR)
+        UINavigationBar.appearance().barTintColor = GLTCUtil.getColorWithHexString(NAVBAR_TINT_HEX_COLOR)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: NAVBAR_FONT_NAME, size: NAVBAR_FONT_SIZE)!]
         UIBarButtonItem.appearance().tintColor = UIColor.whiteColor()

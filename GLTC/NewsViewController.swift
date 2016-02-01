@@ -41,6 +41,10 @@ class NewsViewController: UIViewController, UIPageViewControllerDataSource {
             self.addChildViewController(self.newsContentViewController)
             self.view.addSubview(self.newsContentViewController.view)
             self.newsContentViewController.didMoveToParentViewController(self)
+        }else{
+            let messageLabel = GLTCUtil.getNoDataMessageLabel(CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
+            self.view = messageLabel
+            self.view.backgroundColor = UIColor.whiteColor()
         }
     }
     

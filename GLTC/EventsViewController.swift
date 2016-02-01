@@ -39,6 +39,10 @@ class EventsViewController: UIViewController, UIPageViewControllerDataSource {
             self.addChildViewController(self.eventsContentViewController)
             self.view.addSubview(self.eventsContentViewController.view)
             self.eventsContentViewController.didMoveToParentViewController(self)
+        }else{
+            let messageLabel = GLTCUtil.getNoDataMessageLabel(CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
+            self.view = messageLabel
+            self.view.backgroundColor = UIColor.whiteColor()
         }
     }
     

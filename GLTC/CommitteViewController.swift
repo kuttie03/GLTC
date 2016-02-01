@@ -14,6 +14,7 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
     
     @IBOutlet weak var committeeTableView: UITableView!
     
+    var refreshControl:UIRefreshControl!
     var committees: [GLTCCommittee] = []
     var imageCache = Dictionary<String,UIImage>()
     
@@ -29,6 +30,12 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        // Initialize the refresh control
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = PULL_TO_REFRESH_TEXT
+        self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
+        self.committeeTableView.addSubview(refreshControl)
     }
     
     //Returns Number of Sections
@@ -83,7 +90,10 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
         return committee.getName()
     }
     
-    func stopActivityIndicator(notif: AnyObject) {
-        print("stopActivityIndicator")
+    func reloadData(sender: AnyObject) {
+        GLTCDataLoader.sharedInstance.loadGLTCJson()
+        committees = GLTCDataLoader.sharedInstance.getCommittees()
+        self.refreshControl.endRefreshing()
+        self.committeeTableView.reloadData()
     }
 }

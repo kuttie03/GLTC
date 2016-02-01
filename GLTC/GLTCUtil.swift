@@ -12,15 +12,12 @@ class GLTCUtil {
     
     static func getColorWithHexString (hex:String) -> UIColor {
         var cString:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).uppercaseString
-        
         if (cString.hasPrefix("#")) {
             cString = (cString as NSString).substringFromIndex(1)
         }
-        
 //        if (countElements(cString) != 6) {
 //            return UIColor.grayColor()
 //        }
-        
         let rString = (cString as NSString).substringToIndex(2)
         let gString = ((cString as NSString).substringFromIndex(2) as NSString).substringToIndex(2)
         let bString = ((cString as NSString).substringFromIndex(4) as NSString).substringToIndex(2)
@@ -30,13 +27,12 @@ class GLTCUtil {
         NSScanner(string: gString).scanHexInt(&g)
         NSScanner(string: bString).scanHexInt(&b)
         
-        
         return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: CGFloat(1))
     }
     
     static func getNoDataMessageLabel(frame: CGRect) -> UILabel {
         let messageLabel = UILabel(frame: frame)
-        messageLabel.text = "No data is currently available. Please check your Internet connection or pull down to refresh"
+        messageLabel.text = "No data is currently available. Please check your Internet connection"
         messageLabel.textColor = UIColor.darkGrayColor()
         messageLabel.numberOfLines = 0
         messageLabel.textAlignment = NSTextAlignment.Center

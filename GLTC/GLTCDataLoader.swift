@@ -46,7 +46,7 @@ class GLTCDataLoader {
     
     //Synchronous JSON retrieval
     func loadGLTCJson() {
-        if(events.isEmpty || committees.isEmpty || sponsors.isEmpty || news.isEmpty || videos.isEmpty) {
+        //if(events.isEmpty || committees.isEmpty || sponsors.isEmpty || news.isEmpty || videos.isEmpty) {
             print("Loading data from Server")
             let url = NSURL(string: GLTC_JSON_URL)
             if let data = NSData(contentsOfURL: url!){
@@ -144,9 +144,9 @@ class GLTCDataLoader {
                     print(err.debugDescription)
                 }
             }
-        }else{
-            print("Data Exists - No need to load data again")
-        }
+        //}else{
+          //  print("Data Exists - No need to load data again")
+        //}
     }
     
     //Asynchronous JSON retrieval

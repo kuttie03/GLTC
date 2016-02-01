@@ -14,6 +14,7 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var sponsorTableView: UITableView!
     
+    var refreshControl:UIRefreshControl!
     var sponsors: [GLTCSponsor] = []
     var imageCache = Dictionary<String,UIImage>()
     
@@ -34,6 +35,12 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        // Initialize the refresh control
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = PULL_TO_REFRESH_TEXT
+        self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
+        self.sponsorTableView.addSubview(refreshControl)
     }
     
     //Returns Number of Sections
@@ -77,6 +84,13 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
         }else{
             return SponsorCell()
         }
+    }
+    
+    func reloadData(sender: AnyObject) {
+        GLTCDataLoader.sharedInstance.loadGLTCJson()
+        sponsors = GLTCDataLoader.sharedInstance.getSponsors()
+        self.refreshControl.endRefreshing()
+        self.sponsorTableView.reloadData()
     }
     
     /*func getAllVisibleCells() -> [UITableViewCell] {

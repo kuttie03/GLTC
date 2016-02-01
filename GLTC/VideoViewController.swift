@@ -15,6 +15,7 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var videTableView: UITableView!
     
+    var refreshControl:UIRefreshControl!
     var videos: [GLTCVideo] = []
     
     override func viewDidLoad() {
@@ -29,6 +30,12 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        // Initialize the refresh control
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = PULL_TO_REFRESH_TEXT
+        self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
+        self.videTableView.addSubview(refreshControl)
     }
     
     //Returns Number of Sections
@@ -56,6 +63,13 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
         }else{
             return VideoCell()
         }
+    }
+    
+    func reloadData(sender: AnyObject) {
+        GLTCDataLoader.sharedInstance.loadGLTCJson()
+        videos = GLTCDataLoader.sharedInstance.getVideos()
+        self.refreshControl.endRefreshing()
+        self.videTableView.reloadData()
     }
     
 }

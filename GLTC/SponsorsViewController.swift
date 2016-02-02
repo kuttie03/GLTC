@@ -24,23 +24,8 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
         sponsorTableView.delegate = self
         sponsorTableView.dataSource = self
         sponsorTableView.allowsSelection = false
-        
-        /*var calendarImage = UIImage(named: "calendar")
-        calendarImage = calendarImage?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: calendarImage, style: UIBarButtonItemStyle.Plain, target: self, action: nil)*/
-    
-        if self.revealViewController() != nil {
-            var image = UIImage(named: "menu_white")
-            image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        
-        // Initialize the refresh control
-        self.refreshControl = UIRefreshControl()
-        self.refreshControl.attributedTitle = PULL_TO_REFRESH_TEXT
-        //self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
-        self.sponsorTableView.addSubview(refreshControl)
+        initiateSWRevealController()
+        initiateRefreshControl()
     }
     
     //Returns Number of Sections
@@ -90,6 +75,22 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
         if(self.refreshControl.refreshing) {
             reloadData()
         }
+    }
+    
+    func initiateSWRevealController() {
+        if self.revealViewController() != nil {
+            var image = UIImage(named: "menu_white")
+            image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+    }
+    
+    func initiateRefreshControl() {
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = PULL_TO_REFRESH_TEXT
+        //self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
+        self.sponsorTableView.addSubview(refreshControl)
     }
     
     func reloadData() {

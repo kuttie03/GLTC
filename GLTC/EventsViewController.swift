@@ -17,12 +17,7 @@ class EventsViewController: UIViewController, UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if self.revealViewController() != nil {
-            var image = UIImage(named: "menu_white")
-            image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
+        initiateSWRevealController()
         events = GLTCDataLoader.sharedInstance.getEvents()
         if(events.count > 0){
             self.eventsContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("EventsPageViewController") as! UIPageViewController
@@ -84,5 +79,14 @@ class EventsViewController: UIViewController, UIPageViewControllerDataSource {
         }
         pageContentViewController.pageIndex = index
         return pageContentViewController
+    }
+    
+    func initiateSWRevealController() {
+        if self.revealViewController() != nil {
+            var image = UIImage(named: "menu_white")
+            image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
 }

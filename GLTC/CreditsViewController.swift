@@ -12,6 +12,10 @@ class CreditsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        initiateSWRevealController()
+    }
+    
+    func initiateSWRevealController() {
         if self.revealViewController() != nil {
             var image = UIImage(named: "menu_white")
             image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
@@ -19,5 +23,4 @@ class CreditsViewController: UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
     }
-    
 }

@@ -24,18 +24,8 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
         committeeTableView.delegate = self
         committeeTableView.dataSource = self
         committeeTableView.allowsSelection = false
-        if self.revealViewController() != nil {
-            var image = UIImage(named: "menu_white")
-            image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        
-        // Initialize the refresh control
-        self.refreshControl = UIRefreshControl()
-        self.refreshControl.attributedTitle = PULL_TO_REFRESH_TEXT
-        //self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
-        self.committeeTableView.addSubview(refreshControl)
+        initiateSWRevealController()
+        initiateRefreshControl()
     }
     
     //Returns Number of Sections
@@ -94,6 +84,22 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
         if(self.refreshControl.refreshing) {
             reloadData()
         }
+    }
+    
+    func initiateSWRevealController() {
+        if self.revealViewController() != nil {
+            var image = UIImage(named: "menu_white")
+            image = image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+    }
+    
+    func initiateRefreshControl() {
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = PULL_TO_REFRESH_TEXT
+        //self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
+        self.committeeTableView.addSubview(refreshControl)
     }
     
     func reloadData() {

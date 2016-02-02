@@ -15,6 +15,14 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setHomeScreenTitle()
+        initiateSWRevealController()
+    }
+    
+    override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
+        setHomeScreenTitle()
+    }
+    
+    func initiateSWRevealController() {
         if self.revealViewController() != nil {
             //self.revealViewController().rearViewRevealWidth = 300
             var image = UIImage(named: "menu_white")
@@ -22,10 +30,6 @@ class HomeViewController: UIViewController {
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self.revealViewController(), action: "revealToggle:")
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-    }
-    
-    override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
-        setHomeScreenTitle()
     }
     
     func setHomeScreenTitle() {

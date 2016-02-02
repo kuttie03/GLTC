@@ -41,4 +41,18 @@ class GLTCUtil {
         return messageLabel
     }
     
+    static func getCurrentDeviceType() -> String {
+        let device = UIScreen.mainScreen().traitCollection.userInterfaceIdiom
+        var deviceType = ""
+        switch (device) {
+            case .Phone:
+                deviceType = "iPhone"
+            case .Pad:
+                deviceType = "iPad"
+            default:
+                deviceType = "Unknown"
+        }
+        return deviceType
+    }
+    
 }

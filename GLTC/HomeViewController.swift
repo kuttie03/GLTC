@@ -29,9 +29,16 @@ class HomeViewController: UIViewController {
     }
     
     func setHomeScreenTitle() {
-        let app = UIApplication.sharedApplication()
-        if(app.statusBarOrientation.isLandscape) {
+        let deviceType = GLTCUtil.getCurrentDeviceType()
+        if(deviceType == "iPad") {
             self.navigationItem.title = "Greater Lansing Telangana Community"
+        }else if(deviceType == "iPhone"){
+            let app = UIApplication.sharedApplication()
+            if(app.statusBarOrientation.isLandscape) {
+                self.navigationItem.title = "Greater Lansing Telangana Community"
+            }else{
+                self.navigationItem.title = "GLTC"
+            }
         }else{
             self.navigationItem.title = "GLTC"
         }

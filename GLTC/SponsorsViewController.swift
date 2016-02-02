@@ -39,7 +39,7 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
         // Initialize the refresh control
         self.refreshControl = UIRefreshControl()
         self.refreshControl.attributedTitle = PULL_TO_REFRESH_TEXT
-        self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
+        //self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
         self.sponsorTableView.addSubview(refreshControl)
     }
     
@@ -86,7 +86,13 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
-    func reloadData(sender: AnyObject) {
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        if(self.refreshControl.refreshing) {
+            reloadData()
+        }
+    }
+    
+    func reloadData() {
         GLTCDataLoader.sharedInstance.loadGLTCJson()
         sponsors = GLTCDataLoader.sharedInstance.getSponsors()
         self.refreshControl.endRefreshing()

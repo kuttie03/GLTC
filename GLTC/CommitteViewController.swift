@@ -34,7 +34,7 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
         // Initialize the refresh control
         self.refreshControl = UIRefreshControl()
         self.refreshControl.attributedTitle = PULL_TO_REFRESH_TEXT
-        self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
+        //self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
         self.committeeTableView.addSubview(refreshControl)
     }
     
@@ -90,10 +90,16 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
         return committee.getName()
     }
     
-    func reloadData(sender: AnyObject) {
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        if(self.refreshControl.refreshing) {
+            reloadData()
+        }
+    }
+    
+    func reloadData() {
+        self.refreshControl.endRefreshing()
         GLTCDataLoader.sharedInstance.loadGLTCJson()
         committees = GLTCDataLoader.sharedInstance.getCommittees()
-        self.refreshControl.endRefreshing()
         self.committeeTableView.reloadData()
     }
 }

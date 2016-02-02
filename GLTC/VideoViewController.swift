@@ -34,7 +34,7 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Initialize the refresh control
         self.refreshControl = UIRefreshControl()
         self.refreshControl.attributedTitle = PULL_TO_REFRESH_TEXT
-        self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
+        //self.refreshControl.addTarget(self, action: "reloadData:", forControlEvents: UIControlEvents.ValueChanged)
         self.videTableView.addSubview(refreshControl)
     }
     
@@ -65,7 +65,13 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
-    func reloadData(sender: AnyObject) {
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        if(self.refreshControl.refreshing) {
+            reloadData()
+        }
+    }
+    
+    func reloadData() {
         GLTCDataLoader.sharedInstance.loadGLTCJson()
         videos = GLTCDataLoader.sharedInstance.getVideos()
         self.refreshControl.endRefreshing()

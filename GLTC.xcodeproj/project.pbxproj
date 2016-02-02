@@ -22,13 +22,14 @@
 		A4C9EEA91C494BC200B7067E /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */; };
 		A4C9EEAB1C494C3800B7067E /* GLTCSponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */; };
 		A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */; };
-		A4D086E31C4EBE5300F0675A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D086E21C4EBE5300F0675A /* NewsViewController.swift */; };
-		A4D086E51C4EC05300F0675A /* NewsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D086E41C4EC05300F0675A /* NewsContentViewController.swift */; };
+		A4D086E51C4EC05300F0675A /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D086E41C4EC05300F0675A /* NewsDetailViewController.swift */; };
 		A4D086E71C4ECF4000F0675A /* GLTCNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D086E61C4ECF4000F0675A /* GLTCNews.swift */; };
 		A4DB2D931C581F1D00219F42 /* GLTCUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB2D921C581F1D00219F42 /* GLTCUtil.swift */; };
 		A4DFFDD21C56BC2B00336F21 /* TelanganaHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DFFDD11C56BC2B00336F21 /* TelanganaHistoryViewController.swift */; };
 		A4E01D841C557784002DD247 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E01D831C557784002DD247 /* VideoCell.swift */; };
 		A4E01D861C557E1A002DD247 /* GLTCVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E01D851C557E1A002DD247 /* GLTCVideo.swift */; };
+		A4E22A791C60F5680060FC7A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E22A781C60F5680060FC7A /* NewsViewController.swift */; };
+		A4E22A7B1C60F63A0060FC7A /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E22A7A1C60F63A0060FC7A /* NewsCell.swift */; };
 		A4E9F1E21C4F367800389995 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9F1E11C4F367800389995 /* VideoViewController.swift */; };
 		A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9161C488FB5007973E3 /* AppDelegate.swift */; };
 		A4EBC9191C488FB5007973E3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBC9181C488FB5007973E3 /* HomeViewController.swift */; };
@@ -63,13 +64,14 @@
 		A4C9EEA81C494BC200B7067E /* SponsorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
 		A4C9EEAA1C494C3800B7067E /* GLTCSponsor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCSponsor.swift; sourceTree = "<group>"; };
 		A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsorCell.swift; sourceTree = "<group>"; };
-		A4D086E21C4EBE5300F0675A /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		A4D086E41C4EC05300F0675A /* NewsContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsContentViewController.swift; sourceTree = "<group>"; };
+		A4D086E41C4EC05300F0675A /* NewsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		A4D086E61C4ECF4000F0675A /* GLTCNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCNews.swift; sourceTree = "<group>"; };
 		A4DB2D921C581F1D00219F42 /* GLTCUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCUtil.swift; sourceTree = "<group>"; };
 		A4DFFDD11C56BC2B00336F21 /* TelanganaHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelanganaHistoryViewController.swift; sourceTree = "<group>"; };
 		A4E01D831C557784002DD247 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		A4E01D851C557E1A002DD247 /* GLTCVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCVideo.swift; sourceTree = "<group>"; };
+		A4E22A781C60F5680060FC7A /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		A4E22A7A1C60F63A0060FC7A /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		A4E9F1E11C4F367800389995 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		A4EBC9131C488FB5007973E3 /* GLTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EBC9161C488FB5007973E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */,
 				A47262C01C49A6FE007DE47C /* RoundedButton.swift */,
 				A4E01D831C557784002DD247 /* VideoCell.swift */,
+				A4E22A7A1C60F63A0060FC7A /* NewsCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -205,8 +208,8 @@
 				A4EBC9331C4890EA007973E3 /* CommitteViewController.swift */,
 				A4EBC9341C4890EA007973E3 /* ContactUsViewController.swift */,
 				A4EBC9181C488FB5007973E3 /* HomeViewController.swift */,
-				A4D086E21C4EBE5300F0675A /* NewsViewController.swift */,
-				A4D086E41C4EC05300F0675A /* NewsContentViewController.swift */,
+				A4E22A781C60F5680060FC7A /* NewsViewController.swift */,
+				A4D086E41C4EC05300F0675A /* NewsDetailViewController.swift */,
 				A4E9F1E11C4F367800389995 /* VideoViewController.swift */,
 				A43137AB1C502689001FEB75 /* BylawsViewController.swift */,
 				A482AC2B1C50721400892F16 /* EventsViewController.swift */,
@@ -362,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E22A791C60F5680060FC7A /* NewsViewController.swift in Sources */,
 				A4721EF21C4FFADC00EB62AC /* GLTCDataLoader.swift in Sources */,
 				A41FEF631C596DDC00ADB864 /* GLTCConstants.swift in Sources */,
 				A43137AC1C502689001FEB75 /* BylawsViewController.swift in Sources */,
@@ -369,6 +373,7 @@
 				A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */,
 				A4E9F1E21C4F367800389995 /* VideoViewController.swift in Sources */,
 				A4EBC9191C488FB5007973E3 /* HomeViewController.swift in Sources */,
+				A4E22A7B1C60F63A0060FC7A /* NewsCell.swift in Sources */,
 				A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */,
 				A49A64AB1C5AEACF00FC00E4 /* ImageAsyncDownloader.swift in Sources */,
 				A42E22811C5156C1000171BB /* CreditsViewController.swift in Sources */,
@@ -384,10 +389,9 @@
 				A47262C11C49A6FE007DE47C /* RoundedButton.swift in Sources */,
 				A4DB2D931C581F1D00219F42 /* GLTCUtil.swift in Sources */,
 				A4E01D841C557784002DD247 /* VideoCell.swift in Sources */,
-				A4D086E31C4EBE5300F0675A /* NewsViewController.swift in Sources */,
 				A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */,
 				A4EBC92E1C489045007973E3 /* GLTCCommitteeMember.swift in Sources */,
-				A4D086E51C4EC05300F0675A /* NewsContentViewController.swift in Sources */,
+				A4D086E51C4EC05300F0675A /* NewsDetailViewController.swift in Sources */,
 				A4AFCBB51C57DDBB000ACE4E /* CalendarViewController.swift in Sources */,
 				A482AC2E1C50728B00892F16 /* GLTCEvent.swift in Sources */,
 				A482AC301C5073A100892F16 /* EventsContentViewController.swift in Sources */,

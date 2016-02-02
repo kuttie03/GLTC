@@ -10,11 +10,31 @@ import UIKit
 
 class GLTCNews {
     
+    private var newsId: Int!
+    
+    private var newsHeadline: String!
+    
     private var newsText: String!
     
     private var newsDate: String!
     
     private var imageUrl: String!
+    
+    func getNewsId() -> Int {
+        return self.newsId
+    }
+    
+    func setNewsId(newsId: Int){
+        self.newsId = newsId
+    }
+    
+    func getNewsHeadline() -> String {
+        return self.newsHeadline
+    }
+    
+    func setNewsHeadline(newsHeadline: String){
+        self.newsHeadline = newsHeadline
+    }
     
     func getNewsText() -> String {
         return self.newsText

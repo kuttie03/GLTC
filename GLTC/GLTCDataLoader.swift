@@ -17,7 +17,7 @@ class GLTCDataLoader {
     private var events: [GLTCEvent] = []
     private var committees: [GLTCCommittee] = []
     private var sponsors: [GLTCSponsor] = []
-    private var news: [GLTCNews] = []
+    private var news: Dictionary<Int, GLTCNews> = [:]
     private var videos: [GLTCVideo] = []
     
     private init() {
@@ -36,7 +36,7 @@ class GLTCDataLoader {
         return self.sponsors
     }
     
-    func getNews() -> [GLTCNews] {
+    func getNews() -> Dictionary<Int, GLTCNews> {
         return self.news
     }
     
@@ -113,15 +113,19 @@ class GLTCDataLoader {
                         for newDict in newsDict {
                             let news = GLTCNews()
                             for (key, value) in newDict {
-                                if(key == "newsDate"){
+                                if(key == "newsId"){
+                                    news.setNewsId(Int(value)!)
+                                }else if(key == "newsDate"){
                                     news.setNewsDate(value)
+                                }else if(key == "newsHeadline") {
+                                    news.setNewsHeadline(value)
                                 }else if(key == "newsText") {
                                     news.setNewsText(value)
                                 }else if(key == "imageUrl") {
                                     news.setImageUrl(value)
                                 }
                             }
-                            self.news.append(news)
+                            self.news[news.getNewsId()] = news
                         }
                     }
                     
@@ -244,7 +248,7 @@ class GLTCDataLoader {
         events = []
         committees = []
         sponsors = []
-        news = []
+        news = [:]
         videos = []
     }
 }

@@ -94,7 +94,7 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func reloadData() {
-        GLTCDataLoader.sharedInstance.loadGLTCJson()
+        GLTCDataLoader.sharedInstance.loadGLTCJson(true)
         sponsors = GLTCDataLoader.sharedInstance.getSponsors()
         self.refreshControl.endRefreshing()
         self.sponsorTableView.reloadData()

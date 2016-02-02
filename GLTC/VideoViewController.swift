@@ -78,7 +78,7 @@ class VideoViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func reloadData() {
-        GLTCDataLoader.sharedInstance.loadGLTCJson()
+        GLTCDataLoader.sharedInstance.loadGLTCJson(true)
         videos = GLTCDataLoader.sharedInstance.getVideos()
         self.refreshControl.endRefreshing()
         self.videTableView.reloadData()

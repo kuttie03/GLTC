@@ -73,6 +73,7 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //Called when a row is selected
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         performSegueWithIdentifier("showNewsDetails", sender: indexPath.row)
     }
     
@@ -111,7 +112,7 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func reloadData() {
-        GLTCDataLoader.sharedInstance.loadGLTCJson()
+        GLTCDataLoader.sharedInstance.loadGLTCJson(true)
         gltcNews = GLTCDataLoader.sharedInstance.getNews()
         self.refreshControl.endRefreshing()
         self.newsTableView.reloadData()

@@ -103,9 +103,9 @@ class CommitteeViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func reloadData() {
-        self.refreshControl.endRefreshing()
-        GLTCDataLoader.sharedInstance.loadGLTCJson()
+        GLTCDataLoader.sharedInstance.loadGLTCJson(true)
         committees = GLTCDataLoader.sharedInstance.getCommittees()
+        self.refreshControl.endRefreshing()
         self.committeeTableView.reloadData()
     }
 }

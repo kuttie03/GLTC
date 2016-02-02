@@ -14,7 +14,7 @@ class NewsDetailViewController: UIViewController {
     
     @IBOutlet weak var newsDateLbl: UILabel!
     
-    @IBOutlet weak var newsTxtView: UITextView!
+    @IBOutlet weak var newsLbl: UILabel!
     
     var newsDate: String!
     var newsText: String!
@@ -23,7 +23,7 @@ class NewsDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.newsDateLbl.text = newsDate
-        self.newsTxtView.text = newsText
+        self.newsLbl.text = newsText
         self.newsImageView.image = newsImage
     }
 

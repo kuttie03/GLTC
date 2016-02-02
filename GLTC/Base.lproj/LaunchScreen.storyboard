@@ -24,11 +24,11 @@
                                     <constraint firstAttribute="height" constant="200" id="xUL-Mz-2M7"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DarshanLabs" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-59-Uu8">
-                                <rect key="frame" x="200" y="482" width="200" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DarshanLabs" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-59-Uu8">
+                                <rect key="frame" x="225" y="521" width="150" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="i77-ua-KgQ"/>
-                                    <constraint firstAttribute="height" constant="128" id="qKm-7K-aeL"/>
+                                    <constraint firstAttribute="width" constant="150" id="i77-ua-KgQ"/>
+                                    <constraint firstAttribute="height" constant="90" id="qKm-7K-aeL"/>
                                 </constraints>
                             </imageView>
                         </subviews>

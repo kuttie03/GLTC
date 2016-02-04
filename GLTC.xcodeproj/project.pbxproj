@@ -11,8 +11,13 @@
 		A42E22811C5156C1000171BB /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42E22801C5156C1000171BB /* CreditsViewController.swift */; };
 		A43137AA1C502642001FEB75 /* gltc_bylaws.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A43137A91C502642001FEB75 /* gltc_bylaws.pdf */; };
 		A43137AC1C502689001FEB75 /* BylawsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43137AB1C502689001FEB75 /* BylawsViewController.swift */; };
+		A43E34431C63C03D004F200B /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43E34421C63C03D004F200B /* MaterialTextField.swift */; };
+		A43E34481C63C3A1004F200B /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43E34441C63C3A1004F200B /* NotoSans-Bold.ttf */; };
+		A43E34491C63C3A1004F200B /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43E34451C63C3A1004F200B /* NotoSans-BoldItalic.ttf */; };
+		A43E344A1C63C3A1004F200B /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43E34461C63C3A1004F200B /* NotoSans-Italic.ttf */; };
+		A43E344B1C63C3A1004F200B /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43E34471C63C3A1004F200B /* NotoSans-Regular.ttf */; };
 		A4721EF21C4FFADC00EB62AC /* GLTCDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4721EF11C4FFADC00EB62AC /* GLTCDataLoader.swift */; };
-		A47262C11C49A6FE007DE47C /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47262C01C49A6FE007DE47C /* RoundedButton.swift */; };
+		A47262C11C49A6FE007DE47C /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47262C01C49A6FE007DE47C /* MaterialButton.swift */; };
 		A482AC2C1C50721400892F16 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482AC2B1C50721400892F16 /* EventsViewController.swift */; };
 		A482AC2E1C50728B00892F16 /* GLTCEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482AC2D1C50728B00892F16 /* GLTCEvent.swift */; };
 		A482AC301C5073A100892F16 /* EventsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482AC2F1C5073A100892F16 /* EventsContentViewController.swift */; };
@@ -53,8 +58,13 @@
 		A42E22801C5156C1000171BB /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		A43137A91C502642001FEB75 /* gltc_bylaws.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gltc_bylaws.pdf; sourceTree = "<group>"; };
 		A43137AB1C502689001FEB75 /* BylawsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BylawsViewController.swift; sourceTree = "<group>"; };
+		A43E34421C63C03D004F200B /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		A43E34441C63C3A1004F200B /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		A43E34451C63C3A1004F200B /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A43E34461C63C3A1004F200B /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		A43E34471C63C3A1004F200B /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		A4721EF11C4FFADC00EB62AC /* GLTCDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCDataLoader.swift; sourceTree = "<group>"; };
-		A47262C01C49A6FE007DE47C /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		A47262C01C49A6FE007DE47C /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		A482AC2B1C50721400892F16 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		A482AC2D1C50728B00892F16 /* GLTCEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLTCEvent.swift; sourceTree = "<group>"; };
 		A482AC2F1C5073A100892F16 /* EventsContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsContentViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +125,10 @@
 		A43137A81C502627001FEB75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A43E34441C63C3A1004F200B /* NotoSans-Bold.ttf */,
+				A43E34451C63C3A1004F200B /* NotoSans-BoldItalic.ttf */,
+				A43E34461C63C3A1004F200B /* NotoSans-Italic.ttf */,
+				A43E34471C63C3A1004F200B /* NotoSans-Regular.ttf */,
 				A4AFCBB61C57DDE8000ACE4E /* gltc_calendar_2016.pdf */,
 				A43137A91C502642001FEB75 /* gltc_bylaws.pdf */,
 			);
@@ -194,9 +208,10 @@
 			children = (
 				A4C9EEAC1C4951BC00B7067E /* SponsorCell.swift */,
 				A4EBC92F1C48907B007973E3 /* CommitteeMemberCell.swift */,
-				A47262C01C49A6FE007DE47C /* RoundedButton.swift */,
 				A4E01D831C557784002DD247 /* VideoCell.swift */,
 				A4E22A7A1C60F63A0060FC7A /* NewsCell.swift */,
+				A47262C01C49A6FE007DE47C /* MaterialButton.swift */,
+				A43E34421C63C03D004F200B /* MaterialTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -302,11 +317,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43E344B1C63C3A1004F200B /* NotoSans-Regular.ttf in Resources */,
+				A43E34481C63C3A1004F200B /* NotoSans-Bold.ttf in Resources */,
 				A43137AA1C502642001FEB75 /* gltc_bylaws.pdf in Resources */,
 				A4EBC9211C488FB5007973E3 /* LaunchScreen.storyboard in Resources */,
+				A43E34491C63C3A1004F200B /* NotoSans-BoldItalic.ttf in Resources */,
 				A4AFCBB71C57DDE8000ACE4E /* gltc_calendar_2016.pdf in Resources */,
 				A4EBC91E1C488FB5007973E3 /* Assets.xcassets in Resources */,
 				A4EBC91C1C488FB5007973E3 /* Main.storyboard in Resources */,
+				A43E344A1C63C3A1004F200B /* NotoSans-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +392,7 @@
 				A4C9EEAD1C4951BC00B7067E /* SponsorCell.swift in Sources */,
 				A4E9F1E21C4F367800389995 /* VideoViewController.swift in Sources */,
 				A4EBC9191C488FB5007973E3 /* HomeViewController.swift in Sources */,
+				A43E34431C63C03D004F200B /* MaterialTextField.swift in Sources */,
 				A4E22A7B1C60F63A0060FC7A /* NewsCell.swift in Sources */,
 				A4EBC9301C48907B007973E3 /* CommitteeMemberCell.swift in Sources */,
 				A49A64AB1C5AEACF00FC00E4 /* ImageAsyncDownloader.swift in Sources */,
@@ -386,7 +406,7 @@
 				A4C9EEAB1C494C3800B7067E /* GLTCSponsor.swift in Sources */,
 				A4EBC93B1C48913D007973E3 /* SWRevealViewController.m in Sources */,
 				A4EBC9351C4890EA007973E3 /* CommitteViewController.swift in Sources */,
-				A47262C11C49A6FE007DE47C /* RoundedButton.swift in Sources */,
+				A47262C11C49A6FE007DE47C /* MaterialButton.swift in Sources */,
 				A4DB2D931C581F1D00219F42 /* GLTCUtil.swift in Sources */,
 				A4E01D841C557784002DD247 /* VideoCell.swift in Sources */,
 				A4EBC9171C488FB5007973E3 /* AppDelegate.swift in Sources */,

@@ -12,13 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    let PAGEVIEW_HEX_COLOR = "#39AA33"
-    let NAVBAR_TINT_HEX_COLOR = "#7BAA53"
-    
-    let NAVBAR_FONT_NAME = "Papyrus"
-    let NAVBAR_FONT_SIZE = CGFloat(20)
-    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         

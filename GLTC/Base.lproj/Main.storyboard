@@ -5,6 +5,34 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSans-Bold.ttf">
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
+        </mutableArray>
+        <mutableArray key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Reveal View Controller-->
         <scene sceneID="Zps-FZ-EO1">
@@ -492,17 +520,17 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="by4-Hy-Jbs">
-                                                        <rect key="frame" x="45" y="0.0" width="510" height="31"/>
+                                                        <rect key="frame" x="45" y="0.0" width="510" height="32"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who we are" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uS7-9Y-qEx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="21"/>
-                                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="22"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="16"/>
                                                                 <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greater Lansing Telangana Community (GLTC) is formed to represent the Telangana culture, community and the ‘Telangana’ state." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-Pd-CKg">
-                                                                <rect key="frame" x="0.0" y="31" width="510" height="0.0"/>
-                                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                                <rect key="frame" x="0.0" y="32" width="510" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -521,18 +549,18 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qVM-kY-jWD">
-                                                        <rect key="frame" x="45" y="0.0" width="510" height="31"/>
+                                                        <rect key="frame" x="45" y="0.0" width="510" height="32"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Goal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yw7-yO-Hcz">
-                                                                <rect key="frame" x="0.0" y="0.0" width="74" height="21"/>
-                                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="71" height="22"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="16"/>
                                                                 <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc7-5e-xWH">
-                                                                <rect key="frame" x="0.0" y="31" width="510" height="0.0"/>
+                                                                <rect key="frame" x="0.0" y="32" width="510" height="0.0"/>
                                                                 <string key="text">Is to provide a platform for people of Telangana origin and Indian Diaspora in and around Lansing to come together for cultural awareness and community development.</string>
-                                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -554,18 +582,18 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kf1-3I-uQc">
-                                                        <rect key="frame" x="45" y="0.0" width="515" height="31"/>
+                                                        <rect key="frame" x="45" y="0.0" width="515" height="32"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAy-qS-YqT">
-                                                                <rect key="frame" x="0.0" y="0.0" width="97" height="21"/>
-                                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="22"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="16"/>
                                                                 <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmE-Q2-0rB">
-                                                                <rect key="frame" x="0.0" y="31" width="515" height="0.0"/>
+                                                                <rect key="frame" x="0.0" y="32" width="515" height="0.0"/>
                                                                 <string key="text">Is to help the local charities and communities. GLTC represents Telangana culture, promote and celebrate the festivals like Bathukamma.</string>
-                                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -587,17 +615,17 @@
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qv3-6a-YrM">
-                                                        <rect key="frame" x="45" y="0.0" width="515" height="31"/>
+                                                        <rect key="frame" x="45" y="0.0" width="515" height="32"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFW-Ja-Vcg">
-                                                                <rect key="frame" x="0.0" y="0.0" width="81" height="21"/>
-                                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="79" height="22"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="16"/>
                                                                 <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GLTC Board is formed with Executive Board, Advisory Committee and Bathukamma Committee." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cI-6L-Ydr">
-                                                                <rect key="frame" x="0.0" y="31" width="515" height="0.0"/>
-                                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                                <rect key="frame" x="0.0" y="32" width="515" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -608,14 +636,14 @@
                                                     <constraint firstItem="qv3-6a-YrM" firstAttribute="leading" secondItem="Igr-Q7-UQz" secondAttribute="trailing" constant="10" id="8XU-Yx-XiQ"/>
                                                 </constraints>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QP-6R-RBc" customClass="RoundedButton" customModule="GLTC" customModuleProvider="target">
-                                                <rect key="frame" x="225" y="686" width="150" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QP-6R-RBc" customClass="MaterialButton" customModule="GLTC" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="686" width="190" height="30"/>
                                                 <color key="backgroundColor" red="0.4823529412" green="0.66666666669999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ILw-aH-QrV"/>
-                                                    <constraint firstAttribute="width" constant="170" id="rAX-se-VN6"/>
+                                                    <constraint firstAttribute="width" constant="190" id="rAX-se-VN6"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="16"/>
                                                 <state key="normal" title="Telangana History">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -949,7 +977,7 @@ Source: Telangana State Portal</string>
                                                         <constraint firstAttribute="height" constant="30" id="sam-5T-bLD"/>
                                                         <constraint firstAttribute="width" constant="452" id="uv3-ac-SfA"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -959,7 +987,7 @@ Source: Telangana State Portal</string>
                                                         <constraint firstAttribute="width" constant="178" id="38A-xk-QyP"/>
                                                         <constraint firstAttribute="height" constant="21" id="aLE-ch-62L"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1033,15 +1061,15 @@ Source: Telangana State Portal</string>
                                                     <constraint firstAttribute="width" constant="316" id="G3e-g0-0Oh"/>
                                                     <constraint firstAttribute="height" constant="21" id="cU8-Iv-keV"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="18"/>
                                                 <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyn-iv-sdU">
-                                                <rect key="frame" x="112" y="225" width="984" height="122"/>
+                                                <rect key="frame" x="112" y="225" width="1030" height="143"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuc-0D-NQo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="984" height="122"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuc-0D-NQo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="1030" height="143"/>
                                                         <string key="text">Please use the contact form if you have any questions or requests, concerning our organization. We will respond to your message within 48 hours.
  
 Tel: 517.975.5737
@@ -1049,7 +1077,7 @@ Tel: 517.975.5737
 Fax: 517.580.0828
 
 Email: admin@lansingtelangana.org</string>
-                                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1092,15 +1120,17 @@ Email: admin@lansingtelangana.org</string>
                                                 </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gWx-Rq-btr">
-                                                <rect key="frame" x="297" y="382" width="97" height="150"/>
+                                                <rect key="frame" x="297" y="382" width="80" height="102"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5SZ-K2-9K0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5SZ-K2-9K0" customClass="MaterialTextField" customModule="GLTC" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="18"/>
+                                                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="3ec-1G-oMe"/>
                                                             <constraint firstAttribute="height" constant="30" id="EMX-Dl-wwR"/>
                                                             <constraint firstAttribute="height" constant="30" id="y8q-Mj-8d5"/>
                                                         </constraints>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <variation key="default">
@@ -1126,13 +1156,15 @@ Email: admin@lansingtelangana.org</string>
                                                             </mask>
                                                         </variation>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-Sm-3jm">
-                                                        <rect key="frame" x="0.0" y="40" width="97" height="30"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-Sm-3jm" customClass="MaterialTextField" customModule="GLTC" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="80" height="18"/>
+                                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="1rf-4O-jxN"/>
                                                             <constraint firstAttribute="height" constant="30" id="Dnf-zd-SEI"/>
                                                             <constraint firstAttribute="height" constant="30" id="gJi-MK-zUR"/>
                                                         </constraints>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <variation key="default">
@@ -1158,13 +1190,15 @@ Email: admin@lansingtelangana.org</string>
                                                             </mask>
                                                         </variation>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqB-ox-BkH">
-                                                        <rect key="frame" x="0.0" y="80" width="97" height="30"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Subject*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqB-ox-BkH" customClass="MaterialTextField" customModule="GLTC" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="56" width="80" height="18"/>
+                                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="KZT-2h-0Fv"/>
                                                             <constraint firstAttribute="height" constant="23" id="b8r-Xi-O2U"/>
                                                             <constraint firstAttribute="height" constant="30" id="feF-m3-d56"/>
                                                         </constraints>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <variation key="default">
@@ -1190,14 +1224,16 @@ Email: admin@lansingtelangana.org</string>
                                                             </mask>
                                                         </variation>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Comments*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yPn-SM-Qux">
-                                                        <rect key="frame" x="0.0" y="120" width="97" height="30"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Comments*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yPn-SM-Qux" customClass="MaterialTextField" customModule="GLTC" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="84" width="80" height="18"/>
+                                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="5Wh-CX-u6I"/>
                                                             <constraint firstAttribute="height" constant="150" id="BxQ-Rn-HDB"/>
                                                             <constraint firstAttribute="height" constant="100" id="VJm-Hk-fIL"/>
                                                             <constraint firstAttribute="height" constant="150" id="crt-9d-GmY"/>
                                                         </constraints>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <variation key="default">
@@ -1264,7 +1300,7 @@ Email: admin@lansingtelangana.org</string>
                                                     </mask>
                                                 </variation>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pQ-7w-VtX" customClass="RoundedButton" customModule="GLTC" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pQ-7w-VtX" customClass="MaterialButton" customModule="GLTC" customModuleProvider="target">
                                                 <rect key="frame" x="302" y="561" width="100" height="30"/>
                                                 <color key="backgroundColor" red="0.4823529412" green="0.66666666669999997" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -1275,7 +1311,7 @@ Email: admin@lansingtelangana.org</string>
                                                     <constraint firstAttribute="height" constant="30" id="wPf-8u-A60"/>
                                                     <constraint firstAttribute="height" constant="30" id="waN-vE-q6B"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="16"/>
                                                 <state key="normal" title="Send">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1491,7 +1527,7 @@ Email: admin@lansingtelangana.org</string>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGe-4r-Hna">
                                                     <rect key="frame" x="127" y="8" width="360" height="100"/>
-                                                    <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1609,7 +1645,7 @@ Email: admin@lansingtelangana.org</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="Exg-cE-eE1"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1618,7 +1654,7 @@ Email: admin@lansingtelangana.org</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="Rgm-va-r2i"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1831,7 +1867,7 @@ Email: admin@lansingtelangana.org</string>
 Tel: 268.823.3534
 
 Email: shravankumar.singireddy@gmail.com</string>
-                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1933,7 +1969,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="120" id="u6V-cz-Uln"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2207,13 +2243,13 @@ Email: shravankumar.singireddy@gmail.com</string>
                                                     <constraint firstAttribute="height" constant="26" id="0Yt-qz-FLc"/>
                                                     <constraint firstAttribute="width" constant="344" id="3ve-Cj-xQZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-JK-X7k">
                                                 <rect key="frame" x="24" y="364" width="537" height="422"/>
-                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2221,7 +2257,7 @@ Email: shravankumar.singireddy@gmail.com</string>
                                                 <rect key="frame" x="215" y="816" width="170" height="62"/>
                                                 <string key="text">Thanks &amp; Regards
 GLTC Team</string>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="16"/>
                                                 <color key="textColor" red="0.48361167249999998" green="0.66666666669999997" blue="0.32464992949999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>

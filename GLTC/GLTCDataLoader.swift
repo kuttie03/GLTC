@@ -49,6 +49,23 @@ class GLTCDataLoader {
         if(events.isEmpty || committees.isEmpty || sponsors.isEmpty || news.isEmpty || videos.isEmpty || refresh){
             print("Loading data from the server")
             let url = NSURL(string: GLTC_JSON_URL)
+            /*let authCredentials = "username=GLTC&password=GLTC"
+            let authCrdentialsData = authCredentials.dataUsingEncoding(NSUTF8StringEncoding)
+            let base64EncodedCredentials = authCrdentialsData?.base64EncodedDataWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
+            let request = NSMutableURLRequest(URL: url!)
+            request.setValue("Basic \(base64EncodedCredentials)", forHTTPHeaderField: "Authorization")
+            request.HTTPMethod = "GET"
+            //var response:<#T##AutoreleasingUnsafeMutablePointer<NSURLResponse?>#>= nil
+            do{
+            let data1: NSData = try NSURLConnection.sendSynchronousRequest(request, returningResponse: nil)
+            print(NSString(data: data1, encoding: NSUTF8StringEncoding))
+            let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data1, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
+                print(jsonDictionary)
+            }catch let err as NSError {
+                print(err.debugDescription)
+            }*/
+            
+            
             if let data = NSData(contentsOfURL: url!){
                 do {
                     let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
